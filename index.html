@@ -48,7 +48,7 @@
       
     
     
-      <link rel="stylesheet" href="stylesheets/jeep.css">
+      <link rel="stylesheet" href="assets/stylesheets/jeep.css">
     
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#what-youll-find-here" class="md-skip">
+        <a href="#rohits-ai-architect-playbook" class="md-skip">
           Skip to content
         </a>
       
@@ -361,6 +361,8 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
@@ -388,6 +390,8 @@
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
+  
+    
   
   
     <label class="md-nav__title" for="__toc">
@@ -587,6 +591,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -630,59 +636,49 @@
   
 
 
-  <h1>Home</h1>
-
 <div class="hero">
-
-# Rohit’s AI Architect Playbook
-
-Welcome to my AI Architect Playbook — a practical set of notes, patterns, and decisions I’m building as I learn and apply GenAI and agentic systems.
-
-This is written for two types of readers:
-- **New to GenAI/Agents**: clear explanations with examples and small exercises
-- **Already experienced**: architecture tradeoffs, reliability, security, and “why this approach”
-
-If you’re new, start with **Daily**. If you’re designing systems, jump to **Patterns** and **Decision Records**.
-
+<h1 id="rohits-ai-architect-playbook">Rohit’s AI Architect Playbook<a class="headerlink" href="#rohits-ai-architect-playbook" title="Permanent link">&para;</a></h1>
+<p>A practical, opinionated set of notes I keep as I design and ship AI-enabled systems. The goal is clarity: what to build, why it works, where it breaks, and how to verify it.</p>
+<p>This is written for two kinds of readers:
+- <strong>Getting started</strong>: plain-English explanations with small examples and exercises
+- <strong>Already building</strong>: architecture tradeoffs, reliability, security, and evaluation</p>
+<p>If you’re new, start with <strong>Daily</strong>. If you’re designing systems, jump to <strong>Patterns</strong> and <strong>Decision Records</strong>.</p>
 <div class="badges">
   <span class="badge"><b>Audience</b>: Beginners → Experts</span>
   <span class="badge"><b>Style</b>: Practical + Architecture-first</span>
-  <span class="badge"><b>Focus</b>: RAG • Agents • Reliability • Security</span>
-  <span class="badge"><b>Vibe</b>: AI Lab + Off-road</span>
+  <span class="badge"><b>Topics</b>: RAG • Agents • Reliability • Security</span>
+  <span class="badge"><b>Bias</b>: Ship • Measure • Improve</span>
 </div>
-
 <div class="cta-row">
   <a class="cta primary" href="daily/">Start with Daily</a>
   <a class="cta" href="roadmap/">Roadmap</a>
   <a class="cta" href="patterns/">Architecture Patterns</a>
   <a class="cta" href="decision-records/">Decision Records</a>
 </div>
-
 </div>
-
 <h2 id="what-youll-find-here">What you’ll find here<a class="headerlink" href="#what-youll-find-here" title="Permanent link">&para;</a></h2>
 <div class="grid">
   <div class="card">
     <h3>Daily</h3>
-    <p>2 GenAI + 2 Agentic concepts per day, explained clearly with examples and exercises.</p>
+    <p>Small, focused lessons: concepts, patterns, and pitfalls—with a bias toward what you can apply.</p>
   </div>
   <div class="card">
     <h3>Weekly</h3>
-    <p>Weekly synthesis: what changed, what mattered, what to adopt, what to ignore.</p>
+    <p>Weekly synthesis: what changed, what mattered, what to adopt, and what to ignore.</p>
   </div>
   <div class="card">
     <h3>Patterns</h3>
-    <p>Reusable blueprints: RAG architectures, agent workflows, observability, evals, and guardrails.</p>
+    <p>Reusable blueprints: retrieval, orchestration, observability, evals, and guardrails.</p>
   </div>
   <div class="card">
     <h3>Decision Records</h3>
-    <p>“Why we chose this” docs — tradeoffs, risks, mitigations, and what we’d do differently.</p>
+    <p>“Why we chose this” docs: tradeoffs, risks, mitigations, and what we’d change next time.</p>
   </div>
 </div>
 
 <h2 id="my-operating-principle">My operating principle<a class="headerlink" href="#my-operating-principle" title="Permanent link">&para;</a></h2>
-<p><strong>Good AI systems aren’t magic prompts.</strong><br />
-They’re engineered systems with clear inputs/outputs, tool boundaries, verification, and failure handling.</p>
+<p><strong>Good AI systems aren’t magic prompts.</strong>
+They’re engineered systems with clear interfaces, measurable quality, and deliberate failure handling.</p>
 
 
 

@@ -19,7 +19,7 @@ body{
 
 /* Make logo area handle a wide image nicely */
 .md-header__button.md-logo img {
-  height: 42px;        /* adjust 36–52 if you want */
+  height: 54px;        /* adjust 44–60 if you want */
   width: auto;
 }
 
