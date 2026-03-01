@@ -171,3 +171,27 @@ a:hover, .md-typeset a:hover{
 .lang-btn:hover {
   border-color: rgba(255,255,255,0.35);
 }
+
+.lang-switch{
+  display:flex;
+  gap:10px;
+  align-items:center;
+  justify-content:flex-end;
+  margin: 6px 0 18px 0;
+}
+
+.lang-pill{
+  display:inline-block;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,.18);
+  background: rgba(0,0,0,.22);
+  text-decoration:none;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.lang-pill:hover{
+  border-color: rgba(255,255,255,.35);
+  background: rgba(0,0,0,.32);
+}
