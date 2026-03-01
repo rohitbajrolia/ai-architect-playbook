@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="260" viewBox="0 0 1100 260">
+  <rect x="0" y="0" width="1100" height="260" fill="transparent"/>
+  <text x="20" y="36" font-size="22" font-family="Arial, Helvetica, sans-serif">AI Architecture Maturity Roadmap</text>
+  <text x="20" y="62" font-size="14" font-family="Arial, Helvetica, sans-serif" opacity="0.75">Signal → Discipline → Patterns → Decisions → Leadership Thinking</text>
+
+  <!-- timeline line -->
+  <line x1="60" y1="140" x2="1040" y2="140" stroke="rgba(255,255,255,0.35)" stroke-width="4"/>
+
+  <!-- nodes -->
+  <circle cx="110" cy="140" r="14" fill="rgba(255,255,255,0.9)"/>
+  <circle cx="330" cy="140" r="14" fill="rgba(255,255,255,0.9)"/>
+  <circle cx="550" cy="140" r="14" fill="rgba(255,255,255,0.9)"/>
+  <circle cx="770" cy="140" r="14" fill="rgba(255,255,255,0.9)"/>
+  <circle cx="990" cy="140" r="14" fill="rgba(255,255,255,0.9)"/>
+
+  <!-- labels -->
+  <text x="80" y="115" font-size="14" font-family="Arial, Helvetica, sans-serif">Signals</text>
+  <text x="62" y="168" font-size="12" font-family="Arial, Helvetica, sans-serif" opacity="0.8">Daily capture</text>
+
+  <text x="285" y="115" font-size="14" font-family="Arial, Helvetica, sans-serif">Discipline</text>
+  <text x="260" y="168" font-size="12" font-family="Arial, Helvetica, sans-serif" opacity="0.8">Design drills</text>
+
+  <text x="508" y="115" font-size="14" font-family="Arial, Helvetica, sans-serif">Patterns</text>
+  <text x="470" y="168" font-size="12" font-family="Arial, Helvetica, sans-serif" opacity="0.8">Reusable blueprints</text>
+
+  <text x="708" y="115" font-size="14" font-family="Arial, Helvetica, sans-serif">Decisions</text>
+  <text x="655" y="168" font-size="12" font-family="Arial, Helvetica, sans-serif" opacity="0.8">ADRs + tradeoffs</text>
+
+  <text x="922" y="115" font-size="14" font-family="Arial, Helvetica, sans-serif">Leadership</text>
+  <text x="865" y="168" font-size="12" font-family="Arial, Helvetica, sans-serif" opacity="0.8">Executive synthesis</text>
+</svg>

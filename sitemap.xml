@@ -11,6 +11,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://rohitbajrolia.github.io/ai-architect-playbook/architectural-assets/</loc>
+         <lastmod>2026-03-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://rohitbajrolia.github.io/ai-architect-playbook/daily/</loc>
          <lastmod>2026-03-01</lastmod>
          <changefreq>daily</changefreq>
