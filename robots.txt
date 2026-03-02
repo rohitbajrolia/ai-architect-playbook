@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rohitbajrolia.github.io/ai-architect-playbook/sitemap.xml
