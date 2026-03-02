@@ -196,6 +196,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://rohitbajrolia.github.io/ai-architect-playbook/patterns/architecture-implications-index/</loc>
+         <lastmod>2026-03-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://rohitbajrolia.github.io/ai-architect-playbook/weekly/</loc>
          <lastmod>2026-03-02</lastmod>
          <changefreq>daily</changefreq>
