@@ -107,12 +107,39 @@
         return "/" + parts.join("/") + (pathname.endsWith("/") ? "/" : "");
       }
 
+      function contentTopFromPath(pathname) {
+        const parts = pathname.split("/").filter(Boolean);
+        const idx = baseIndex(parts);
+        const afterBase = parts.slice(idx);
+        const maybeLang = afterBase[0];
+        const contentParts = supported.includes(maybeLang) ? afterBase.slice(1) : afterBase;
+        return contentParts[0] || "";
+      }
+
+      function defaultLandingFor(lang) {
+        const parts = window.location.pathname.split("/").filter(Boolean);
+        const idx = baseIndex(parts);
+        const base = idx === 1 ? [repoName] : [];
+        const langPart = lang !== "en" ? [lang] : [];
+        // Only Daily + Executive are translated; use Daily as a stable landing.
+        return "/" + base.concat(langPart, ["daily"]).join("/") + "/";
+      }
+
+      function safeTargetFor(lang) {
+        const top = contentTopFromPath(window.location.pathname);
+        const translatedTops = ["daily", "executive-strategy"];
+        if (lang !== "en" && !translatedTops.includes(top)) {
+          return defaultLandingFor(lang);
+        }
+        return withLang(window.location.pathname, lang);
+      }
+
       // Remember + auto-redirect on load (only if user chose hi/es)
       const saved = localStorage.getItem(STORAGE_KEY);
       if (saved && supported.includes(saved)) {
         const curr = currentLangFromPath(window.location.pathname);
         if (saved !== curr) {
-          const target = withLang(window.location.pathname, saved);
+          const target = safeTargetFor(saved);
           // redirect without adding history noise
           window.location.replace(target + window.location.search + window.location.hash);
         }
@@ -123,7 +150,7 @@
         set: function (lang) {
           if (!supported.includes(lang)) return;
           localStorage.setItem(STORAGE_KEY, lang);
-          const target = withLang(window.location.pathname, lang);
+          const target = safeTargetFor(lang);
           window.location.href = target + window.location.search + window.location.hash;
         },
         get: function () {
@@ -140,19 +167,33 @@
         const wrap = document.createElement("div");
         wrap.className = "aap-lang-switch";
 
+        const current = window.__AAP_LANG__.get();
+
         const btnEn = document.createElement("div");
         btnEn.className = "aap-lang-btn";
         btnEn.textContent = "EN";
+        btnEn.title = "Language: English";
+        btnEn.setAttribute("role", "button");
+        btnEn.setAttribute("aria-label", "Switch language to English");
+        if (current === "en") btnEn.classList.add("aap-lang-btn--active");
         btnEn.onclick = () => window.__AAP_LANG__.set("en");
 
         const btnHi = document.createElement("div");
         btnHi.className = "aap-lang-btn";
         btnHi.textContent = "हिन्दी";
+        btnHi.title = "Language: Hindi";
+        btnHi.setAttribute("role", "button");
+        btnHi.setAttribute("aria-label", "Switch language to Hindi");
+        if (current === "hi") btnHi.classList.add("aap-lang-btn--active");
         btnHi.onclick = () => window.__AAP_LANG__.set("hi");
 
         const btnEs = document.createElement("div");
         btnEs.className = "aap-lang-btn";
         btnEs.textContent = "Español";
+        btnEs.title = "Language: Spanish";
+        btnEs.setAttribute("role", "button");
+        btnEs.setAttribute("aria-label", "Switch language to Spanish");
+        if (current === "es") btnEs.classList.add("aap-lang-btn--active");
         btnEs.onclick = () => window.__AAP_LANG__.set("es");
 
         wrap.appendChild(btnEn);
@@ -322,6 +363,10 @@
     }
     .aap-lang-btn:hover {
       background: rgba(0,0,0,.40);
+    }
+    .aap-lang-btn--active {
+      background: rgba(255,255,255,.10);
+      border-color: rgba(255,255,255,.35);
     }
   </style>
 
