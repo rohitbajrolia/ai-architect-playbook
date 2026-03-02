@@ -118,6 +118,43 @@
           return currentLangFromPath(window.location.pathname);
         }
       };
+
+      // Mount buttons into the top header area.
+      function mountButtons() {
+        const header = document.querySelector(".md-header__inner");
+        if (!header || header.querySelector(".aap-lang-switch")) return;
+
+        const right = header.querySelector(".md-header__option") || header;
+        const wrap = document.createElement("div");
+        wrap.className = "aap-lang-switch";
+
+        const btnEn = document.createElement("div");
+        btnEn.className = "aap-lang-btn";
+        btnEn.textContent = "EN";
+        btnEn.onclick = () => window.__AAP_LANG__.set("en");
+
+        const btnHi = document.createElement("div");
+        btnHi.className = "aap-lang-btn";
+        btnHi.textContent = "हिन्दी";
+        btnHi.onclick = () => window.__AAP_LANG__.set("hi");
+
+        const btnEs = document.createElement("div");
+        btnEs.className = "aap-lang-btn";
+        btnEs.textContent = "Español";
+        btnEs.onclick = () => window.__AAP_LANG__.set("es");
+
+        wrap.appendChild(btnEn);
+        wrap.appendChild(btnHi);
+        wrap.appendChild(btnEs);
+
+        right.appendChild(wrap);
+      }
+
+      if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", mountButtons);
+      } else {
+        mountButtons();
+      }
     })();
   </script>
 
