@@ -1,8 +1,8 @@
 # Rohit’s AI Architect Playbook
 
-This repository hosts the published version of Rohit’s AI Architect Playbook.
+This repository contains the published site for Rohit’s AI Architect Playbook.
 
-It’s a practical, architecture-first knowledge base focused on building reliable AI systems: decision-making frameworks, implementation patterns, and a consistent writing habit to stay sharp.
+The playbook is a set of short, structured notes and reference material for designing and delivering reliable AI-enabled systems.
 
 ## Read the playbook
 
@@ -10,10 +10,17 @@ It’s a practical, architecture-first knowledge base focused on building reliab
 
 ## What you’ll find
 
-- **Daily**: short entries that reinforce structured thinking (signals, concepts, and a design drill).
-- **Executive Strategy**: weekly monitoring notes written for delivery leadership—what matters, implications, and cautions.
-- **Patterns**: reusable blueprints for retrieval, orchestration, observability/evals, guardrails, and failure handling.
-- **Decision Records**: “why we chose this” write-ups capturing tradeoffs and rationale.
+- **Daily**: short entries with concrete prompts (signals, concepts, and a design drill).
+- **Executive Strategy**: weekly monitoring notes focused on delivery and client conversations.
+- **Patterns**: implementation blueprints (retrieval, orchestration, observability/evals, guardrails, failure handling).
+- **Decision Records**: rationale and tradeoffs captured as short decision memos.
+
+## Features
+
+- **Language selector**: English, Hindi, Spanish.
+	- Current coverage: **Daily** and **Executive Strategy** are available in Hindi/Spanish.
+	- Other sections are currently English.
+- **Search**: full-text search across published pages.
 
 ## Notes on updates
 
