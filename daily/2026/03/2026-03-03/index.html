@@ -910,106 +910,125 @@
 
 <h1 id="2026-03-03">2026-03-03<a class="headerlink" href="#2026-03-03" title="Permanent link">&para;</a></h1>
 <h2 id="daily-framework-for-2026-03-03">Daily Framework for 2026-03-03<a class="headerlink" href="#daily-framework-for-2026-03-03" title="Permanent link">&para;</a></h2>
+<p>How I read this page:
+- [REL] Reliability &amp; Evaluation — What fails in prod? How do we test + observe it?
+- [AGENT] Agents &amp; Orchestration — What runs the loop? What actions can it take?
+- [DATA] Data, RAG &amp; Knowledge — Where does context come from? How is it retrieved?
+- [GOV] Security, Privacy &amp; Governance — What needs policy, permissions, and audit?
+- [COST] Infra, Hardware &amp; Cost — What gets expensive (latency/tokens/GPU/ops)? How do we cap it?
+- [OPS] Product &amp; Operating Model — Who owns this weekly? How do we roll it out safely?</p>
+<p>Quick system map (to place each item): Model → Context (RAG/memory) → Orchestrator → Tools → Evals/Tracing → Governance.</p>
 <h3 id="1-todays-signals">1) Today's Signals<a class="headerlink" href="#1-todays-signals" title="Permanent link">&para;</a></h3>
 <ul>
-<li><strong>2026-03-02</strong>: <a href="https://www.itpro.com/infrastructure/networking/ericsson-maps-out-the-road-to-fully-commercial-6g-networks-at-mwc-2026">Ericsson's 6G Vision at MWC 2026</a> — Ericsson plans AI-native 6G networks by decade's end.</li>
-<li><strong>2026-03-02</strong>: <a href="https://press.siemens.com/global/en/pressrelease/siemens-showcases-journey-smart-autonomous-buildings-light-building-2026">Siemens' Autonomous Buildings at Light + Building 2026</a> — Siemens showcases transition to human-centric autonomous infrastructure.</li>
-<li><strong>2026-03-02</strong>: <a href="https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2026/m03/cisco-builds-the-critical-infrastructure-for-the-ai-era.html">Cisco's AI Infrastructure at MWC 2026</a> — Cisco emphasizes secure, smart networks for AI workloads.</li>
-<li><strong>2026-03-01</strong>: <a href="https://skillsllm.com/news/ai-news-2026-03-01">Claude Code's Multi-Repository Context Spanning</a> — Claude Code maintains context across 10 linked repositories.</li>
-<li><strong>2026-03-01</strong>: <a href="https://skillsllm.com/news/ai-news-2026-03-01">MCP Registry's 5,000 Community Servers</a> — Model Context Protocol registry surpasses 5,000 servers.</li>
-<li><strong>2026-03-01</strong>: <a href="https://skillsllm.com/news/ai-news-2026-03-01">AutoGen Studio 3.0's Visual Agent Orchestration</a> — Microsoft introduces drag-and-drop interface for agent workflows.</li>
-<li><strong>2026-03-01</strong>: <a href="https://skillsllm.com/news/ai-news-2026-03-01">DevAgent Framework's Open-Source Growth</a> — DevAgent reaches 15K GitHub stars, emphasizing deterministic tool execution.</li>
-<li><strong>2026-03-01</strong>: <a href="https://boston.aitinkerers.org/p/ai-tinkerers-boston-march-2026-meetup">AI Tinkerers Boston Meetup Announcement</a> — AI Tinkerers Boston announces March 2026 meetup.</li>
+<li><strong>2026-03-03</strong>: <a href="https://www.itpro.com/infrastructure/networking/ericsson-maps-out-the-road-to-fully-commercial-6g-networks-at-mwc-2026">Ericsson's 6G Vision</a> — Ericsson plans AI-native 6G networks by decade's end to support AI models and autonomous agents.</li>
+<li><strong>2026-03-03</strong>: <a href="https://www.prnewswire.com/news-releases/sabre-unveils-once-in-a-generation-company-rebuild-and-its-ai-first-platform-at-itb-berlin-2026-302701932.html">Sabre's AI-First Platform</a> — Sabre introduces a unified AI-driven platform for intelligent retailing and autonomous workflows.</li>
+<li><strong>2026-03-03</strong>: <a href="https://www.prnewswire.com/news-releases/revizto-brings-together-the-worlds-most-ambitious-builders-at-made-right-2026-and-debuts-a-groundbreaking-ai-integration-302701328.html">Revizto's AI Integration</a> — Revizto integrates AI to enhance collaboration in architecture, engineering, and construction.</li>
+<li><strong>2026-03-03</strong>: <a href="https://nvidianews.nvidia.com/news/nvidia-ceo-jensen-huang-and-global-technology-leaders-to-showcase-age-of-ai-at-gtc-2026">NVIDIA's GTC 2026 Announcement</a> — NVIDIA's GTC 2026 to showcase AI as essential infrastructure across industries.</li>
+<li><strong>2026-03-03</strong>: <a href="https://www.biztechreports.com/news-archive/2026/3/3/ai-infrastructure-spending-reached-a-record-86b-in-q3-2025-idc-march-03-2026">AI Infrastructure Spending Record</a> — AI infrastructure spending hits $86 billion in Q3 2025, signaling sustained investment.</li>
 </ul>
 <hr />
-<h3 id="2-genai-2-items">2) GenAI (2 items)<a class="headerlink" href="#2-genai-2-items" title="Permanent link">&para;</a></h3>
+<h3 id="2-genai">2) GenAI<a class="headerlink" href="#2-genai" title="Permanent link">&para;</a></h3>
 <h4 id="ericssons-6g-vision">Ericsson's 6G Vision<a class="headerlink" href="#ericssons-6g-vision" title="Permanent link">&para;</a></h4>
 <div class="admonition note">
 <p class="admonition-title">Architectural Implication</p>
 <ul>
-<li>[REL] Reliability &amp; Evaluation — Future networks will need robust AI integration.</li>
-<li>[AGENT] Agents &amp; Orchestration — Autonomous control will be essential in 6G.</li>
-<li>[GOV] Security, Privacy &amp; Governance — AI-native networks must address new security challenges.</li>
+<li>[REL] Reliability &amp; Evaluation — Need for robust testing frameworks for AI-native networks.</li>
+<li>[AGENT] Agents &amp; Orchestration — Design AI agents capable of autonomous network management.</li>
+<li>[GOV] Security, Privacy &amp; Governance — Establish policies for data handling in intelligent networks.</li>
 </ul>
 </div>
-<h4 id="siemens-autonomous-buildings">Siemens' Autonomous Buildings<a class="headerlink" href="#siemens-autonomous-buildings" title="Permanent link">&para;</a></h4>
+<p>Open questions:
+- How will AI-native networks handle real-time data processing?
+- What are the security implications of autonomous network management?</p>
+<h4 id="sabres-ai-first-platform">Sabre's AI-First Platform<a class="headerlink" href="#sabres-ai-first-platform" title="Permanent link">&para;</a></h4>
 <div class="admonition note">
 <p class="admonition-title">Architectural Implication</p>
 <ul>
-<li>[DATA] Data, RAG &amp; Knowledge — Buildings will generate and process vast data streams.</li>
-<li>[COST] Infra, Hardware &amp; Cost — Investment in smart infrastructure will be significant.</li>
-<li>[OPS] Product &amp; Operating Model — Operations will shift towards autonomous management.</li>
+<li>[DATA] Data, RAG &amp; Knowledge — Integrate diverse data sources for intelligent decision-making.</li>
+<li>[COST] Infra, Hardware &amp; Cost — Assess cost implications of deploying AI-driven platforms.</li>
+<li>[OPS] Product &amp; Operating Model — Develop agile processes for continuous AI model updates.</li>
 </ul>
 </div>
+<p>Open questions:
+- What are the scalability challenges of Sabre's AI platform?
+- How does Sabre ensure data privacy in its AI-driven services?</p>
 <hr />
-<h3 id="3-agentic-ai-2-items">3) Agentic AI (2 items)<a class="headerlink" href="#3-agentic-ai-2-items" title="Permanent link">&para;</a></h3>
-<h4 id="claude-codes-multi-repository-context-spanning">Claude Code's Multi-Repository Context Spanning<a class="headerlink" href="#claude-codes-multi-repository-context-spanning" title="Permanent link">&para;</a></h4>
+<h3 id="3-agentic-ai">3) Agentic AI<a class="headerlink" href="#3-agentic-ai" title="Permanent link">&para;</a></h3>
+<h4 id="reviztos-ai-integration">Revizto's AI Integration<a class="headerlink" href="#reviztos-ai-integration" title="Permanent link">&para;</a></h4>
 <div class="admonition note">
 <p class="admonition-title">Architectural Implication</p>
 <ul>
-<li>[AGENT] Agents &amp; Orchestration — Agents will manage complex, multi-repository contexts.</li>
-<li>[REL] Reliability &amp; Evaluation — Maintaining context across repositories is crucial for reliability.</li>
-<li>[GOV] Security, Privacy &amp; Governance — Managing data across repositories raises governance concerns.</li>
+<li>[AGENT] Agents &amp; Orchestration — Implement AI agents to facilitate real-time collaboration.</li>
+<li>[REL] Reliability &amp; Evaluation — Ensure AI agents' reliability in complex project environments.</li>
+<li>[GOV] Security, Privacy &amp; Governance — Define access controls for sensitive project data.</li>
 </ul>
 </div>
-<h4 id="autogen-studio-30s-visual-agent-orchestration">AutoGen Studio 3.0's Visual Agent Orchestration<a class="headerlink" href="#autogen-studio-30s-visual-agent-orchestration" title="Permanent link">&para;</a></h4>
+<p>Open questions:
+- How does Revizto's AI integration handle data synchronization across teams?
+- What measures are in place to prevent AI-driven errors in project management?</p>
+<h4 id="global-ais-compliance-automation">Global AI's Compliance Automation<a class="headerlink" href="#global-ais-compliance-automation" title="Permanent link">&para;</a></h4>
 <div class="admonition note">
 <p class="admonition-title">Architectural Implication</p>
 <ul>
-<li>[DATA] Data, RAG &amp; Knowledge — Simplifies data flow management in agent systems.</li>
-<li>[COST] Infra, Hardware &amp; Cost — Reduces development time and costs for agent-based applications.</li>
-<li>[OPS] Product &amp; Operating Model — Facilitates rapid deployment of complex agent systems.</li>
+<li>[DATA] Data, RAG &amp; Knowledge — Embed compliance checks into design workflows.</li>
+<li>[COST] Infra, Hardware &amp; Cost — Evaluate infrastructure needs for AI compliance tools.</li>
+<li>[OPS] Product &amp; Operating Model — Integrate AI compliance tools into existing project management systems.</li>
 </ul>
 </div>
+<p>Open questions:
+- What is the accuracy rate of Global AI's compliance automation?
+- How does the system handle regulatory changes over time?</p>
 <hr />
-<h3 id="4-ai-radar-1-item">4) AI Radar (1 item)<a class="headerlink" href="#4-ai-radar-1-item" title="Permanent link">&para;</a></h3>
-<h4 id="devagent-frameworks-open-source-growth">DevAgent Framework's Open-Source Growth<a class="headerlink" href="#devagent-frameworks-open-source-growth" title="Permanent link">&para;</a></h4>
+<h3 id="4-ai-radar">4) AI Radar<a class="headerlink" href="#4-ai-radar" title="Permanent link">&para;</a></h3>
+<h4 id="nvidias-gtc-2026-announcement">NVIDIA's GTC 2026 Announcement<a class="headerlink" href="#nvidias-gtc-2026-announcement" title="Permanent link">&para;</a></h4>
 <div class="admonition note">
 <p class="admonition-title">Architectural Implication</p>
 <ul>
-<li>[REL] Reliability &amp; Evaluation — Open-source frameworks can enhance system reliability.</li>
-<li>[GOV] Security, Privacy &amp; Governance — Open-source adoption requires robust security practices.</li>
-<li>[COST] Infra, Hardware &amp; Cost — Reduces costs by leveraging community-driven development.</li>
+<li>[REL] Reliability &amp; Evaluation — Prepare for AI's role as critical infrastructure.</li>
+<li>[GOV] Security, Privacy &amp; Governance — Address governance challenges in AI integration.</li>
+<li>[COST] Infra, Hardware &amp; Cost — Plan for scaling AI infrastructure to meet industry demands.</li>
 </ul>
 </div>
+<p>Open questions:
+- What new AI applications will be showcased at GTC 2026?
+- How will NVIDIA's announcements impact existing AI infrastructure?</p>
 <hr />
 <h3 id="5-cto-brief">5) CTO Brief<a class="headerlink" href="#5-cto-brief" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Investment in AI-native infrastructure is accelerating.</li>
-<li>Open-source tools are gaining traction in AI development.</li>
-<li>Autonomous systems are reshaping operational models.</li>
+<li>AI-native networks require new testing and security protocols.</li>
+<li>AI-driven platforms demand scalable and agile infrastructure.</li>
+<li>Integrating AI agents into workflows enhances collaboration but introduces governance complexities.</li>
 </ul>
 <hr />
 <h3 id="6-rohits-notes">6) Rohit's Notes<a class="headerlink" href="#6-rohits-notes" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Surprised by the rapid adoption of open-source AI frameworks.</li>
-<li>Need to re-check security protocols for multi-repository AI systems.</li>
-<li>Tell the team: Focus on building adaptable, secure AI infrastructures.</li>
+<li>Surprised by the rapid adoption of AI in network infrastructure.</li>
+<li>Need to re-check the scalability of AI-driven platforms.</li>
+<li>Tell the team: Focus on integrating AI agents to improve collaboration efficiency.</li>
 </ul>
 <hr />
 <h3 id="7-design-drill">7) Design Drill<a class="headerlink" href="#7-design-drill" title="Permanent link">&para;</a></h3>
-<p><strong>Scenario:</strong> A healthcare provider wants to implement an AI-driven patient management system across multiple clinics.</p>
+<p><strong>Scenario:</strong> A global architecture firm needs to ensure all building designs comply with evolving safety regulations before submission for approval.</p>
 <p><strong>Constraints:</strong>
-- Compliance with healthcare data privacy regulations.
-- Integration with existing electronic health record systems.
-- Scalability to accommodate future growth.</p>
+- Compliance with multiple regional safety standards.
+- Integration with existing design and project management tools.
+- Real-time validation of design changes.</p>
 <p><strong>Guiding questions:</strong>
-- How will the system ensure data privacy and security?
-- What integration points are necessary with current EHR systems?
-- How can the system be designed for scalability?
-- What are the potential challenges in multi-clinic deployment?
-- How will the system handle real-time data processing requirements?</p>
+- How can AI be integrated into existing design workflows for compliance?
+- What are the challenges in automating compliance checks across different regions?
+- How can the system handle real-time updates to safety regulations?
+- What measures ensure the accuracy and reliability of AI-driven compliance tools?
+- How can the system be scaled to accommodate large, complex projects?</p>
 <hr />
 <!-- AII_TODAY_START -->
 <p><a id="aii-today"></a></p>
 <h3 id="architecture-implications-index-today">Architecture Implications Index (Today)<a class="headerlink" href="#architecture-implications-index-today" title="Permanent link">&para;</a></h3>
-<p>(3–5 bullets. Each must start with a theme key + human label. One line each.)</p>
+<!-- 3–5 bullets. Each must start with a theme key + human label. One line each. Must include Component + Decision. -->
+
 <ul>
-<li>[REL] Reliability &amp; Evaluation — Future networks will need robust AI integration.</li>
-<li>[AGENT] Agents &amp; Orchestration — Autonomous control will be essential in 6G.</li>
-<li>[DATA] Data, RAG &amp; Knowledge — Buildings will generate and process vast data streams.</li>
-<li>[COST] Infra, Hardware &amp; Cost — Investment in smart infrastructure will be significant.</li>
-<li>[OPS] Product &amp; Operating Model — Operations will shift towards autonomous management.</li>
+<li>[REL] Reliability &amp; Evaluation — Component: AI testing frameworks; Decision: Develop robust testing protocols for AI-native networks.</li>
+<li>[AGENT] Agents &amp; Orchestration — Component: AI agents; Decision: Implement agents for autonomous network management.</li>
+<li>[GOV] Security, Privacy &amp; Governance — Component: Data governance policies; Decision: Establish comprehensive policies for data handling in intelligent networks.</li>
 </ul>
 <!-- AII_TODAY_END -->
 
