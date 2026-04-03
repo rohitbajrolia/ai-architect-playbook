@@ -1,0 +1,1107 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Daily structured frameworks and architecture drills—clear, practical, and experience-based.">
+      
+      
+      
+        <link rel="canonical" href="https://rohitbajrolia.github.io/ai-architect-playbook/hi/daily/2026/04/2026-04-03/">
+      
+      
+      
+      
+      <link rel="icon" href="../../../../../assets/images/logo.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.0">
+    
+    
+      
+        <title>2026 04 03 - Rohit’s AI Architect Playbook</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.45e1311d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../../assets/stylesheets/jeep.css">
+    
+    <script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  
+  <script>
+    (function () {
+      const STORAGE_KEY = "aap_lang"; // ai-architect-playbook language
+      const supported = ["en", "hi", "es"];
+      const repoName = "ai-architect-playbook";
+
+      function baseIndex(parts) {
+        // GitHub Pages project sites are served under /<repo>/...
+        return parts[0] === repoName ? 1 : 0;
+      }
+
+      function currentLangFromPath(pathname) {
+        const parts = pathname.split("/").filter(Boolean);
+        // pathname like:
+        // - /ai-architect-playbook/hi/daily/... (GitHub Pages)
+        // - /hi/daily/... (custom domain/root)
+        const idx = baseIndex(parts);
+        const maybeLang = parts[idx];
+        if (supported.includes(maybeLang)) return maybeLang;
+        return "en";
+      }
+
+      function stripLangFromPath(pathname) {
+        const parts = pathname.split("/").filter(Boolean);
+        const idx = baseIndex(parts);
+        if (parts.length > idx && supported.includes(parts[idx])) {
+          parts.splice(idx, 1); // remove lang
+        }
+        return "/" + parts.join("/") + (pathname.endsWith("/") ? "/" : "");
+      }
+
+      function withLang(pathname, lang) {
+        const parts = pathname.split("/").filter(Boolean);
+        if (parts.length === 0) return pathname;
+        const idx = baseIndex(parts);
+
+        // Remove existing lang if present
+        if (parts.length > idx && supported.includes(parts[idx])) {
+          parts.splice(idx, 1);
+        }
+
+        if (lang !== "en") {
+          parts.splice(idx, 0, lang);
+        }
+        return "/" + parts.join("/") + (pathname.endsWith("/") ? "/" : "");
+      }
+
+      function contentTopFromPath(pathname) {
+        const parts = pathname.split("/").filter(Boolean);
+        const idx = baseIndex(parts);
+        const afterBase = parts.slice(idx);
+        const maybeLang = afterBase[0];
+        const contentParts = supported.includes(maybeLang) ? afterBase.slice(1) : afterBase;
+        return contentParts[0] || "";
+      }
+
+      function defaultLandingFor(lang) {
+        const parts = window.location.pathname.split("/").filter(Boolean);
+        const idx = baseIndex(parts);
+        const base = idx === 1 ? [repoName] : [];
+        const langPart = lang !== "en" ? [lang] : [];
+        // Only Daily + Executive are translated; use Daily as a stable landing.
+        return "/" + base.concat(langPart, ["daily"]).join("/") + "/";
+      }
+
+      function safeTargetFor(lang) {
+        const top = contentTopFromPath(window.location.pathname);
+        const translatedTops = ["daily", "executive-strategy"];
+        if (lang !== "en" && !translatedTops.includes(top)) {
+          return defaultLandingFor(lang);
+        }
+        return withLang(window.location.pathname, lang);
+      }
+
+      // Remember + auto-redirect on load (only if user chose hi/es)
+      const saved = localStorage.getItem(STORAGE_KEY);
+      if (saved && supported.includes(saved)) {
+        const curr = currentLangFromPath(window.location.pathname);
+        if (saved !== curr) {
+          const target = safeTargetFor(saved);
+          // redirect without adding history noise
+          window.location.replace(target + window.location.search + window.location.hash);
+        }
+      }
+
+      // Expose helper for buttons
+      window.__AAP_LANG__ = {
+        set: function (lang) {
+          if (!supported.includes(lang)) return;
+          localStorage.setItem(STORAGE_KEY, lang);
+          const target = safeTargetFor(lang);
+          window.location.href = target + window.location.search + window.location.hash;
+        },
+        get: function () {
+          return currentLangFromPath(window.location.pathname);
+        }
+      };
+
+      // Mount buttons into the top header area.
+      function mountButtons() {
+        const header = document.querySelector(".md-header__inner");
+        if (!header || header.querySelector(".aap-lang-switch")) return;
+
+        const right = header.querySelector(".md-header__option") || header;
+        const wrap = document.createElement("div");
+        wrap.className = "aap-lang-switch";
+
+        const current = window.__AAP_LANG__.get();
+
+        const btnEn = document.createElement("div");
+        btnEn.className = "aap-lang-btn";
+        btnEn.textContent = "EN";
+        btnEn.title = "Language: English";
+        btnEn.setAttribute("role", "button");
+        btnEn.setAttribute("aria-label", "Switch language to English");
+        if (current === "en") btnEn.classList.add("aap-lang-btn--active");
+        btnEn.onclick = () => window.__AAP_LANG__.set("en");
+
+        const btnHi = document.createElement("div");
+        btnHi.className = "aap-lang-btn";
+        btnHi.textContent = "हिन्दी";
+        btnHi.title = "Language: Hindi";
+        btnHi.setAttribute("role", "button");
+        btnHi.setAttribute("aria-label", "Switch language to Hindi");
+        if (current === "hi") btnHi.classList.add("aap-lang-btn--active");
+        btnHi.onclick = () => window.__AAP_LANG__.set("hi");
+
+        const btnEs = document.createElement("div");
+        btnEs.className = "aap-lang-btn";
+        btnEs.textContent = "Español";
+        btnEs.title = "Language: Spanish";
+        btnEs.setAttribute("role", "button");
+        btnEs.setAttribute("aria-label", "Switch language to Spanish");
+        if (current === "es") btnEs.classList.add("aap-lang-btn--active");
+        btnEs.onclick = () => window.__AAP_LANG__.set("es");
+
+        wrap.appendChild(btnEn);
+        wrap.appendChild(btnHi);
+        wrap.appendChild(btnEs);
+
+        right.appendChild(wrap);
+      }
+
+      if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", mountButtons);
+      } else {
+        mountButtons();
+      }
+    })();
+  </script>
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="lime">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#2026-04-03" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+  
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../../.." title="Rohit’s AI Architect Playbook" class="md-header__button md-logo" aria-label="Rohit’s AI Architect Playbook" data-md-component="logo">
+      
+  <img src="../../../../../assets/images/jaat-jeep-logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Rohit’s AI Architect Playbook
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              2026 04 03
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="lime"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/rohitbajrolia/ai-architect-playbook" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+  <style>
+    .aap-lang-switch {
+      display: flex;
+      gap: .5rem;
+      align-items: center;
+      margin-left: 1rem;
+    }
+    .aap-lang-btn {
+      border: 1px solid rgba(255,255,255,.18);
+      border-radius: 999px;
+      padding: .25rem .6rem;
+      font-size: .85rem;
+      line-height: 1.2;
+      cursor: pointer;
+      user-select: none;
+      background: rgba(0,0,0,.25);
+    }
+    .aap-lang-btn:hover {
+      background: rgba(0,0,0,.40);
+    }
+    .aap-lang-btn--active {
+      background: rgba(255,255,255,.10);
+      border-color: rgba(255,255,255,.35);
+    }
+  </style>
+
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../../daily/" class="md-tabs__link">
+          
+  
+  Daily
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../../patterns/architecture-implications-index/" class="md-tabs__link">
+        
+  
+    
+  
+  Implications Index
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../../executive-strategy/" class="md-tabs__link">
+          
+  
+  Executive Strategy
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../../roadmap/" class="md-tabs__link">
+        
+  
+    
+  
+  Roadmap
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../../architectural-assets/" class="md-tabs__link">
+        
+  
+    
+  
+  Architectural Assets
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../../weekly/" class="md-tabs__link">
+        
+  
+    
+  
+  Weekly
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../../patterns/" class="md-tabs__link">
+        
+  
+    
+  
+  Patterns
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../../decision-records/" class="md-tabs__link">
+        
+  
+    
+  
+  Decision Records
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../../glossaries/" class="md-tabs__link">
+        
+  
+    
+  
+  Glossary
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../../.." title="Rohit’s AI Architect Playbook" class="md-nav__button md-logo" aria-label="Rohit’s AI Architect Playbook" data-md-component="logo">
+      
+  <img src="../../../../../assets/images/jaat-jeep-logo.png" alt="logo">
+
+    </a>
+    Rohit’s AI Architect Playbook
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/rohitbajrolia/ai-architect-playbook" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Daily
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Daily
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../daily/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../patterns/architecture-implications-index/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Implications Index
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Executive Strategy
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Executive Strategy
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../executive-strategy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../roadmap/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Roadmap
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../architectural-assets/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Architectural Assets
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../weekly/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Weekly
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../patterns/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Patterns
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../decision-records/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Decision Records
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../glossaries/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Glossary
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<!-- SOURCE_SHA256: 590ac54637c9ee4a9b1bc11633b71d8c5b3ea930fc97a6aa76998eb5ecb29cd4 -->
+<h1 id="2026-04-03">2026-04-03<a class="headerlink" href="#2026-04-03" title="Permanent link">&para;</a></h1>
+<h2 id="2026-04-03_1">2026-04-03 के लिए दैनिक रूपरेखा<a class="headerlink" href="#2026-04-03_1" title="Permanent link">&para;</a></h2>
+<p>मैं इस पृष्ठ को कैसे पढ़ता हूँ:
+- [REL] विश्वसनीयता और मूल्यांकन — प्रोडक्शन में क्या विफल होता है? हम इसे कैसे परीक्षण और निरीक्षण करते हैं?
+- [AGENT] एजेंट और ऑर्केस्ट्रेशन — लूप कौन चलाता है? यह कौन-कौन से क्रियाएँ कर सकता है?
+- [DATA] डेटा, RAG और ज्ञान — संदर्भ कहाँ से आता है? इसे कैसे प्राप्त किया जाता है?
+- [GOV] सुरक्षा, गोपनीयता और शासन — किसे नीति, अनुमतियां, और ऑडिट की आवश्यकता है?
+- [COST] इन्फ्रा, हार्डवेयर और लागत — क्या महंगा होता है (देर/टोकन/जीपीयू/ऑप्स)? हम इसे कैसे सीमित करते हैं?
+- [OPS] उत्पाद और संचालन मॉडल — सप्ताह में इसका स्वामित्व कौन रखता है? हम इसे सुरक्षित रूप से कैसे लागू करते हैं?</p>
+<p>त्वरित सिस्टम मानचित्र (प्रत्येक वस्तु को स्थापित करने के लिए): मॉडल → संदर्भ (RAG/मेमोरी) → ऑर्केस्ट्रेटर → उपकरण → मूल्यांकन/ट्रेसिंग → शासन।</p>
+<h3 id="1">1) आज के संकेत<a class="headerlink" href="#1" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>2026-04-03</strong>: <a href="https://www.distillintelligence.com/briefings/ai-leaders-2026-04-03">OpenAI ने $122B जुटाए जबकि उसने सोरा बंद किया, Anthropic को बड़े कोड लीक का सामना, और Google ने वैश्विक प्रतिस्पर्धियों को चुनौती देने के लिए Gemma 4 जारी किया।</a> — OpenAI ने $122B की फंडिंग सुरक्षित की, सोरा बंद किया; Anthropic ने कोड लीक किया; Google ने Gemma 4 जारी किया।</li>
+<li><strong>2026-04-03</strong>: <a href="https://news.ai.thewang.net/">Google के Gemma 4 मॉडल को Apache 2.0 लाइसेंस के तहत ओपन-सोर्स रूप में जारी किया गया है, जो उन्नत विज़न और तर्क क्षमताएँ प्रदान करता है।</a> — Google ने Gemma 4 मॉडल ओपन-सोर्स रूप में जारी किया।</li>
+<li><strong>2026-04-03</strong>: <a href="https://winbuzzer.com/2026/04/03/microsoft-launches-3-in-house-ai-models-to-challenge-openai-google-xcxwbn/">Microsoft ने OpenAI को चुनौती देने के लिए तीन इन-हाउस AI मॉडल लॉन्च किए।</a> — Microsoft ने OpenAI से प्रतिस्पर्धा के लिए तीन AI मॉडल पेश किए।</li>
+<li><strong>2026-04-03</strong>: <a href="https://blockchain.news/ainews/google-deepmind-launches-31b-dense-26b-moe-and-edge-e4b-e2b-models-latest-analysis-on-on-device-ai-in-2026">Google DeepMind ने 31B Dense, 26B MoE, और Edge E4B E2B मॉडल लॉन्च किए।</a> — Google DeepMind ने ऑन-डिवाइस AI के लिए नए AI मॉडल जारी किए।</li>
+<li><strong>2026-04-03</strong>: <a href="https://www.iraqnewsgazette.com/mavenir-receives-the-presidents-honor-at-msuas-2026-satellite-mobile-innovation-awards/">Mavenir को MSUA के 2026 सैटेलाइट मोबाइल इनोवेशन अवार्ड्स में राष्ट्रपति सम्मान प्राप्त हुआ।</a> — AI-आधारित मोबाइल समाधानों के लिए Mavenir को सम्मानित किया गया।</li>
+<li><strong>2026-04-03</strong>: <a href="https://asanify.com/blog/news/ai-recruiting-data-breach-april-3-2026/">एक $10B AI भर्ती प्लेटफॉर्म में सुरक्षा उल्लंघन हुआ।</a> — एक बड़ा AI भर्ती प्लेटफॉर्म डेटा उल्लंघन का शिकार हुआ।</li>
+<li><strong>2026-04-03</strong>: <a href="https://en.wikipedia.org/wiki/AI_Futures_Project">AI फ्यूचर्स प्रोजेक्ट: AI 2027।</a> — AI फ्यूचर्स प्रोजेक्ट 2027 तक AI विकास पर चर्चा करता है।</li>
+<li><strong>2026-04-03</strong>: <a href="https://arxiv.org/abs/2603.28735">RAD-AI: AI-अगुमेंटेड पारिस्थितिकी तंत्र के लिए वास्तुकला दस्तावेज़ीकरण का पुनर्विचार।</a> — AI वास्तुकला दस्तावेज़ीकरण के लिए नया फ्रेमवर्क।</li>
+<li><strong>2026-04-03</strong>: <a href="https://www.swecogroup.com/">Sweco Group – वास्तुकला और इंजीनियरिंग परामर्श।</a> — Sweco ने डेटा सेंटर्स को महत्वपूर्ण अवसंरचना के रूप में चर्चा की।</li>
+<li><strong>2026-04-03</strong>: <a href="https://plantis.ai/kb/articles/ainews-a-quiet-april-fools-51fc7d31">एक शांत अप्रैल फूल्स - AI कंडुक्टर फ्रेमवर्क।</a> — AI मॉडल रिलीज़ और कोड लीक पर चर्चा।</li>
+</ul>
+<hr />
+<h3 id="2-genai">2) GenAI<a class="headerlink" href="#2-genai" title="Permanent link">&para;</a></h3>
+<h4 id="openai-122b">OpenAI का $122B फंडिंग और सोरा का बंद होना<a class="headerlink" href="#openai-122b" title="Permanent link">&para;</a></h4>
+<div class="admonition note">
+<p class="admonition-title">वास्तुशिल्पीय प्रभाव</p>
+<ul>
+<li>[COST] इन्फ्रा, हार्डवेयर और लागत — OpenAI की विशाल फंडिंग AI संसाधनों के लिए प्रतिस्पर्धा बढ़ा सकती है, जिससे इन्फ्रास्ट्रक्चर की लागत प्रभावित हो सकती है।</li>
+<li>[OPS] उत्पाद और संचालन मॉडल — सोरा का बंद होना OpenAI की उत्पाद रणनीति में बदलाव को दर्शाता है, जो मौजूदा उपयोगकर्ता वर्कफ़्लो को प्रभावित कर सकता है।</li>
+</ul>
+</div>
+<p>खुले प्रश्न
+- OpenAI का नया सुपरऐप मौजूदा AI उत्पाद पारिस्थितिक तंत्र को कैसे प्रभावित करेगा?
+- सोरा का उपयोग करने वाले AI डेवलपर्स के लिए क्या निहितार्थ होंगे?</p>
+<h4 id="anthropic">Anthropic का कोड लीक<a class="headerlink" href="#anthropic" title="Permanent link">&para;</a></h4>
+<div class="admonition note">
+<p class="admonition-title">वास्तुशिल्पीय प्रभाव</p>
+<ul>
+<li>[GOV] सुरक्षा, गोपनीयता और शासन — आंतरिक कोड का लीक डेटा सुरक्षा चिंता को बढ़ाता है और मजबूत पहुँच नियंत्रण की आवश्यकता है।</li>
+<li>[REL] विश्वसनीयता और मूल्यांकन — Anthropic के सिस्टम्स में संभावित कमजोरियां उनके AI उत्पादों की विश्वसनीयता को प्रभावित कर सकती हैं।</li>
+</ul>
+</div>
+<p>खुले प्रश्न
+- भविष्य में सुरक्षा घटनाओं को रोकने के लिए Anthropic कौन से कदम उठा रहा है?
+- यह Anthropic के AI समाधानों पर उपयोगकर्ता विश्वास को कैसे प्रभावित करेगा?</p>
+<h4 id="google-gemma-4">Google के Gemma 4 रिलीज़<a class="headerlink" href="#google-gemma-4" title="Permanent link">&para;</a></h4>
+<div class="admonition note">
+<p class="admonition-title">वास्तुशिल्पीय प्रभाव</p>
+<ul>
+<li>[DATA] डेटा, RAG और ज्ञान — Gemma 4 मॉडल का ओपन-सोर्स होना डेवलपर्स को एप्लिकेशन में AI क्षमताओं को एकीकृत करने के लिए उन्नत उपकरण प्रदान करता है।</li>
+<li>[COST] इन्फ्रा, हार्डवेयर और लागत — शक्तिशाली मॉडलों की उपलब्धता इन्हाउस AI इन्फ्रास्ट्रक्चर की आवश्यकता को कम कर सकती है।</li>
+</ul>
+</div>
+<p>खुले प्रश्न
+- Gemma 4 के ओपन-सोर्स स्वभाव से AI विकास प्रथाओं पर क्या प्रभाव पड़ेगा?
+- मौजूदा सिस्टम में Gemma 4 एकीकरण में संभावित चुनौतियां क्या हैं?</p>
+<hr />
+<h3 id="3-ai">3) एजेंटिक AI<a class="headerlink" href="#3-ai" title="Permanent link">&para;</a></h3>
+<h4 id="microsoft-ai">Microsoft के इन-हाउस AI मॉडल<a class="headerlink" href="#microsoft-ai" title="Permanent link">&para;</a></h4>
+<div class="admonition note">
+<p class="admonition-title">वास्तुशिल्पीय प्रभाव</p>
+<ul>
+<li>[AGENT] एजेंट और ऑर्केस्ट्रेशन — Microsoft के नए AI मॉडल उनके इकोसिस्टम में अधिक एकीकृत और कुशल AI एजेंट विकसित करने का मार्ग प्रशस्त कर सकते हैं।</li>
+<li>[COST] इन्फ्रा, हार्डवेयर और लागत — इन-हाउस मॉडल विकसित करने से बाहरी AI प्रदाताओं पर निर्भरता कम हो सकती है, जिससे लागत घट सकती है।</li>
+</ul>
+</div>
+<p>खुले प्रश्न
+- Microsoft के AI मॉडल OpenAI और Google के मौजूदा ऑफ़र से कैसे तुलना करेंगे?
+- AI विकास में प्रतिस्पर्धी परिदृश्य पर इसका क्या प्रभाव होगा?</p>
+<h4 id="google-deepmind">Google DeepMind के नए मॉडल<a class="headerlink" href="#google-deepmind" title="Permanent link">&para;</a></h4>
+<div class="admonition note">
+<p class="admonition-title">वास्तुशिल्पीय प्रभाव</p>
+<ul>
+<li>[DATA] डेटा, RAG और ज्ञान — नए मॉडल ऑन-डिवाइस AI क्षमताओं को बढ़ाते हैं, जिससे स्थानीय प्रसंस्करण अधिक परिष्कृत होता है।</li>
+<li>[OPS] उत्पाद और संचालन मॉडल — ये मॉडल एज डिवाइसों पर कुशलतापूर्वक परिचालित होने वाले नए AI अनुप्रयोगों के विकास की संभावना प्रदान करते हैं।</li>
+</ul>
+</div>
+<p>खुले प्रश्न
+- उपभोक्ता और उद्यम अनुप्रयोगों में इन नए मॉडलों के विशिष्ट उपयोग के मामले क्या हैं?
+- ये मॉडल क्लाउड-आधारित AI समाधानों के मुकाबले प्रदर्शन में कैसे होंगे?</p>
+<hr />
+<h3 id="4-ai">4) AI रेडार<a class="headerlink" href="#4-ai" title="Permanent link">&para;</a></h3>
+<h4 id="mavenir-ai-">Mavenir का पुरस्कार और AI-आधारित मोबाइल समाधान<a class="headerlink" href="#mavenir-ai-" title="Permanent link">&para;</a></h4>
+<div class="admonition note">
+<p class="admonition-title">वास्तुशिल्पीय प्रभाव</p>
+<ul>
+<li>[OPS] उत्पाद और संचालन मॉडल — Mavenir की पहचान मोबाइल नेटवर्क समाधानों में AI के बढ़ते महत्व को दर्शाती है।</li>
+<li>[COST] इन्फ्रा, हार्डवेयर और लागत — AI-चालित मोबाइल समाधान नेटवर्क संचालन को अधिक कुशल और लागत-कुशल बना सकते हैं।</li>
+</ul>
+</div>
+<p>खुले प्रश्न
+- Mavenir के AI समाधानों का मौजूदा मोबाइल नेटवर्क इन्फ्रास्ट्रक्चर के साथ एकीकरण कैसे होगा?
+- AI-चालित मोबाइल नेटवर्क के लिए स्केलेबिलिटी की संभावनाएँ क्या हैं?</p>
+<hr />
+<h3 id="5-cto">5) CTO सारांश<a class="headerlink" href="#5-cto" title="Permanent link">&para;</a></h3>
+<ul>
+<li>OpenAI की फंडिंग और उत्पाद परिवर्तनों से मौजूदा AI उत्पाद पारिस्थितिकी तंत्र में व्यवधान आ सकता है।</li>
+<li>Anthropic के कोड लीक ने AI विकास में उन्नत सुरक्षा उपायों की आवश्यकता को रेखांकित किया है।</li>
+<li>Google के ओपन-सोर्स Gemma 4 मॉडल AI एकीकरण के नए अवसर प्रदान करते हैं।</li>
+</ul>
+<hr />
+<h3 id="6">6) रोहित के नोट्स<a class="headerlink" href="#6" title="Permanent link">&para;</a></h3>
+<ul>
+<li>OpenAI की फंडिंग और रणनीतिक परिवर्तनों के पैमाने से हैरानी हुई।</li>
+<li>Anthropic की घटना के मद्देनजर सुरक्षा प्रोटोकॉल की पुनः जांच करने की आवश्यकता।</li>
+<li>हमारे उत्पादों में ओपन-सोर्स AI मॉडलों के एकीकरण पर ध्यान केंद्रित करना।</li>
+</ul>
+<hr />
+<h3 id="7">7) डिजाइन ड्रिल<a class="headerlink" href="#7" title="Permanent link">&para;</a></h3>
+<p><strong>परिदृश्य:</strong> एक कंपनी अपने मौजूदा मोबाइल एप्लिकेशन में उन्नत AI क्षमताओं को एकीकृत करने का योजना बना रही है ताकि उपयोगकर्ता सहभागिता और व्यक्तिगतकरण को बढ़ाया जा सके।</p>
+<p><strong>पाबंदियां:</strong>
+- डेटा गोपनीयता नियमों का पालन करना अनिवार्य है।
+- एकीकरण से ऐप के प्रदर्शन पर महत्वपूर्ण प्रभाव नहीं पड़ना चाहिए।
+- समाधान को भविष्य की वृद्धि के लिए स्केलेबल होना चाहिए।</p>
+<p><strong>मार्गदर्शक प्रश्न:</strong>
+- मोबाइल एप्लिकेशन में AI मॉडलों को एकीकृत करने के लिए सर्वोत्तम प्रथाएँ क्या हैं?
+- एकीकरण के दौरान डेटा गोपनीयता कानूनों का अनुपालन कैसे सुनिश्चित करें?
+- AI-संवर्धित ऐप के लिए प्रदर्शन मानदंड क्या निर्धारित करें?
+- भविष्य के AI फीचर्स के लिए सिस्टम को स्केलेबल कैसे डिजाइन करें?
+- एकीकरण के बाद निगरानी और मूल्यांकन के लिए कौन सी रणनीतियाँ अपनानी चाहिए?</p>
+<hr />
+<!-- AII_TODAY_START -->
+<p><a id="aii-today"></a></p>
+<h3 id="_1">वास्तुकला प्रभावांक सूची (आज)<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
+<!-- 3–5 बुलेट। प्रत्येक की शुरुआत थीम कुंजी + मानव लेबल से होना चाहिए। प्रत्येक एक पंक्ति। कंपोनेंट + निर्णय शामिल होना चाहिए। -->
+
+<ul>
+<li>[COST] इन्फ्रा, हार्डवेयर और लागत — कंपोनेंट: AI इन्फ्रास्ट्रक्चर; निर्णय: OpenAI की फंडिंग का संसाधन उपलब्धता और लागतों पर प्रभाव का आकलन करें।</li>
+<li>[OPS] उत्पाद और संचालन मॉडल — कंपोनेंट: सोरा प्लेटफ़ॉर्म; निर्णय: सोरा के बंद होने के उत्पाद रणनीति और उपयोगकर्ता वर्कफ़्लो पर प्रभाव का मूल्यांकन करें।</li>
+<li>[GOV] सुरक्षा, गोपनीयता और शासन — कंपोनेंट: Anthropic का कोडबेस; निर्णय: डेटा उल्लंघनों को रोकने के लिए उन्नत सुरक्षा उपाय लागू करें।</li>
+<li>[DATA] डेटा, RAG और ज्ञान — कंपोनेंट: Gemma 4 मॉडल; निर्णय: ओपन-सोर्स मॉडल्स को मौजूदा एप्लिकेशन में एकीकृत करने की खोज करें।</li>
+<li>[AGENT] एजेंट और ऑर्केस्ट्रेशन — कंपोनेंट: Microsoft के AI मॉडल; निर्णय: Microsoft के इकोसिस्टम में एकीकृत AI एजेंट विकसित करने की संभावना का विश्लेषण करें।</li>
+</ul>
+<!-- AII_TODAY_END -->
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.top", "toc.integrate", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../../../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../../../assets/javascripts/bundle.d7c377c4.min.js"></script>
+      
+    
+  </body>
+</html>
