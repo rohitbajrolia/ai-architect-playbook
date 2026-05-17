@@ -36,10 +36,6 @@ body{
 }
 
 /* Tabs bar */
-.md-tabs{
-  background: rgba(7,10,15,0.65) !important;
-  border-bottom: 1px solid var(--brand-border);
-}
 
 /* Links */
 a, .md-typeset a{
@@ -246,6 +242,8 @@ a:hover, .md-typeset a:hover{
 
 .md-tabs {
   position: sticky !important;
-  top: 76px;
-  z-index: 99;
+  top: 48px !important;
+  z-index: 99 !important;
+  background: rgba(7,10,15,0.95) !important;
+  backdrop-filter: blur(10px);
 }
