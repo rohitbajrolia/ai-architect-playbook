@@ -233,17 +233,3 @@ a:hover, .md-typeset a:hover{
   border-left: 3px solid var(--brand-accent);
   padding-left: .65rem;
 }
-
-.md-header {
-  position: sticky !important;
-  top: 0;
-  z-index: 100;
-}
-
-.md-tabs {
-  position: sticky !important;
-  top: 48px !important;
-  z-index: 99 !important;
-  background: rgba(7,10,15,0.95) !important;
-  backdrop-filter: blur(10px);
-}
