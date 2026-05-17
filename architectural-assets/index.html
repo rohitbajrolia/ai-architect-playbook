@@ -862,9 +862,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#pr-review-checklist-for-ai-changes" class="md-nav__link">
+  <a href="#before-you-ship-ai-feature-checklist" class="md-nav__link">
     <span class="md-ellipsis">
-      PR Review Checklist for AI Changes
+      Before You Ship — AI Feature Checklist
     </span>
   </a>
   
@@ -1018,19 +1018,19 @@
 <p>This section is where “daily learning” turns into reusable building blocks.</p>
 <p>Not everything needs to be fancy. The point is to capture what’s reusable.</p>
 <h2 id="templates-copypaste">Templates (copy/paste)<a class="headerlink" href="#templates-copypaste" title="Permanent link">&para;</a></h2>
-<h3 id="pr-review-checklist-for-ai-changes">PR Review Checklist for AI Changes<a class="headerlink" href="#pr-review-checklist-for-ai-changes" title="Permanent link">&para;</a></h3>
-<p>Use this before merging any pull request that touches a prompt, model config, agent tool, retrieval pipeline, or evaluation gate.</p>
-<ul>
-<li>[ ] Is the model version pinned, or is version drift handled with a fallback pin in config?</li>
-<li>[ ] Do existing eval tests cover the changed behavior, or have new tests been added?</li>
-<li>[ ] Have we verified there is no PII in prompt templates, context windows, or logged outputs?</li>
-<li>[ ] Is the agent tool allowlist the minimum needed — no broader than the task requires?</li>
-<li>[ ] Is there a human-in-the-loop step for decisions that are hard or costly to reverse?</li>
-<li>[ ] Are retry limits and per-call timeouts defined for every LLM invocation?</li>
-<li>[ ] Is the failure mode tested — does the system degrade gracefully or fail loudly?</li>
-<li>[ ] Have we estimated the token and latency cost at production-scale request volume?</li>
-<li>[ ] Does the prompt include at least one example of an expected output and one rejection case?</li>
-<li>[ ] Is there a named owner for reviewing weekly drift, error rates, and rollout scope?</li>
+<h3 id="before-you-ship-ai-feature-checklist">Before You Ship — AI Feature Checklist<a class="headerlink" href="#before-you-ship-ai-feature-checklist" title="Permanent link">&para;</a></h3>
+<p>Run this before releasing any AI feature into production.</p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Is the model version pinned so a provider update cannot silently change behaviour?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Is there an eval suite that runs on every deployment and blocks on regression?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Is retrieval freshness defined — how old can context be before it is considered stale?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Are all LLM calls wrapped with retry limits and per-call timeouts?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Is there a graceful fallback if the model or retrieval is unavailable?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Is PII excluded from prompts, context windows, and logs?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Is token and latency cost estimated at production-scale request volume?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Is there a named owner who reviews error rates and drift weekly?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> For any irreversible action — is there a human approval step?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Are failure modes tested, not just happy paths?</li>
 </ul>
 <hr />
 <h2 id="decision-shortcuts">Decision Shortcuts<a class="headerlink" href="#decision-shortcuts" title="Permanent link">&para;</a></h2>
