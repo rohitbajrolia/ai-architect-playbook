@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Reusable AI architecture building blocks including checklists, RAG and agent reference architectures, and decision shortcuts for model and eval choices.">
+        <meta name="description" content="Reusable AI architecture decision frameworks, reference architectures, and production checklists for architects building enterprise AI systems.">
       
       
       
@@ -852,57 +852,93 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#templates-copypaste" class="md-nav__link">
+  <a href="#decision-frameworks" class="md-nav__link">
     <span class="md-ellipsis">
-      Templates (copy/paste)
+      Decision Frameworks
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Templates (copy/paste)">
+    <nav class="md-nav" aria-label="Decision Frameworks">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#rag-vs-fine-tuning" class="md-nav__link">
+    <span class="md-ellipsis">
+      RAG vs Fine-Tuning
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#agents-vs-deterministic-workflows" class="md-nav__link">
+    <span class="md-ellipsis">
+      Agents vs Deterministic Workflows
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#choosing-evaluation-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Choosing Evaluation Metrics
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference-architectures" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reference Architectures
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Reference Architectures">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rag-baseline" class="md-nav__link">
+    <span class="md-ellipsis">
+      RAG Baseline
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#agentic-workflow-baseline" class="md-nav__link">
+    <span class="md-ellipsis">
+      Agentic Workflow Baseline
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#observability-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Observability Loop
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#before-you-ship-ai-feature-checklist" class="md-nav__link">
     <span class="md-ellipsis">
       Before You Ship — AI Feature Checklist
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#decision-shortcuts" class="md-nav__link">
-    <span class="md-ellipsis">
-      Decision Shortcuts
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Decision Shortcuts">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#when-to-use-rag-vs-fine-tuning" class="md-nav__link">
-    <span class="md-ellipsis">
-      When to Use RAG vs Fine-Tuning
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#how-i-keep-it-honest" class="md-nav__link">
-    <span class="md-ellipsis">
-      How I keep it honest
     </span>
   </a>
   
@@ -1015,10 +1051,195 @@
 
 
 <h1 id="architectural-assets">Architectural Assets<a class="headerlink" href="#architectural-assets" title="Permanent link">&para;</a></h1>
-<p>This section is where “daily learning” turns into reusable building blocks.</p>
-<p>Not everything needs to be fancy. The point is to capture what’s reusable.</p>
-<h2 id="templates-copypaste">Templates (copy/paste)<a class="headerlink" href="#templates-copypaste" title="Permanent link">&para;</a></h2>
-<h3 id="before-you-ship-ai-feature-checklist">Before You Ship — AI Feature Checklist<a class="headerlink" href="#before-you-ship-ai-feature-checklist" title="Permanent link">&para;</a></h3>
+<p>Real building blocks for architects designing production AI systems.</p>
+<p>Everything here passed one test: would an architect actually reach
+for this when designing a real system?</p>
+<hr />
+<h2 id="decision-frameworks">Decision Frameworks<a class="headerlink" href="#decision-frameworks" title="Permanent link">&para;</a></h2>
+<h3 id="rag-vs-fine-tuning">RAG vs Fine-Tuning<a class="headerlink" href="#rag-vs-fine-tuning" title="Permanent link">&para;</a></h3>
+<p>Default to RAG. Override only when the evidence is clear.</p>
+<table>
+<thead>
+<tr>
+<th>Situation</th>
+<th>Use</th>
+<th>Why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Knowledge changes frequently — policies, prices, docs</td>
+<td>RAG</td>
+<td>Fine-tuning freezes knowledge at training time</td>
+</tr>
+<tr>
+<td>You need source citations or auditability</td>
+<td>RAG</td>
+<td>Retrieval gives you traceable context</td>
+</tr>
+<tr>
+<td>Fewer than 10,000 high-quality labelled examples</td>
+<td>RAG</td>
+<td>Fine-tuning needs volume to generalise</td>
+</tr>
+<tr>
+<td>Model needs to change reasoning style or tone</td>
+<td>Fine-tuning</td>
+<td>RAG cannot reshape how a model thinks</td>
+</tr>
+<tr>
+<td>Latency is critical and retrieval adds too much overhead</td>
+<td>Fine-tuning</td>
+<td>Baked-in knowledge has no retrieval step</td>
+</tr>
+<tr>
+<td>Domain vocabulary the base model does not know</td>
+<td>Fine-tuning + RAG</td>
+<td>Fine-tune for style, RAG for current facts</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="agents-vs-deterministic-workflows">Agents vs Deterministic Workflows<a class="headerlink" href="#agents-vs-deterministic-workflows" title="Permanent link">&para;</a></h3>
+<p>Default to workflows. Add agents only when judgment is genuinely
+required that a workflow cannot provide.</p>
+<table>
+<thead>
+<tr>
+<th>Situation</th>
+<th>Use</th>
+<th>Why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Steps are known, order is fixed, inputs are predictable</td>
+<td>Workflow</td>
+<td>Cheaper, faster, easier to debug</td>
+</tr>
+<tr>
+<td>Path depends on intermediate results you cannot predict</td>
+<td>Agent</td>
+<td>Agents decide next steps based on what they find</td>
+</tr>
+<tr>
+<td>Errors need to be hard and immediately visible</td>
+<td>Workflow</td>
+<td>Agents can fail softly in ways that hide problems</td>
+</tr>
+<tr>
+<td>Task requires open-ended tool use or multi-step reasoning</td>
+<td>Agent</td>
+<td>Workflows cannot handle dynamic tool chaining</td>
+</tr>
+<tr>
+<td>Full audit trail of every decision is required</td>
+<td>Workflow</td>
+<td>Agent reasoning is harder to trace step by step</td>
+</tr>
+<tr>
+<td>Scale is high and cost must stay predictable</td>
+<td>Workflow</td>
+<td>Agent token usage is variable and can spike</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="choosing-evaluation-metrics">Choosing Evaluation Metrics<a class="headerlink" href="#choosing-evaluation-metrics" title="Permanent link">&para;</a></h3>
+<p>Define what good looks like before you build. If you cannot define
+it before launch, you will not know if it is working after launch.</p>
+<table>
+<thead>
+<tr>
+<th>What you care about</th>
+<th>Metric</th>
+<th>What it catches</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Answer correctness</td>
+<td>Exact match or F1 against ground truth</td>
+<td>Factual errors</td>
+</tr>
+<tr>
+<td>Retrieval quality</td>
+<td>Precision@K, Recall@K</td>
+<td>Wrong or missing context</td>
+</tr>
+<tr>
+<td>Faithfulness</td>
+<td>Answer grounded in retrieved context</td>
+<td>Hallucination</td>
+</tr>
+<tr>
+<td>Helpfulness</td>
+<td>Human preference or LLM-as-judge score</td>
+<td>Tone and completeness</td>
+</tr>
+<tr>
+<td>Latency</td>
+<td>P50 and P95 response time</td>
+<td>Slow paths under load</td>
+</tr>
+<tr>
+<td>Cost</td>
+<td>Tokens per request × price</td>
+<td>Budget drift</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="reference-architectures">Reference Architectures<a class="headerlink" href="#reference-architectures" title="Permanent link">&para;</a></h2>
+<h3 id="rag-baseline">RAG Baseline<a class="headerlink" href="#rag-baseline" title="Permanent link">&para;</a></h3>
+<p>The simplest RAG system that is still production-worthy.</p>
+<pre><code>User query
+→ Embed query (same model used at index time)
+→ Vector search (top-K chunks scored by similarity)
+→ Rerank (optional but recommended for precision)
+→ Stuff into prompt with source metadata
+→ LLM generates answer grounded in retrieved context
+→ Return answer + sources to user
+</code></pre>
+<p><strong>Instrument:</strong> retrieval latency, chunk hit rate, faithfulness
+score, user feedback.</p>
+<p><strong>What breaks first:</strong> stale index, chunk size mismatch, retrieval
+returning irrelevant context the model uses anyway.</p>
+<hr />
+<h3 id="agentic-workflow-baseline">Agentic Workflow Baseline<a class="headerlink" href="#agentic-workflow-baseline" title="Permanent link">&para;</a></h3>
+<p>The minimum viable agent that is safe for production.</p>
+<pre><code>User intent
+→ Planner — LLM decides which tools to call and in what order
+→ Tool executor — runs one tool at a time, checks output
+→ State manager — tracks what has been done and what failed
+→ Human approval gate — for actions that are hard to reverse
+→ Result synthesiser — LLM summarises what was done
+→ Return result + action log to user
+</code></pre>
+<p><strong>Instrument:</strong> tool call count per session, failure rate per tool,
+escalation rate, end-to-end latency.</p>
+<p><strong>What breaks first:</strong> tools with side effects that cannot be undone,
+missing timeouts on long-running tools, agents retrying without a cap.</p>
+<hr />
+<h3 id="observability-loop">Observability Loop<a class="headerlink" href="#observability-loop" title="Permanent link">&para;</a></h3>
+<p>What to log, what to score, and who reviews it.</p>
+<pre><code>Every request logs:
+→ Input (query or intent)
+→ Retrieved context (chunks + scores)
+→ Model output
+→ Latency (retrieval, generation, total)
+→ Token count
+→ User feedback if available
+
+Weekly review checks:
+→ Retrieval precision trending down → reindex or tune chunking
+→ Latency P95 growing → check vector DB load or chunk size
+→ Hallucination rate up → tighten retrieval or add faithfulness check
+→ Cost per request growing → check token bloat in prompts
+</code></pre>
+<p>One person owns this review. If nobody owns it, it does not happen.</p>
+<hr />
+<h2 id="before-you-ship-ai-feature-checklist">Before You Ship — AI Feature Checklist<a class="headerlink" href="#before-you-ship-ai-feature-checklist" title="Permanent link">&para;</a></h2>
 <p>Run this before releasing any AI feature into production.</p>
 <ul class="task-list">
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Is the model version pinned so a provider update cannot silently change behaviour?</li>
@@ -1033,56 +1254,7 @@
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Are failure modes tested, not just happy paths?</li>
 </ul>
 <hr />
-<h2 id="decision-shortcuts">Decision Shortcuts<a class="headerlink" href="#decision-shortcuts" title="Permanent link">&para;</a></h2>
-<h3 id="when-to-use-rag-vs-fine-tuning">When to Use RAG vs Fine-Tuning<a class="headerlink" href="#when-to-use-rag-vs-fine-tuning" title="Permanent link">&para;</a></h3>
-<table>
-<thead>
-<tr>
-<th>Situation</th>
-<th>Recommended</th>
-<th>Why</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Knowledge changes frequently (policies, prices, news)</td>
-<td>RAG</td>
-<td>Fine-tuned weights are static; RAG retrieves at query time</td>
-</tr>
-<tr>
-<td>Outputs must cite specific source documents</td>
-<td>RAG</td>
-<td>Retrieval preserves provenance; fine-tuning blends knowledge opaquely</td>
-</tr>
-<tr>
-<td>Latency is critical and context window covers the domain</td>
-<td>Fine-tuning</td>
-<td>Avoids retrieval round-trip and chunking overhead</td>
-</tr>
-<tr>
-<td>Output must follow a strict format or house style consistently</td>
-<td>Fine-tuning</td>
-<td>Repeated patterns in training data are more reliable than prompting alone</td>
-</tr>
-<tr>
-<td>Corpus is large, heterogeneous, and updated frequently</td>
-<td>RAG</td>
-<td>Index-based retrieval scales better than repeated fine-tune cycles</td>
-</tr>
-<tr>
-<td>Model needs to reason over long or ambiguous documents</td>
-<td>RAG + reranker</td>
-<td>Retrieval + reranker surfaces the best chunks before generation</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h2 id="how-i-keep-it-honest">How I keep it honest<a class="headerlink" href="#how-i-keep-it-honest" title="Permanent link">&para;</a></h2>
-<p>Anything that lands here must pass one test:</p>
-<blockquote>
-<p>“Would I reuse this in a real system six months from now?”</p>
-</blockquote>
-<p>If yes, it belongs here.</p>
+<p><em>More assets added as patterns mature.</em></p>
 
 
 
@@ -1138,7 +1310,7 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.sticky", "navigation.top", "toc.integrate", "search.suggest", "search.highlight", "content.code.copy", "content.code.annotate"], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.top", "toc.integrate", "search.suggest", "search.highlight", "content.code.copy", "content.code.annotate"], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../assets/javascripts/bundle.d7c377c4.min.js"></script>
