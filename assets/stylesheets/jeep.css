@@ -195,3 +195,45 @@ a:hover, .md-typeset a:hover{
   border-color: rgba(255,255,255,.35);
   background: rgba(0,0,0,.32);
 }
+
+.stats-row {
+  display: flex;
+  gap: .75rem;
+  flex-wrap: wrap;
+  margin: 1.2rem 0 2rem;
+}
+
+.stat-card {
+  flex: 1;
+  min-width: 120px;
+  padding: .8rem 1rem;
+  border: 1px solid var(--brand-border);
+  border-radius: 14px;
+  background: rgba(255,255,255,0.03);
+  text-align: center;
+}
+
+.stat-card .stat-number {
+  display: block;
+  font-size: 1.7rem;
+  font-weight: 800;
+  color: var(--brand-accent);
+  line-height: 1.1;
+}
+
+.stat-card .stat-label {
+  display: block;
+  font-size: .78rem;
+  color: var(--brand-muted);
+  margin-top: .25rem;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+}
+
+.entry-meta {
+  color: var(--brand-muted);
+  font-size: .88rem;
+  margin-bottom: 1.2rem;
+  border-left: 3px solid var(--brand-accent);
+  padding-left: .65rem;
+}

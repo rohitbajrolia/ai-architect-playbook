@@ -852,37 +852,19 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#what-will-live-here" class="md-nav__link">
+  <a href="#templates-copypaste" class="md-nav__link">
     <span class="md-ellipsis">
-      What will live here
+      Templates (copy/paste)
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="What will live here">
+    <nav class="md-nav" aria-label="Templates (copy/paste)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-templates-copypaste" class="md-nav__link">
+  <a href="#pr-review-checklist-for-ai-changes" class="md-nav__link">
     <span class="md-ellipsis">
-      1) Templates (copy/paste)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-reference-architectures" class="md-nav__link">
-    <span class="md-ellipsis">
-      2) Reference architectures
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-decision-shortcuts" class="md-nav__link">
-    <span class="md-ellipsis">
-      3) Decision shortcuts
+      PR Review Checklist for AI Changes
     </span>
   </a>
   
@@ -894,9 +876,33 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#how-ill-keep-it-honest" class="md-nav__link">
+  <a href="#decision-shortcuts" class="md-nav__link">
     <span class="md-ellipsis">
-      How I’ll keep it honest
+      Decision Shortcuts
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Decision Shortcuts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#when-to-use-rag-vs-fine-tuning" class="md-nav__link">
+    <span class="md-ellipsis">
+      When to Use RAG vs Fine-Tuning
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-i-keep-it-honest" class="md-nav__link">
+    <span class="md-ellipsis">
+      How I keep it honest
     </span>
   </a>
   
@@ -1011,28 +1017,67 @@
 <h1 id="architectural-assets">Architectural Assets<a class="headerlink" href="#architectural-assets" title="Permanent link">&para;</a></h1>
 <p>This section is where “daily learning” turns into reusable building blocks.</p>
 <p>Not everything needs to be fancy. The point is to capture what’s reusable.</p>
-<h2 id="what-will-live-here">What will live here<a class="headerlink" href="#what-will-live-here" title="Permanent link">&para;</a></h2>
-<h3 id="1-templates-copypaste">1) Templates (copy/paste)<a class="headerlink" href="#1-templates-copypaste" title="Permanent link">&para;</a></h3>
+<h2 id="templates-copypaste">Templates (copy/paste)<a class="headerlink" href="#templates-copypaste" title="Permanent link">&para;</a></h2>
+<h3 id="pr-review-checklist-for-ai-changes">PR Review Checklist for AI Changes<a class="headerlink" href="#pr-review-checklist-for-ai-changes" title="Permanent link">&para;</a></h3>
+<p>Use this before merging any pull request that touches a prompt, model config, agent tool, retrieval pipeline, or evaluation gate.</p>
 <ul>
-<li>PR review checklist for AI changes</li>
-<li>RAG evaluation checklist (offline + online)</li>
-<li>Agent risk review (tool access, escalation, rollback)</li>
-<li>“Before we ship” reliability checklist</li>
+<li>[ ] Is the model version pinned, or is version drift handled with a fallback pin in config?</li>
+<li>[ ] Do existing eval tests cover the changed behavior, or have new tests been added?</li>
+<li>[ ] Have we verified there is no PII in prompt templates, context windows, or logged outputs?</li>
+<li>[ ] Is the agent tool allowlist the minimum needed — no broader than the task requires?</li>
+<li>[ ] Is there a human-in-the-loop step for decisions that are hard or costly to reverse?</li>
+<li>[ ] Are retry limits and per-call timeouts defined for every LLM invocation?</li>
+<li>[ ] Is the failure mode tested — does the system degrade gracefully or fail loudly?</li>
+<li>[ ] Have we estimated the token and latency cost at production-scale request volume?</li>
+<li>[ ] Does the prompt include at least one example of an expected output and one rejection case?</li>
+<li>[ ] Is there a named owner for reviewing weekly drift, error rates, and rollout scope?</li>
 </ul>
-<h3 id="2-reference-architectures">2) Reference architectures<a class="headerlink" href="#2-reference-architectures" title="Permanent link">&para;</a></h3>
-<ul>
-<li>RAG baseline (simple, measurable)</li>
-<li>Agentic workflow (planner/executor/tooling)</li>
-<li>Observability + eval loop (what to log, what to score)</li>
-</ul>
-<h3 id="3-decision-shortcuts">3) Decision shortcuts<a class="headerlink" href="#3-decision-shortcuts" title="Permanent link">&para;</a></h3>
-<ul>
-<li>When to use RAG vs fine-tuning</li>
-<li>When to use agents vs workflows</li>
-<li>Where to enforce structured outputs</li>
-<li>How to choose evaluation metrics</li>
-</ul>
-<h2 id="how-ill-keep-it-honest">How I’ll keep it honest<a class="headerlink" href="#how-ill-keep-it-honest" title="Permanent link">&para;</a></h2>
+<hr />
+<h2 id="decision-shortcuts">Decision Shortcuts<a class="headerlink" href="#decision-shortcuts" title="Permanent link">&para;</a></h2>
+<h3 id="when-to-use-rag-vs-fine-tuning">When to Use RAG vs Fine-Tuning<a class="headerlink" href="#when-to-use-rag-vs-fine-tuning" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Situation</th>
+<th>Recommended</th>
+<th>Why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Knowledge changes frequently (policies, prices, news)</td>
+<td>RAG</td>
+<td>Fine-tuned weights are static; RAG retrieves at query time</td>
+</tr>
+<tr>
+<td>Outputs must cite specific source documents</td>
+<td>RAG</td>
+<td>Retrieval preserves provenance; fine-tuning blends knowledge opaquely</td>
+</tr>
+<tr>
+<td>Latency is critical and context window covers the domain</td>
+<td>Fine-tuning</td>
+<td>Avoids retrieval round-trip and chunking overhead</td>
+</tr>
+<tr>
+<td>Output must follow a strict format or house style consistently</td>
+<td>Fine-tuning</td>
+<td>Repeated patterns in training data are more reliable than prompting alone</td>
+</tr>
+<tr>
+<td>Corpus is large, heterogeneous, and updated frequently</td>
+<td>RAG</td>
+<td>Index-based retrieval scales better than repeated fine-tune cycles</td>
+</tr>
+<tr>
+<td>Model needs to reason over long or ambiguous documents</td>
+<td>RAG + reranker</td>
+<td>Retrieval + reranker surfaces the best chunks before generation</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="how-i-keep-it-honest">How I keep it honest<a class="headerlink" href="#how-i-keep-it-honest" title="Permanent link">&para;</a></h2>
 <p>Anything that lands here must pass one test:</p>
 <blockquote>
 <p>“Would I reuse this in a real system six months from now?”</p>
@@ -1093,7 +1138,7 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.top", "toc.integrate", "search.suggest", "search.highlight", "content.code.copy"], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.sticky", "navigation.top", "toc.integrate", "search.suggest", "search.highlight", "content.code.copy", "content.code.annotate"], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../assets/javascripts/bundle.d7c377c4.min.js"></script>
