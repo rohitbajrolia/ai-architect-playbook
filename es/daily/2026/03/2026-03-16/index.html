@@ -920,28 +920,32 @@
   
 
 
-<!-- SOURCE_SHA256: c2ffc5963508c8ae64ac59ff429a1015a35a4ca24cf86a773245b4180e0d89d0 -->
+<!-- SOURCE_SHA256: bc3171609758ce74c7457a91edac2f1f0d4c9ff86227161b3f5511bd73655c1a -->
+<hr />
+<p>title: "Alcance de Permisos de Agentes, Puertas de Evaluación y Controles de Memoria"
+description: "Cubre el alcance de permisos de agentes, la disciplina de puertas de evaluación antes de los despliegues del modelo, escrituras de memoria reversibles y registros de auditoría para acciones autónomas de IA."</p>
+<hr />
 <h1 id="2026-03-16">2026-03-16<a class="headerlink" href="#2026-03-16" title="Permanent link">&para;</a></h1>
 <h2 id="marco-diario-para-2026-03-16">Marco Diario para 2026-03-16<a class="headerlink" href="#marco-diario-para-2026-03-16" title="Permanent link">&para;</a></h2>
 <p>Cómo leo esta página:
 - [REL] Confiabilidad y Evaluación — ¿Qué falla en producción? ¿Cómo lo probamos y observamos?
-- [AGENT] Agentes y Orquestación — ¿Qué ejecuta el ciclo? ¿Qué acciones puede tomar?
-- [DATA] Datos, RAG y Conocimiento — ¿De dónde viene el contexto? ¿Cómo se recupera?
-- [GOV] Seguridad, Privacidad y Gobernanza — ¿Qué necesita políticas, permisos y auditoría?
-- [COST] Infraestructura, Hardware y Costo — ¿Qué se vuelve caro (latencia/tokens/GPU/operaciones)? ¿Cómo lo limitamos?
-- [OPS] Producto y Modelo Operativo — ¿Quién es responsable semanalmente? ¿Cómo lo implementamos con seguridad?</p>
-<p>Mapa rápido del sistema (para ubicar cada ítem): Modelo → Contexto (RAG/memoria) → Orquestador → Herramientas → Evaluaciones/Rastreo → Gobernanza.</p>
+- [AGENT] Agentes y Orquestación — ¿Qué ejecuta el ciclo? ¿Qué acciones puede realizar?
+- [DATA] Datos, RAG y Conocimiento — ¿De dónde proviene el contexto? ¿Cómo se recupera?
+- [GOV] Seguridad, Privacidad y Gobernanza — ¿Qué necesita política, permisos y auditoría?
+- [COST] Infraestructura, Hardware y Costos — ¿Qué se vuelve costoso (latencia/tokens/GPU/operaciones)? ¿Cómo lo limitamos?
+- [OPS] Producto y Modelo Operativo — ¿Quién es responsable semanalmente? ¿Cómo lo desplegamos de forma segura?</p>
+<p>Mapa rápido del sistema (para ubicar cada elemento): Modelo → Contexto (RAG/memoria) → Orquestador → Herramientas → Evaluaciones/Rastreo → Gobernanza.</p>
 <h3 id="1-senales-de-hoy">1) Señales de Hoy<a class="headerlink" href="#1-senales-de-hoy" title="Permanent link">&para;</a></h3>
 <ul>
-<li><strong>2026-03-16</strong>: <a href="https://en.wikipedia.org/wiki/Rubin_%28microarchitecture%29">Anunciada la Arquitectura de GPU Rubin de Nvidia</a> — Nvidia presenta Rubin, una nueva arquitectura de GPU con 50 petaflops de rendimiento en FP4, prevista para lanzamiento en el T3 2026.</li>
-<li><strong>2026-03-16</strong>: <a href="https://en.wikipedia.org/wiki/Apple_M5">Apple lanza los chips M5 Pro y M5 Max</a> — Apple presenta los chips M5 Pro y M5 Max con Arquitectura Fusion para mejorar el rendimiento de IA.</li>
-<li><strong>2026-03-16</strong>: <a href="https://en.wikipedia.org/wiki/Meta_Platforms">Revelado el roadmap de chips de IA de Meta</a> — Meta anuncia planes para cuatro nuevos chips de IA propios como parte de su programa Meta Training and Inference Accelerator.</li>
-<li><strong>2026-03-16</strong>: <a href="https://investor.cisco.com/files/doc_news/Cisco-Announces-its-Second-Annual-AI-Summit-Featuring-the-Builders-of-the-AI-Economy-2026.pdf">Celebrada la Segunda Cumbre Anual de IA de Cisco</a> — Cisco organiza la Cumbre de IA con líderes que están moldeando la economía de la IA.</li>
-<li><strong>2026-03-16</strong>: <a href="https://arxiv.org/abs/2602.22425">El sistema AI ArchAgent demuestra diseño de políticas de caché</a> — El sistema ArchAgent AI diseña autónomamente políticas de reemplazo de caché de última generación, logrando un aumento del 5.3 % en IPC sobre métodos previos.</li>
-<li><strong>2026-03-16</strong>: <a href="https://arxiv.org/abs/2602.15286">AI-Paging introduce anclaje de ejecución basado en arrendamiento</a> — AI-Paging propone una transacción de plano de control para IA-como-servicio, resolviendo la intención del usuario en identidad de servicio de IA y ubicación de ejecución bajo restricciones de políticas.</li>
-<li><strong>2026-03-16</strong>: <a href="https://arxiv.org/abs/2601.19413">NET4EXA desarrolla interconexiones de próxima generación para IA</a> — El proyecto NET4EXA apunta a desarrollar interconexiones de alto rendimiento para supercomputadoras y sistemas de IA, integrando un sistema piloto funcional en TRL 8.</li>
-<li><strong>2026-03-16</strong>: <a href="https://en.wikipedia.org/wiki/Meta_Platforms">Meta permite rivales de IA en WhatsApp</a> — Meta acuerda permitir rivales de IA en WhatsApp durante un año para prevenir acciones antimonopolio de la UE.</li>
-<li><strong>2026-03-16</strong>: <a href="https://en.wikipedia.org/wiki/Meta_Platforms">Meta adquiere Moltbook, una red social para bots de IA</a> — Meta adquiere Moltbook, una red social para bots de IA, permitiendo interacción autónoma entre agentes de IA.</li>
+<li><strong>2026-03-16</strong>: <a href="https://en.wikipedia.org/wiki/Rubin_%28microarchitecture%29">Anunciada arquitectura de GPU Rubin de Nvidia</a> — Nvidia presenta Rubin, una nueva arquitectura de GPU con 50 petaflops de rendimiento en FP4, programada para lanzamiento en Q3 2026.</li>
+<li><strong>2026-03-16</strong>: <a href="https://en.wikipedia.org/wiki/Apple_M5">Lanzamiento de chips M5 Pro y M5 Max de Apple</a> — Apple revela chips M5 Pro y M5 Max con Arquitectura Fusion para un mejor rendimiento en IA.</li>
+<li><strong>2026-03-16</strong>: <a href="https://en.wikipedia.org/wiki/Meta_Platforms">Revelado el roadmap de chips de IA de Meta</a> — Meta anuncia planes para cuatro nuevos chips de IA internos como parte de su programa Meta Training and Inference Accelerator.</li>
+<li><strong>2026-03-16</strong>: <a href="https://investor.cisco.com/files/doc_news/Cisco-Announces-its-Second-Annual-AI-Summit-Featuring-the-Builders-of-the-AI-Economy-2026.pdf">Celebrada la segunda Cumbre anual de IA de Cisco</a> — Cisco organiza la Cumbre de IA con líderes que moldean la economía de IA.</li>
+<li><strong>2026-03-16</strong>: <a href="https://arxiv.org/abs/2602.22425">Sistema de IA ArchAgent demuestra diseño de políticas de caché</a> — El sistema de IA ArchAgent diseña autónomamente políticas de reemplazo de caché de punta, logrando un aumento de 5.3% en IPC sobre métodos previos.</li>
+<li><strong>2026-03-16</strong>: <a href="https://arxiv.org/abs/2602.15286">AI-Paging introduce anclaje de ejecución basado en arrendamientos</a> — AI-Paging propone una transacción de plano de control para IA como Servicio, resolviendo la intención del usuario en identidad y ubicación de ejecución de servicio IA bajo restricciones de política.</li>
+<li><strong>2026-03-16</strong>: <a href="https://arxiv.org/abs/2601.19413">NET4EXA desarrolla interconexiones de próxima generación para IA</a> — El proyecto NET4EXA busca desarrollar interconexiones de alto rendimiento para supercomputadoras y sistemas de IA, integrando un sistema piloto funcional en TRL 8.</li>
+<li><strong>2026-03-16</strong>: <a href="https://en.wikipedia.org/wiki/Meta_Platforms">Meta permite rivales de IA en WhatsApp</a> — Meta acepta permitir rivales de IA en WhatsApp por un año para evitar acción antimonopolio de la UE.</li>
+<li><strong>2026-03-16</strong>: <a href="https://en.wikipedia.org/wiki/Meta_Platforms">Meta adquiere Moltbook, una red social de bots de IA</a> — Meta adquiere Moltbook, una red social para bots de IA, permitiendo la interacción autónoma entre agentes de IA.</li>
 </ul>
 <hr />
 <h3 id="2-genai">2) GenAI<a class="headerlink" href="#2-genai" title="Permanent link">&para;</a></h3>
@@ -949,89 +953,89 @@
 <div class="admonition note">
 <p class="admonition-title">Implicación Arquitectónica</p>
 <ul>
-<li>[REL] Confiabilidad y Evaluación — Debo tratar un cambio de modelo como cualquier otro riesgo de regresión y volver a ejecutar el paquete de evaluaciones antes del lanzamiento.</li>
-<li>[AGENT] Agentes y Orquestación — Mantener el comportamiento del agente condicionado mediante flags cuando el comportamiento del modelo empieza a variar.</li>
-<li>[GOV] Seguridad, Privacidad y Gobernanza — Cambios en los prompts y políticas que afecten decisiones deben pasar por aprobación, no por ediciones silenciosas.</li>
+<li>[REL] Confiabilidad y Evaluación — Debo tratar un intercambio de modelo como cualquier otro riesgo de regresión y volver a ejecutar el paquete de evaluación antes del despliegue.</li>
+<li>[AGENT] Agentes y Orquestación — Mantener el comportamiento del agente sujeto a flags cuando el comportamiento del modelo empiece a variar.</li>
+<li>[GOV] Seguridad, Privacidad y Gobernanza — Los cambios de prompt y políticas que afecten decisiones deben pasar por aprobación, no por ediciones silenciosas.</li>
 </ul>
 </div>
 <h4 id="las-reglas-de-recuperacion-y-costos-deben-mantenerse-visibles">Las reglas de recuperación y costos deben mantenerse visibles<a class="headerlink" href="#las-reglas-de-recuperacion-y-costos-deben-mantenerse-visibles" title="Permanent link">&para;</a></h4>
 <div class="admonition note">
 <p class="admonition-title">Implicación Arquitectónica</p>
 <ul>
-<li>[DATA] Datos, RAG y Conocimiento — Quiero que las comprobaciones de frescura estén separadas de la síntesis de respuestas para que el contexto obsoleto sea evidente.</li>
-<li>[COST] Infraestructura, Hardware y Costo — Rastrear presupuesto de tokens y latencia por flujo de trabajo antes de que el uso se expanda silenciosamente.</li>
-<li>[OPS] Producto y Modelo Operativo — Un responsable debe revisar fallos, desviaciones y alcance de despliegue cada semana.</li>
+<li>[DATA] Datos, RAG y Conocimiento — Quiero que las verificaciones de frescura estén separadas de la síntesis de respuestas para que el contexto obsoleto sea evidente.</li>
+<li>[COST] Infraestructura, Hardware y Costos — Controlar presupuesto de tokens y latencia por flujo de trabajo antes de que el uso se distribuya silenciosamente.</li>
+<li>[OPS] Producto y Modelo Operativo — Un responsable debe revisar fallos, desviaciones y alcance del despliegue semanalmente.</li>
 </ul>
 </div>
 <hr />
-<h3 id="3-ia-agencial">3) IA Agencial<a class="headerlink" href="#3-ia-agencial" title="Permanent link">&para;</a></h3>
-<h4 id="los-permisos-de-agentes-necesitan-un-alcance-menor">Los permisos de agentes necesitan un alcance menor<a class="headerlink" href="#los-permisos-de-agentes-necesitan-un-alcance-menor" title="Permanent link">&para;</a></h4>
+<h3 id="3-ia-agentica">3) IA Agéntica<a class="headerlink" href="#3-ia-agentica" title="Permanent link">&para;</a></h3>
+<h4 id="los-permisos-de-agentes-necesitan-un-ambito-mas-pequeno">Los permisos de agentes necesitan un ámbito más pequeño<a class="headerlink" href="#los-permisos-de-agentes-necesitan-un-ambito-mas-pequeno" title="Permanent link">&para;</a></h4>
 <div class="admonition note">
 <p class="admonition-title">Implicación Arquitectónica</p>
 <ul>
-<li>[AGENT] Agentes y Orquestación — Comenzar con una lista de herramientas permitidas más pequeña y forzar escalamiento para cualquier acción difícil de revertir.</li>
-<li>[REL] Confiabilidad y Evaluación — Las fallas en múltiples pasos necesitan trazas reproducibles, de lo contrario la depuración se vuelve adivinanza.</li>
+<li>[AGENT] Agentes y Orquestación — Empezar con una lista de herramientas permitidas pequeña y exigir escalación para todo lo difícil de deshacer.</li>
+<li>[REL] Confiabilidad y Evaluación — Las fallas en múltiples pasos necesitan trazas reproducibles, de lo contrario depurar se vuelve conjetura.</li>
 <li>[GOV] Seguridad, Privacidad y Gobernanza — Registrar quién aprobó una acción autónoma y qué contexto tenía el sistema en ese momento.</li>
 </ul>
 </div>
-<h4 id="el-manejo-del-estado-es-donde-aparecen-los-problemas-en-produccion">El manejo del estado es donde aparecen los problemas en producción<a class="headerlink" href="#el-manejo-del-estado-es-donde-aparecen-los-problemas-en-produccion" title="Permanent link">&para;</a></h4>
+<h4 id="el-manejo-del-estado-es-donde-aparece-el-dolor-en-produccion">El manejo del estado es donde aparece el dolor en producción<a class="headerlink" href="#el-manejo-del-estado-es-donde-aparece-el-dolor-en-produccion" title="Permanent link">&para;</a></h4>
 <div class="admonition note">
 <p class="admonition-title">Implicación Arquitectónica</p>
 <ul>
-<li>[DATA] Datos, RAG y Conocimiento — Las escrituras en memoria deben mantenerse limitadas, revisadas y reversibles para que el contexto no se contamine.</li>
-<li>[COST] Infraestructura, Hardware y Costo — Limitar la profundidad de reintentos y la multiplicidad de llamadas a herramientas antes de que las tareas largas se vuelvan caras y extrañas.</li>
-<li>[OPS] Producto y Modelo Operativo — Alguien debe ser responsable de los manuales para tareas atascadas, memoria mala y tormentas de reintentos.</li>
+<li>[DATA] Datos, RAG y Conocimiento — Las escrituras en memoria deben mantenerse acotadas, revisadas y reversibles para no contaminar el contexto.</li>
+<li>[COST] Infraestructura, Hardware y Costos — Limitar la profundidad de reintentos y la expansión de llamadas a herramientas antes que tareas prolongadas se vuelvan caras y complejas.</li>
+<li>[OPS] Producto y Modelo Operativo — Alguien debe ser responsable de los runbooks para tareas atascadas, memoria fallida y tormentas de reintentos.</li>
 </ul>
 </div>
 <hr />
 <h3 id="4-radar-de-ia">4) Radar de IA<a class="headerlink" href="#4-radar-de-ia" title="Permanent link">&para;</a></h3>
-<h4 id="la-nueva-capacidad-debe-entrar-primero-por-un-piloto-pequeno">La nueva capacidad debe entrar primero por un piloto pequeño<a class="headerlink" href="#la-nueva-capacidad-debe-entrar-primero-por-un-piloto-pequeno" title="Permanent link">&para;</a></h4>
+<h4 id="nuevas-capacidades-deberian-empezar-por-un-pequeno-piloto">Nuevas capacidades deberían empezar por un pequeño piloto<a class="headerlink" href="#nuevas-capacidades-deberian-empezar-por-un-pequeno-piloto" title="Permanent link">&para;</a></h4>
 <div class="admonition note">
 <p class="admonition-title">Implicación Arquitectónica</p>
 <ul>
-<li>[REL] Confiabilidad y Evaluación — Empezar con un conjunto de evaluaciones limitado ligado a un flujo de trabajo antes de abrir la puerta más ampliamente.</li>
+<li>[REL] Confiabilidad y Evaluación — Comenzar con un conjunto de evaluaciones reducido ligado a un flujo de trabajo antes de abrir la puerta más ampliamente.</li>
 <li>[GOV] Seguridad, Privacidad y Gobernanza — Revisar las vías de exposición de datos antes de habilitar algo nuevo en entornos compartidos.</li>
-<li>[COST] Infraestructura, Hardware y Costo — Poner el piloto detrás de límites de uso para que la emoción no se convierta en gasto inesperado.</li>
+<li>[COST] Infraestructura, Hardware y Costos — Poner el piloto detrás de límites de uso para que el entusiasmo no se transforme en gasto sorpresa.</li>
 </ul>
 </div>
 <hr />
 <h3 id="5-informe-del-cto">5) Informe del CTO<a class="headerlink" href="#5-informe-del-cto" title="Permanent link">&para;</a></h3>
 <ul>
-<li>No ampliar la autonomía antes de que la puerta de evaluación sea aburrida y confiable.</li>
-<li>Mantener permisos de herramientas y alcance de memoria más estrictos que lo que la demo quiere.</li>
-<li>Reintentos, trazas y rutas de aprobación son parte de la arquitectura, no tareas de limpieza.</li>
+<li>No ampliar la autonomía antes que la puerta de evaluación sea aburrida y confiable.</li>
+<li>Mantener permisos de herramientas y ámbito de memoria más restringidos que lo que el demo quiera.</li>
+<li>Reintentos, trazas y rutas de aprobación son arquitectura, no trabajo de limpieza.</li>
 </ul>
 <hr />
 <h3 id="6-notas-de-rohit">6) Notas de Rohit<a class="headerlink" href="#6-notas-de-rohit" title="Permanent link">&para;</a></h3>
 <ul>
-<li>El modelo derivó otra vez en estructura. Buen recordatorio de que contenido y diseño no deben depender del mismo paso.</li>
-<li>Hoy falló en: validación GenAI fallida: se esperaban 2 ítems.</li>
-<li>El patrón más seguro es obvio ahora: dejar que el modelo encuentre señales, luego dejar que el código bloquee la forma de la página.</li>
+<li>El modelo se desvió otra vez en la estructura. Buen recordatorio que contenido y diseño no deben depender del mismo paso.</li>
+<li>Hoy falló en: validación de GenAI fallida: se esperaban 2 ítems.</li>
+<li>El patrón más seguro es obvio ahora: dejar que el modelo encuentre señales y luego dejar que el código bloquee la forma de la página.</li>
 </ul>
 <hr />
 <h3 id="7-ejercicio-de-diseno">7) Ejercicio de Diseño<a class="headerlink" href="#7-ejercicio-de-diseno" title="Permanent link">&para;</a></h3>
-<p><strong>Escenario:</strong> Un equipo de plataforma quiere aprobaciones impulsadas por agentes en un flujo de trabajo interno de entrega este trimestre.</p>
+<p><strong>Escenario:</strong> Un equipo de plataforma quiere aprobaciones impulsadas por agentes en un flujo de entrega interno este trimestre.</p>
 <p><strong>Restricciones:</strong>
-- Los controles de auditoría existentes no pueden debilitarse
-- El costo debe permanecer dentro del presupuesto actual de la plataforma
-- Las fallas deben revertir a un camino manual en minutos</p>
+- No se pueden debilitar los controles de auditoría existentes
+- El costo debe mantenerse dentro del presupuesto actual de la plataforma
+- Los fallos deben volver a una ruta manual en minutos</p>
 <p><strong>Preguntas guía:</strong>
-- ¿Qué acciones permanecen en solo lectura por defecto?
+- ¿Qué acciones permanecen solo lectura por defecto?
 - ¿Dónde sigue siendo obligatoria la aprobación humana?
 - ¿Cómo se limitarán y observarán los reintentos?
-- ¿Qué escrituras en memoria están permitidas y son reversibles?
-- ¿Qué evaluaciones deciden si el piloto se expande?</p>
+- ¿Qué escrituras en memoria están permitidas y reversibles?
+- ¿Qué evaluaciones deciden si el piloto se amplía?</p>
 <hr />
 <!-- AII_TODAY_START -->
 <p><a id="aii-today"></a></p>
 <h3 id="indice-de-implicaciones-arquitectonicas-hoy">Índice de Implicaciones Arquitectónicas (Hoy)<a class="headerlink" href="#indice-de-implicaciones-arquitectonicas-hoy" title="Permanent link">&para;</a></h3>
-<!-- 3–5 viñetas. Cada una debe comenzar con un tema clave + etiqueta humana. Una línea cada una. Debe incluir Componente + Decisión. -->
+<!-- 3–5 puntos. Cada uno debe empezar con una clave temática + etiqueta humana. Una línea cada uno. Debe incluir Componente + Decisión. -->
 
 <ul>
-<li>[REL] Confiabilidad y Evaluación — Componente: puerta de evaluación; Decisión: bloquear el lanzamiento hasta que las comprobaciones de regresión pasen tras cambios de modelo o herramienta.</li>
-<li>[AGENT] Agentes y Orquestación — Componente: política de herramienta; Decisión: mantener permisos estrechos y forzar escalamiento para acciones sensibles.</li>
-<li>[DATA] Datos, RAG y Conocimiento — Componente: capa de memoria; Decisión: limitar escrituras y hacerlas reversibles antes de uso prolongado.</li>
-<li>[GOV] Seguridad, Privacidad y Gobernanza — Componente: auditoría de aprobación; Decisión: capturar actor, contexto y ruta de decisión para pasos autónomos.</li>
+<li>[REL] Confiabilidad y Evaluación — Componente: puerta de evaluación; Decisión: bloquear despliegue hasta que pasen los chequeos de regresión tras cambios de modelo o herramienta.</li>
+<li>[AGENT] Agentes y Orquestación — Componente: política de herramienta; Decisión: mantener permisos estrechos y exigir escalación para acciones sensibles.</li>
+<li>[DATA] Datos, RAG y Conocimiento — Componente: capa de memoria; Decisión: delimitar escrituras y hacerlas reversibles antes del uso prolongado.</li>
+<li>[GOV] Seguridad, Privacidad y Gobernanza — Componente: auditoría de aprobación; Decisión: capturar actor, contexto y ruta de decisión en pasos autónomos.</li>
 </ul>
 <!-- AII_TODAY_END -->
 

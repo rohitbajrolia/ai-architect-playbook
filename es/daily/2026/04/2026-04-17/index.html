@@ -920,110 +920,114 @@
   
 
 
-<!-- SOURCE_SHA256: 0453dce59d1ace939918f232d368f0ff93398da3cbd0b051b211f86919336b8a -->
+<!-- SOURCE_SHA256: 3addd2aac697bbcf8ff9244acaae3b9f946bf9f825ecf284e89a39be0913404c -->
+<hr />
+<p>title: 'Android 17 IA, Claude Opus 4.7, Gemini Robotics y NVIDIA Ising — 17 de abril de 2026'
+description: 'Google I/O 2026 revela aspectos destacados de Android 17 IA; Anthropic lanza Claude Opus 4.7 para ingeniería de software; Gemini Robotics-ER 1.6; modelo cuántico NVIDIA Ising.'</p>
+<hr />
 <h1 id="2026-04-17">2026-04-17<a class="headerlink" href="#2026-04-17" title="Permanent link">&para;</a></h1>
 <h2 id="marco-diario-para-2026-04-17">Marco Diario para 2026-04-17<a class="headerlink" href="#marco-diario-para-2026-04-17" title="Permanent link">&para;</a></h2>
 <p>Cómo leo esta página:
 - [REL] Confiabilidad y Evaluación — ¿Qué falla en producción? ¿Cómo lo probamos y observamos?
-- [AGENT] Agentes y Orquestación — ¿Qué ejecuta el ciclo? ¿Qué acciones puede realizar?
+- [AGENT] Agentes y Orquestación — ¿Qué ejecuta el ciclo? ¿Qué acciones puede tomar?
 - [DATA] Datos, RAG y Conocimiento — ¿De dónde proviene el contexto? ¿Cómo se recupera?
 - [GOV] Seguridad, Privacidad y Gobernanza — ¿Qué requiere políticas, permisos y auditoría?
-- [COST] Infraestructura, Hardware y Costos — ¿Qué se vuelve caro (latencia/tokens/GPU/operaciones)? ¿Cómo lo limitamos?
-- [OPS] Producto y Modelo Operativo — ¿Quién es responsable semanalmente? ¿Cómo lo desplegamos con seguridad?</p>
-<p>Mapa rápido del sistema (para ubicar cada ítem): Modelo → Contexto (RAG/memoria) → Orquestador → Herramientas → Evaluaciones/Rastreo → Gobernanza.</p>
-<h3 id="1-senales-del-dia">1) Señales del Día<a class="headerlink" href="#1-senales-del-dia" title="Permanent link">&para;</a></h3>
+- [COST] Infraestructura, Hardware y Costos — ¿Qué se vuelve costoso (latencia/tokens/GPU/operaciones)? ¿Cómo lo limitamos?
+- [OPS] Producto y Modelo Operativo — ¿Quién es responsable semanalmente? ¿Cómo lo implementamos con seguridad?</p>
+<p>Mapa rápido del sistema (para ubicar cada elemento): Modelo → Contexto (RAG/memoria) → Orquestador → Herramientas → Evaluaciones/Trazabilidad → Gobernanza.</p>
+<h3 id="1-senales-de-hoy">1) Señales de Hoy<a class="headerlink" href="#1-senales-de-hoy" title="Permanent link">&para;</a></h3>
 <ul>
-<li><strong>2026-04-14</strong>: <a href="https://www.androidcentral.com/phones/google-pixel/google-i-o-2026-sessions-list-teases-major-android-17-highlights-ai-and-chrome">Lista de sesiones de Google I/O 2026 adelanta grandes novedades de Android 17, IA y Chrome</a> — Google planea mostrar actualizaciones de rendimiento de Android 17, mejoras en aplicaciones de medios y cámara, funcionalidad para escritorio y pantallas grandes, e iniciativa "Adaptive Everywhere" en I/O 2026.</li>
-<li><strong>2026-04-16</strong>: <a href="https://planet.news/article/ai-digital-innovation-april-2026-comprehensive-report">La tecnología de IA alcanza un punto de inflexión crítico mientras gigantes de la industria implementan medidas de seguridad sin precedentes</a> — Grandes avances en IA para entretenimiento, automatización marítima, centros de datos y servicios móviles coinciden con mayor supervisión regulatoria y desafíos en ciberseguridad.</li>
-<li><strong>2026-04-16</strong>: <a href="https://oct-rick-brick.com/en/articles/2026-04-17-ai-tech-daily-2026-04-17">Anthropic lanza “Claude Opus 4.7,” un modelo especializado en ingeniería de software</a> — El nuevo modelo de Anthropic, Opus 4.7, optimizado para ingeniería de software, cuenta con capacidades mejoradas de autocorrección y procesamiento visual.</li>
-<li><strong>2026-04-16</strong>: <a href="https://oct-rick-brick.com/en/articles/2026-04-17-ai-tech-daily-2026-04-17">Google DeepMind anuncia “Gemini Robotics-ER 1.6”</a> — El nuevo modelo de DeepMind mejora el reconocimiento espacial y las perspectivas multi-vista de robots, potenciando la navegación y manipulación autónoma.</li>
-<li><strong>2026-04-16</strong>: <a href="https://oct-rick-brick.com/en/articles/2026-04-17-ai-tech-daily-2026-04-17">NVIDIA anuncia el modelo “Ising,” abordando desafíos de computación cuántica</a> — El modelo de IA cuántica de código abierto de NVIDIA, Ising, busca acelerar la calibración de procesadores cuánticos y la corrección de errores.</li>
-<li><strong>2026-04-16</strong>: <a href="https://www.rand.com/press-releases/2026/imaginit-technologies-to-present-ai-roadmap/">IMAGINiT Technologies presentará hoja de ruta de IA en New York Build Expo 2026</a> — IMAGINiT compartirá estrategias escalables de adopción de IA en NY Build Expo 2026, centrándose en integración de plataformas y flujos de trabajo conectados.</li>
+<li><strong>2026-04-14</strong>: <a href="https://www.androidcentral.com/phones/google-pixel/google-i-o-2026-sessions-list-teases-major-android-17-highlights-ai-and-chrome">Lista de sesiones de Google I/O 2026 anticipa principales novedades de Android 17, IA y Chrome</a> — Google planea mostrar actualizaciones de rendimiento de Android 17, mejoras en apps de medios y cámara, funcionalidad para escritorio y pantallas grandes, e iniciativa "Adaptativo en Todas Partes" en I/O 2026.</li>
+<li><strong>2026-04-16</strong>: <a href="https://planet.news/article/ai-digital-innovation-april-2026-comprehensive-report">La tecnología IA alcanza un punto de inflexión crítico mientras gigantes de la industria implementan medidas de seguridad sin precedentes</a> — Grandes desarrollos IA en entretenimiento, automatización marítima, centros de datos y servicios móviles coinciden con una mayor supervisión regulatoria y desafíos de ciberseguridad.</li>
+<li><strong>2026-04-16</strong>: <a href="https://oct-rick-brick.com/en/articles/2026-04-17-ai-tech-daily-2026-04-17">Anthropic lanza “Claude Opus 4.7,” modelo especializado en ingeniería de software</a> — El nuevo modelo Opus 4.7 de Anthropic, optimizado para ingeniería de software, presenta capacidades mejoradas de autocorrección y procesamiento visual.</li>
+<li><strong>2026-04-16</strong>: <a href="https://oct-rick-brick.com/en/articles/2026-04-17-ai-tech-daily-2026-04-17">Google DeepMind anuncia “Gemini Robotics-ER 1.6”</a> — El nuevo modelo de DeepMind mejora el reconocimiento espacial y perspectivas multivista de robots, fortaleciendo navegación y manipulación autónoma.</li>
+<li><strong>2026-04-16</strong>: <a href="https://oct-rick-brick.com/en/articles/2026-04-17-ai-tech-daily-2026-04-17">NVIDIA anuncia modelo “Ising”, abordando desafíos de la computación cuántica</a> — El modelo AI cuántico de código abierto Ising de NVIDIA busca acelerar calibración de procesadores cuánticos y corrección de errores.</li>
+<li><strong>2026-04-16</strong>: <a href="https://www.rand.com/press-releases/2026/imaginit-technologies-to-present-ai-roadmap/">IMAGINiT Technologies presentará hoja de ruta de IA en New York Build Expo 2026</a> — IMAGINiT compartirá estrategias escalables de adopción IA en New York Build Expo 2026, enfocándose en integración de plataformas y flujos de trabajo conectados.</li>
 <li><strong>2026-04-16</strong>: <a href="https://www.prnewswire.com/apac/news-releases/infinitix-and-phison-to-showcase-heterogeneous-ai-infrastructure-solutions-at-japan-it-week-2026-302729689.html">INFINITIX y Phison exhibirán soluciones heterogéneas de infraestructura IA en Japan IT Week 2026</a> — INFINITIX y Phison presentarán gestión unificada de infraestructura IA integrando GPUs y SSDs en Japan IT Week 2026.</li>
-<li><strong>2026-04-16</strong>: <a href="https://www.ai.cc/news/ai-expo-2026-governance-for-agentic-enterprise/">Highlights del día 1 de AI Expo 2026 enfatizan gobernanza y preparación de datos para éxito empresarial agente</a> — AI Expo 2026 enfatiza la transición de automatización pasiva a sistemas IA agente, enfocándose en gobernanza y preparación de datos.</li>
-<li><strong>2026-04-16</strong>: <a href="https://aiaphiladelphia.org/news/chapter-news/1461/1461-Thinking-AI-First-How-Architects-Are-Adapting-to-the-Future-Now">Pensando primero en IA: Cómo los arquitectos se están adaptando al futuro, ahora</a> — Arquitectos adoptando "pensamiento IA primero" para mejorar y acelerar procesos con herramientas como Perplexity, ChatGPT, Gemini y NotebookLM.</li>
+<li><strong>2026-04-16</strong>: <a href="https://www.ai.cc/news/ai-expo-2026-governance-for-agentic-enterprise/">AI Expo 2026 Día 1 destaca gobernanza y preparación de datos para éxito empresarial agente</a> — AI Expo 2026 enfatiza la transición de automatización pasiva a sistemas IA agente, enfocándose en gobernanza y preparación de datos.</li>
+<li><strong>2026-04-16</strong>: <a href="https://aiaphiladelphia.org/news/chapter-news/1461/1461-Thinking-AI-First-How-Architects-Are-Adapting-to-the-Future-Now">Pensando en IA Primero: cómo los arquitectos se adaptan al futuro, ahora</a> — Arquitectos adoptan "pensar IA primero" para mejorar y acelerar procesos usando herramientas como Perplexity, ChatGPT, Gemini y NotebookLM.</li>
 </ul>
 <hr />
-<h3 id="2-genai">2) GenAI<a class="headerlink" href="#2-genai" title="Permanent link">&para;</a></h3>
-<h4 id="lista-de-sesiones-de-google-io-2026-adelanta-grandes-novedades-de-android-17-ia-y-chrome">Lista de sesiones de Google I/O 2026 adelanta grandes novedades de Android 17, IA y Chrome<a class="headerlink" href="#lista-de-sesiones-de-google-io-2026-adelanta-grandes-novedades-de-android-17-ia-y-chrome" title="Permanent link">&para;</a></h4>
+<h3 id="2-genia">2) GenIA<a class="headerlink" href="#2-genia" title="Permanent link">&para;</a></h3>
+<h4 id="lista-de-sesiones-de-google-io-2026-anticipa-principales-novedades-de-android-17-ia-y-chrome">Lista de sesiones de Google I/O 2026 anticipa principales novedades de Android 17, IA y Chrome<a class="headerlink" href="#lista-de-sesiones-de-google-io-2026-anticipa-principales-novedades-de-android-17-ia-y-chrome" title="Permanent link">&para;</a></h4>
 <div class="admonition note">
-<p class="admonition-title">Implicación arquitectónica</p>
+<p class="admonition-title">Implicación Arquitectónica</p>
 <ul>
 <li>[REL] Confiabilidad y Evaluación — Necesidad de probar las nuevas funciones de Android 17 en entornos diversos.</li>
-<li>[AGENT] Agentes y Orquestación — Asegurar integración fluida de "Adaptive Everywhere" entre dispositivos.</li>
-<li>[GOV] Seguridad, Privacidad y Gobernanza — Abordar posibles preocupaciones de seguridad con funcionalidad multi-dispositivo.</li>
+<li>[AGENT] Agentes y Orquestación — Garantizar integración fluida de "Adaptativo en Todas Partes" entre dispositivos.</li>
+<li>[GOV] Seguridad, Privacidad y Gobernanza — Abordar posibles preocupaciones de seguridad con funcionalidad cruzada entre dispositivos.</li>
 </ul>
 </div>
 <p>Preguntas abiertas
-- ¿Cómo manejará "Adaptive Everywhere" la sincronización de datos entre dispositivos?
-- ¿Cuáles son las implicaciones de privacidad en transiciones fluidas de dispositivos?</p>
-<h4 id="anthropic-lanza-claude-opus-47-un-modelo-especializado-en-ingenieria-de-software">Anthropic lanza “Claude Opus 4.7,” un modelo especializado en ingeniería de software<a class="headerlink" href="#anthropic-lanza-claude-opus-47-un-modelo-especializado-en-ingenieria-de-software" title="Permanent link">&para;</a></h4>
+- ¿Cómo manejará "Adaptativo en Todas Partes" la sincronización de datos entre dispositivos?
+- ¿Cuáles son las implicaciones de privacidad en transiciones fluidas entre dispositivos?</p>
+<h4 id="anthropic-lanza-claude-opus-47-modelo-especializado-en-ingenieria-de-software">Anthropic lanza “Claude Opus 4.7,” modelo especializado en ingeniería de software<a class="headerlink" href="#anthropic-lanza-claude-opus-47-modelo-especializado-en-ingenieria-de-software" title="Permanent link">&para;</a></h4>
 <div class="admonition note">
-<p class="admonition-title">Implicación arquitectónica</p>
+<p class="admonition-title">Implicación Arquitectónica</p>
 <ul>
 <li>[DATA] Datos, RAG y Conocimiento — Integrar Opus 4.7 para mejorar generación y análisis de código.</li>
-<li>[COST] Infraestructura, Hardware y Costos — Evaluar recursos computacionales necesarios para desplegar Opus 4.7.</li>
-<li>[OPS] Producto y Modelo Operativo — Entrenar equipos en capacidades e integración de Opus 4.7.</li>
+<li>[COST] Infraestructura, Hardware y Costos — Evaluar recursos computacionales necesarios para despliegue de Opus 4.7.</li>
+<li>[OPS] Producto y Modelo Operativo — Capacitar equipos en capacidades e integración de Opus 4.7.</li>
 </ul>
 </div>
 <p>Preguntas abiertas
 - ¿Cuáles son las mejoras específicas de rendimiento sobre Opus 4.6?
-- ¿Cómo maneja Opus 4.7 tareas complejas de codificación de forma autónoma?</p>
+- ¿Cómo maneja Opus 4.7 tareas de codificación complejas de forma autónoma?</p>
 <h4 id="google-deepmind-anuncia-gemini-robotics-er-16">Google DeepMind anuncia “Gemini Robotics-ER 1.6”<a class="headerlink" href="#google-deepmind-anuncia-gemini-robotics-er-16" title="Permanent link">&para;</a></h4>
 <div class="admonition note">
-<p class="admonition-title">Implicación arquitectónica</p>
+<p class="admonition-title">Implicación Arquitectónica</p>
 <ul>
-<li>[AGENT] Agentes y Orquestación — Implementar Gemini Robotics-ER 1.6 para mayor autonomía robótica.</li>
+<li>[AGENT] Agentes y Orquestación — Implementar Gemini Robotics-ER 1.6 para mejor autonomía robótica.</li>
 <li>[REL] Confiabilidad y Evaluación — Validar desempeño de Gemini Robotics-ER 1.6 en escenarios reales.</li>
-<li>[GOV] Seguridad, Privacidad y Gobernanza — Asegurar cumplimiento de normas de seguridad en robótica autónoma.</li>
+<li>[GOV] Seguridad, Privacidad y Gobernanza — Garantizar cumplimiento de normas de seguridad en robótica autónoma.</li>
 </ul>
 </div>
 <p>Preguntas abiertas
 - ¿Qué tareas específicas puede realizar autónomamente Gemini Robotics-ER 1.6?
-- ¿Cómo se compara con versiones previas en eficiencia?</p>
-<h4 id="nvidia-anuncia-el-modelo-ising-abordando-desafios-de-computacion-cuantica">NVIDIA anuncia el modelo “Ising,” abordando desafíos de computación cuántica<a class="headerlink" href="#nvidia-anuncia-el-modelo-ising-abordando-desafios-de-computacion-cuantica" title="Permanent link">&para;</a></h4>
+- ¿Cómo se compara en eficiencia con versiones anteriores?</p>
+<h4 id="nvidia-anuncia-modelo-ising-abordando-desafios-de-computacion-cuantica">NVIDIA anuncia modelo “Ising”, abordando desafíos de computación cuántica<a class="headerlink" href="#nvidia-anuncia-modelo-ising-abordando-desafios-de-computacion-cuantica" title="Permanent link">&para;</a></h4>
 <div class="admonition note">
-<p class="admonition-title">Implicación arquitectónica</p>
+<p class="admonition-title">Implicación Arquitectónica</p>
 <ul>
 <li>[DATA] Datos, RAG y Conocimiento — Explorar Ising para aplicaciones en computación cuántica.</li>
-<li>[COST] Infraestructura, Hardware y Costos — Evaluar requerimientos de hardware para despliegue de Ising.</li>
+<li>[COST] Infraestructura, Hardware y Costos — Evaluar requerimientos hardware para despliegue de Ising.</li>
 <li>[OPS] Producto y Modelo Operativo — Desarrollar estrategias para integrar Ising en sistemas existentes.</li>
 </ul>
 </div>
 <p>Preguntas abiertas
 - ¿Cuáles son las aplicaciones prácticas de Ising en computación cuántica?
-- ¿Cómo mejora Ising modelos IA cuánticos existentes?</p>
+- ¿Cómo mejora Ising a modelos IA cuánticos existentes?</p>
 <hr />
 <h3 id="3-ia-agente">3) IA Agente<a class="headerlink" href="#3-ia-agente" title="Permanent link">&para;</a></h3>
-<h4 id="highlights-del-dia-1-de-ai-expo-2026-enfatizan-gobernanza-y-preparacion-de-datos-para-exito-empresarial-agente">Highlights del día 1 de AI Expo 2026 enfatizan gobernanza y preparación de datos para éxito empresarial agente<a class="headerlink" href="#highlights-del-dia-1-de-ai-expo-2026-enfatizan-gobernanza-y-preparacion-de-datos-para-exito-empresarial-agente" title="Permanent link">&para;</a></h4>
+<h4 id="ai-expo-2026-dia-1-destaca-gobernanza-y-preparacion-de-datos-para-exito-empresarial-agente">AI Expo 2026 Día 1 destaca gobernanza y preparación de datos para éxito empresarial agente<a class="headerlink" href="#ai-expo-2026-dia-1-destaca-gobernanza-y-preparacion-de-datos-para-exito-empresarial-agente" title="Permanent link">&para;</a></h4>
 <div class="admonition note">
-<p class="admonition-title">Implicación arquitectónica</p>
+<p class="admonition-title">Implicación Arquitectónica</p>
 <ul>
-<li>[AGENT] Agentes y Orquestación — Transición a sistemas IA agente en flujos empresariales.</li>
+<li>[AGENT] Agentes y Orquestación — Transición a sistemas IA agente para flujos empresariales.</li>
 <li>[REL] Confiabilidad y Evaluación — Establecer métricas para evaluar desempeño de sistemas IA agente.</li>
 <li>[GOV] Seguridad, Privacidad y Gobernanza — Implementar marcos de gobernanza para despliegue IA agente.</li>
 </ul>
 </div>
 <p>Preguntas abiertas
-- ¿Cuáles son los principales desafíos en adopción de sistemas IA agente?
-- ¿Cómo asegurar la preparación de datos para IA agente?</p>
-<h4 id="pensando-primero-en-ia-como-los-arquitectos-se-estan-adaptando-al-futuro-ahora">Pensando primero en IA: Cómo los arquitectos se están adaptando al futuro, ahora<a class="headerlink" href="#pensando-primero-en-ia-como-los-arquitectos-se-estan-adaptando-al-futuro-ahora" title="Permanent link">&para;</a></h4>
+- ¿Cuáles son los desafíos clave en adopción de sistemas IA agente?
+- ¿Cómo pueden las organizaciones asegurar la preparación de datos para IA agente?</p>
+<h4 id="pensando-en-ia-primero-como-los-arquitectos-se-adaptan-al-futuro-ahora">Pensando en IA Primero: cómo los arquitectos se adaptan al futuro, ahora<a class="headerlink" href="#pensando-en-ia-primero-como-los-arquitectos-se-adaptan-al-futuro-ahora" title="Permanent link">&para;</a></h4>
 <div class="admonition note">
-<p class="admonition-title">Implicación arquitectónica</p>
+<p class="admonition-title">Implicación Arquitectónica</p>
 <ul>
 <li>[DATA] Datos, RAG y Conocimiento — Usar herramientas IA para mejorar procesos de diseño arquitectónico.</li>
 <li>[COST] Infraestructura, Hardware y Costos — Invertir en infraestructura IA para apoyar innovación en diseño.</li>
-<li>[OPS] Producto y Modelo Operativo — Fomentar cultura IA primero en firmas de arquitectura.</li>
+<li>[OPS] Producto y Modelo Operativo — Fomentar cultura “IA primero” en firmas de arquitectura.</li>
 </ul>
 </div>
 <p>Preguntas abiertas
 - ¿Cuáles son las herramientas IA más efectivas para diseño arquitectónico?
-- ¿Cómo pueden las firmas medir el retorno de inversión al adoptar estrategias IA primero?</p>
+- ¿Cómo pueden las firmas medir el retorno de inversión al adoptar estrategias “IA primero”?</p>
 <hr />
 <h3 id="4-radar-ia">4) Radar IA<a class="headerlink" href="#4-radar-ia" title="Permanent link">&para;</a></h3>
-<h4 id="la-tecnologia-de-ia-alcanza-un-punto-de-inflexion-critico-mientras-gigantes-de-la-industria-implementan-medidas-de-seguridad-sin-precedentes">La tecnología de IA alcanza un punto de inflexión crítico mientras gigantes de la industria implementan medidas de seguridad sin precedentes<a class="headerlink" href="#la-tecnologia-de-ia-alcanza-un-punto-de-inflexion-critico-mientras-gigantes-de-la-industria-implementan-medidas-de-seguridad-sin-precedentes" title="Permanent link">&para;</a></h4>
+<h4 id="la-tecnologia-ia-alcanza-un-punto-de-inflexion-critico-mientras-gigantes-de-la-industria-implementan-medidas-de-seguridad-sin-precedentes">La tecnología IA alcanza un punto de inflexión crítico mientras gigantes de la industria implementan medidas de seguridad sin precedentes<a class="headerlink" href="#la-tecnologia-ia-alcanza-un-punto-de-inflexion-critico-mientras-gigantes-de-la-industria-implementan-medidas-de-seguridad-sin-precedentes" title="Permanent link">&para;</a></h4>
 <div class="admonition note">
-<p class="admonition-title">Implicación arquitectónica</p>
+<p class="admonition-title">Implicación Arquitectónica</p>
 <ul>
 <li>[REL] Confiabilidad y Evaluación — Priorizar medidas de seguridad en diseño de sistemas IA.</li>
 <li>[GOV] Seguridad, Privacidad y Gobernanza — Navegar desafíos regulatorios en despliegue IA.</li>
@@ -1031,47 +1035,47 @@
 </ul>
 </div>
 <p>Preguntas abiertas
-- ¿Qué medidas específicas de seguridad están implementando los gigantes industriales?
-- ¿Cómo impactarán estas medidas los plazos de desarrollo de IA?</p>
+- ¿Qué medidas de seguridad específicas están implementando los gigantes de la industria?
+- ¿Cómo impactarán estas medidas los cronogramas de desarrollo IA?</p>
 <hr />
-<h3 id="5-resumen-cto">5) Resumen CTO<a class="headerlink" href="#5-resumen-cto" title="Permanent link">&para;</a></h3>
+<h3 id="5-resumen-para-cto">5) Resumen para CTO<a class="headerlink" href="#5-resumen-para-cto" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Enfocarse en integrar sistemas IA agente en flujos empresariales.</li>
-<li>Priorizar seguridad y gobernanza en despliegues de IA.</li>
+<li>Priorizar seguridad y gobernanza en despliegues IA.</li>
 <li>Invertir en infraestructura IA para apoyar innovación y eficiencia.</li>
 </ul>
 <hr />
 <h3 id="6-notas-de-rohit">6) Notas de Rohit<a class="headerlink" href="#6-notas-de-rohit" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Sorprendido por la rápida adopción del pensamiento IA primero en arquitectura.</li>
-<li>Necesidad de reevaluar la escalabilidad de sistemas IA agente en grandes empresas.</li>
-<li>Decir al equipo: "Adopten herramientas IA para agilizar nuestros procesos de diseño."</li>
+<li>Sorprendido por la rápida adopción del pensamiento “IA primero” en arquitectura.</li>
+<li>Necesidad de reevaluar escalabilidad de sistemas IA agente en grandes empresas.</li>
+<li>Decir al equipo: "Adoptemos herramientas IA para agilizar nuestros procesos de diseño."</li>
 </ul>
 <hr />
 <h3 id="7-ejercicio-de-diseno">7) Ejercicio de Diseño<a class="headerlink" href="#7-ejercicio-de-diseno" title="Permanent link">&para;</a></h3>
-<p><strong>Escenario:</strong> Una firma de arquitectura busca integrar herramientas IA en su proceso de diseño para aumentar creatividad y eficiencia.</p>
+<p><strong>Escenario:</strong> Una firma de arquitectura busca integrar herramientas IA en su proceso de diseño para potenciar creatividad y eficiencia.</p>
 <p><strong>Restricciones:</strong>
 - Presupuesto limitado para nueva tecnología.
-- Software de diseño actual debe mantenerse compatible.
-- Miembros del equipo tienen distintos niveles de alfabetización en IA.</p>
+- El software de diseño existente debe permanecer compatible.
+- Miembros del equipo tienen niveles variados de alfabetización IA.</p>
 <p><strong>Preguntas guía:</strong>
 - ¿Qué herramientas IA ofrecen mejor relación costo-beneficio?
-- ¿Cómo asegurar compatibilidad con el software actual?
+- ¿Cómo aseguramos compatibilidad con el software actual?
 - ¿Qué capacitación es necesaria para el equipo?
-- ¿Cómo medir el impacto de la integración IA?
+- ¿Cómo medimos el impacto de la integración IA?
 - ¿Cuáles son los riesgos potenciales y cómo mitigarlos?</p>
 <hr />
 <!-- AII_TODAY_START -->
 <p><a id="aii-today"></a></p>
 <h3 id="indice-de-implicaciones-arquitectonicas-hoy">Índice de Implicaciones Arquitectónicas (Hoy)<a class="headerlink" href="#indice-de-implicaciones-arquitectonicas-hoy" title="Permanent link">&para;</a></h3>
-<!-- 3–5 bullets. Each must start with a theme key + human label. One line each. Must include Component + Decision. -->
+<!-- 3–5 viñetas. Cada una debe iniciar con una clave temática + etiqueta humana. Una línea cada una. Debe incluir Componente + Decisión. -->
 
 <ul>
-<li>[REL] Confiabilidad y Evaluación — Componente: Protocolos de seguridad IA; Decisión: Implementar medidas de seguridad mejoradas en sistemas IA.</li>
-<li>[AGENT] Agentes y Orquestación — Componente: Integración IA; Decisión: Adoptar sistemas IA agente para flujos empresariales.</li>
-<li>[DATA] Datos, RAG y Conocimiento — Componente: Herramientas IA; Decisión: Invertir en infraestructura IA para apoyar innovación en diseño.</li>
-<li>[GOV] Seguridad, Privacidad y Gobernanza — Componente: Gobernanza IA; Decisión: Establecer marcos para despliegue IA agente.</li>
-<li>[COST] Infraestructura, Hardware y Costos — Componente: Infraestructura IA; Decisión: Asignar recursos para integración y cumplimiento de sistemas IA.</li>
+<li>[REL] Confiabilidad y Evaluación — Componente: protocolos de seguridad IA; Decisión: implementar medidas de seguridad reforzadas en sistemas IA.</li>
+<li>[AGENT] Agentes y Orquestación — Componente: integración IA; Decisión: adoptar sistemas IA agente para flujos empresariales.</li>
+<li>[DATA] Datos, RAG y Conocimiento — Componente: herramientas IA; Decisión: invertir en infraestructura IA para apoyar innovación en diseño.</li>
+<li>[GOV] Seguridad, Privacidad y Gobernanza — Componente: gobernanza IA; Decisión: establecer marcos para despliegue IA agente.</li>
+<li>[COST] Infraestructura, Hardware y Costos — Componente: infraestructura IA; Decisión: asignar recursos para integración y cumplimiento de sistemas IA.</li>
 </ul>
 <!-- AII_TODAY_END -->
 

@@ -920,91 +920,95 @@
   
 
 
-<!-- SOURCE_SHA256: 5ae33cee30aacc21aa639c268b80314cdfd09f88da0d048116bd038c8a691a1d -->
+<!-- SOURCE_SHA256: 267df36955718de205431908d75330eebc81874e4730e09ad8dd7ee44b3638b4 -->
+<hr />
+<p>title: 'BlueField-4 STX, Hoja de ruta de Nvidia y Fábrica de IA segura Cisco-NVIDIA — 22 de marzo de 2026'
+description: 'Cubre Nvidia BlueField-4 STX, hoja de ruta de GPU Rosa/Feynman y el despliegue de la Fábrica de IA segura Cisco-NVIDIA con implicaciones arquitectónicas para la seguridad de la IA empresarial.'</p>
+<hr />
 <h1 id="2026-03-22">2026-03-22<a class="headerlink" href="#2026-03-22" title="Permanent link">&para;</a></h1>
-<h2 id="marco-diario-para-2026-03-22">Marco Diario para 2026-03-22<a class="headerlink" href="#marco-diario-para-2026-03-22" title="Permanent link">&para;</a></h2>
+<h2 id="marco-diario-para-2026-03-22">Marco diario para 2026-03-22<a class="headerlink" href="#marco-diario-para-2026-03-22" title="Permanent link">&para;</a></h2>
 <p>Cómo leo esta página:
 - [REL] Confiabilidad y Evaluación — ¿Qué falla en producción? ¿Cómo lo probamos y observamos?
 - [AGENT] Agentes y Orquestación — ¿Qué ejecuta el ciclo? ¿Qué acciones puede tomar?
 - [DATA] Datos, RAG y Conocimiento — ¿De dónde viene el contexto? ¿Cómo se recupera?
-- [GOV] Seguridad, Privacidad y Gobernanza — ¿Qué necesita políticas, permisos y auditoría?
-- [COST] Infraestructura, Hardware y Costo — ¿Qué se vuelve costoso (latencia/tokens/GPU/operaciones)? ¿Cómo lo limitamos?
+- [GOV] Seguridad, Privacidad y Gobernanza — ¿Qué requiere políticas, permisos y auditoría?
+- [COST] Infraestructura, Hardware y Costo — ¿Qué se encarece (latencia/tokens/GPU/ops)? ¿Cómo lo limitamos?
 - [OPS] Producto y Modelo Operativo — ¿Quién es responsable semanalmente? ¿Cómo lo implementamos de forma segura?</p>
-<p>Mapa rápido del sistema (para ubicar cada ítem): Modelo → Contexto (RAG/memoria) → Orquestador → Herramientas → Evaluaciones/Rastreo → Gobernanza.</p>
+<p>Mapa rápido del sistema (para situar cada ítem): Modelo → Contexto (RAG/memoria) → Orquestador → Herramientas → Evaluaciones/Seguimiento → Gobernanza.</p>
 <h3 id="1-senales-de-hoy">1) Señales de hoy<a class="headerlink" href="#1-senales-de-hoy" title="Permanent link">&para;</a></h3>
 <ul>
-<li><strong>2026-03-17</strong>: <a href="https://www.tomshardware.com/tech-industry/nvidia-launches-bluefield-4-stx-storage-architecture-for-agentic-ai">Nvidia lanza la arquitectura de almacenamiento BlueField-4 STX para IA agéntica en GTC 2026</a> — Nvidia presenta una solución de almacenamiento para abordar cuellos de botella de datos en aplicaciones de IA agéntica.</li>
-<li><strong>2026-03-17</strong>: <a href="https://www.tomshardware.com/pc-components/gpus/nvidia-updates-data-center-roadmap-with-rosa-cpu-and-stacked-feynman-gpus-optical-nvlink-groq-lpus-with-nvfp4-and-nvlink-also-on-deck">Nvidia actualiza la hoja de ruta de centros de datos con CPU Rosa y GPUs apilados Feynman</a> — Nvidia revela planes para nuevas CPUs y GPUs para mejorar el rendimiento de centros de datos.</li>
-<li><strong>2026-03-17</strong>: <a href="https://www.axios.com/2026/03/17/watch-livestream-axios-ai-dc-takeover-week-events-2026">VER EN VIVO: Eventos de la semana de toma de control Axios AI+DC</a> — Axios anuncia una serie de eventos virtuales centrados en IA y políticas gubernamentales.</li>
-<li><strong>2026-03-16</strong>: <a href="https://investor.cisco.com/files/doc_news/Cisco-Secure-AI-Factory-with-NVIDIA-Makes-AI-Easier-to-Deploy-and-Secure-Anywhere-Organizations-Need-It-2026.pdf">Cisco Secure AI Factory con NVIDIA facilita el despliegue y la seguridad de IA en cualquier lugar</a> — Cisco y NVIDIA colaboran para simplificar y asegurar el despliegue de IA en infraestructuras diversas.</li>
+<li><strong>2026-03-17</strong>: <a href="https://www.tomshardware.com/tech-industry/nvidia-launches-bluefield-4-stx-storage-architecture-for-agentic-ai">Nvidia lanza la arquitectura de almacenamiento BlueField-4 STX para IA agente en GTC 2026</a> — Nvidia presenta una solución de almacenamiento para abordar cuellos de botella de datos en aplicaciones de IA agente.</li>
+<li><strong>2026-03-17</strong>: <a href="https://www.tomshardware.com/pc-components/gpus/nvidia-updates-data-center-roadmap-with-rosa-cpu-and-stacked-feynman-gpus-optical-nvlink-groq-lpus-with-nvfp4-and-nvlink-also-on-deck">Nvidia actualiza la hoja de ruta del centro de datos con CPU Rosa y GPUs apiladas Feynman</a> — Nvidia revela planes para nuevas CPUs y GPUs para mejorar el rendimiento del centro de datos.</li>
+<li><strong>2026-03-17</strong>: <a href="https://www.axios.com/2026/03/17/watch-livestream-axios-ai-dc-takeover-week-events-2026">VER EN VIVO: eventos de Axios AI+DC Takeover Week</a> — Axios anuncia una serie de eventos virtuales centrados en IA y políticas gubernamentales.</li>
+<li><strong>2026-03-16</strong>: <a href="https://investor.cisco.com/files/doc_news/Cisco-Secure-AI-Factory-with-NVIDIA-Makes-AI-Easier-to-Deploy-and-Secure-Anywhere-Organizations-Need-It-2026.pdf">Cisco Secure AI Factory con NVIDIA facilita el despliegue y la seguridad de IA en cualquier lugar</a> — Cisco y NVIDIA colaboran para simplificar y asegurar el despliegue de IA en infraestructuras.</li>
 </ul>
 <hr />
 <h3 id="2-genai">2) GenAI<a class="headerlink" href="#2-genai" title="Permanent link">&para;</a></h3>
 <h4 id="arquitectura-de-almacenamiento-bluefield-4-stx-de-nvidia">Arquitectura de almacenamiento BlueField-4 STX de Nvidia<a class="headerlink" href="#arquitectura-de-almacenamiento-bluefield-4-stx-de-nvidia" title="Permanent link">&para;</a></h4>
 <div class="admonition note">
-<p class="admonition-title">Implicación Arquitectónica</p>
+<p class="admonition-title">Implicación arquitectónica</p>
 <ul>
 <li>[DATA] Datos, RAG y Conocimiento — Necesidad de integrar soluciones de almacenamiento de alto rendimiento para manejar datos de IA a gran escala eficientemente.</li>
-<li>[COST] Infraestructura, Hardware y Costo — Evaluar el balance costo-beneficio de adoptar arquitecturas especializadas de almacenamiento para cargas de trabajo de IA.</li>
+<li>[COST] Infraestructura, Hardware y Costo — Evaluar el costo-beneficio de adoptar arquitecturas especializadas de almacenamiento para cargas de trabajo de IA.</li>
 <li>[OPS] Producto y Modelo Operativo — Evaluar el impacto operativo de implementar nuevas tecnologías de almacenamiento en sistemas de IA existentes.</li>
 </ul>
 </div>
 <p>Preguntas abiertas
-- ¿Cómo afectará la integración de BlueField-4 STX a los pipelines de datos existentes?
+- ¿Cómo afectará la integración de BlueField-4 STX a las canalizaciones de datos existentes?
 - ¿Cuáles son los límites de escalabilidad de esta solución de almacenamiento?</p>
-<h4 id="actualizacion-de-la-hoja-de-ruta-para-centros-de-datos-de-nvidia">Actualización de la hoja de ruta para centros de datos de Nvidia<a class="headerlink" href="#actualizacion-de-la-hoja-de-ruta-para-centros-de-datos-de-nvidia" title="Permanent link">&para;</a></h4>
+<h4 id="actualizacion-de-la-hoja-de-ruta-del-centro-de-datos-de-nvidia">Actualización de la hoja de ruta del centro de datos de Nvidia<a class="headerlink" href="#actualizacion-de-la-hoja-de-ruta-del-centro-de-datos-de-nvidia" title="Permanent link">&para;</a></h4>
 <div class="admonition note">
-<p class="admonition-title">Implicación Arquitectónica</p>
+<p class="admonition-title">Implicación arquitectónica</p>
 <ul>
 <li>[COST] Infraestructura, Hardware y Costo — Planificar actualizaciones de hardware para soportar nuevas arquitecturas de CPU y GPU.</li>
 <li>[OPS] Producto y Modelo Operativo — Prepararse para posibles interrupciones durante las transiciones de hardware.</li>
-<li>[DATA] Datos, RAG y Conocimiento — Asegurar compatibilidad del nuevo hardware con los marcos de procesamiento de datos actuales.</li>
+<li>[DATA] Datos, RAG y Conocimiento — Garantizar la compatibilidad del nuevo hardware con los marcos actuales de procesamiento de datos.</li>
 </ul>
 </div>
 <p>Preguntas abiertas
-- ¿Cuál es el cronograma para desplegar estos nuevos componentes de hardware?
-- ¿Cómo impactarán estas actualizaciones en el rendimiento y confiabilidad del sistema?</p>
+- ¿Cuál es la cronología para desplegar estos nuevos componentes de hardware?
+- ¿Cómo afectarán estas actualizaciones el rendimiento y la confiabilidad del sistema?</p>
 <hr />
-<h3 id="3-ia-agentica">3) IA Agéntica<a class="headerlink" href="#3-ia-agentica" title="Permanent link">&para;</a></h3>
-<h4 id="cisco-y-nvidia-secure-ai-factory">Cisco y NVIDIA Secure AI Factory<a class="headerlink" href="#cisco-y-nvidia-secure-ai-factory" title="Permanent link">&para;</a></h4>
+<h3 id="3-ia-agente">3) IA agente<a class="headerlink" href="#3-ia-agente" title="Permanent link">&para;</a></h3>
+<h4 id="fabrica-de-ia-segura-de-cisco-y-nvidia">Fábrica de IA segura de Cisco y NVIDIA<a class="headerlink" href="#fabrica-de-ia-segura-de-cisco-y-nvidia" title="Permanent link">&para;</a></h4>
 <div class="admonition note">
-<p class="admonition-title">Implicación Arquitectónica</p>
+<p class="admonition-title">Implicación arquitectónica</p>
 <ul>
-<li>[GOV] Seguridad, Privacidad y Gobernanza — Implementar medidas robustas de seguridad para proteger despliegues de IA en entornos diversos.</li>
+<li>[GOV] Seguridad, Privacidad y Gobernanza — Implementar medidas de seguridad robustas para proteger despliegues de IA en entornos diversos.</li>
 <li>[OPS] Producto y Modelo Operativo — Desarrollar procesos estandarizados para desplegar soluciones de IA de forma segura y eficiente.</li>
 <li>[DATA] Datos, RAG y Conocimiento — Garantizar prácticas seguras de manejo de datos en aplicaciones de IA.</li>
 </ul>
 </div>
 <p>Preguntas abiertas
-- ¿Qué protocolos específicos de seguridad se están integrando en Secure AI Factory?
+- ¿Qué protocolos de seguridad específicos se están integrando en la Fábrica de IA segura?
 - ¿Cómo afectará esta colaboración el ciclo de vida del despliegue de IA?</p>
 <hr />
 <h3 id="4-radar-de-ia">4) Radar de IA<a class="headerlink" href="#4-radar-de-ia" title="Permanent link">&para;</a></h3>
-<h4 id="eventos-de-la-semana-de-toma-de-control-aidc">Eventos de la semana de toma de control AI+DC<a class="headerlink" href="#eventos-de-la-semana-de-toma-de-control-aidc" title="Permanent link">&para;</a></h4>
+<h4 id="eventos-de-aidc-takeover-week">Eventos de AI+DC Takeover Week<a class="headerlink" href="#eventos-de-aidc-takeover-week" title="Permanent link">&para;</a></h4>
 <div class="admonition note">
-<p class="admonition-title">Implicación Arquitectónica</p>
+<p class="admonition-title">Implicación arquitectónica</p>
 <ul>
-<li>[GOV] Seguridad, Privacidad y Gobernanza — Mantenerse informado sobre desarrollos de políticas que afectan despliegue y gobernanza de IA.</li>
-<li>[OPS] Producto y Modelo Operativo — Adaptarse a paisajes regulatorios en evolución que impactan operaciones de IA.</li>
-<li>[DATA] Datos, RAG y Conocimiento — Monitorear discusiones sobre el rol de la IA en políticas públicas y sus implicaciones para el uso de datos.</li>
+<li>[GOV] Seguridad, Privacidad y Gobernanza — Mantenerse informado sobre desarrollos de políticas que afectan el despliegue y gobernanza de IA.</li>
+<li>[OPS] Producto y Modelo Operativo — Adaptarse a paisajes regulatorios en evolución que impactan las operaciones de IA.</li>
+<li>[DATA] Datos, RAG y Conocimiento — Monitorear discusiones sobre el papel de la IA en políticas públicas y sus implicaciones en el uso de datos.</li>
 </ul>
 </div>
 <p>Preguntas abiertas
-- ¿Qué cambios clave de política se anticipan de estos eventos?
-- ¿Cómo pueden las organizaciones prepararse para los próximos cambios regulatorios en IA?</p>
+- ¿Qué cambios clave en políticas se anticipan de estos eventos?
+- ¿Cómo pueden las organizaciones prepararse para próximos cambios regulatorios en IA?</p>
 <hr />
-<h3 id="5-resumen-para-cto">5) Resumen para CTO<a class="headerlink" href="#5-resumen-para-cto" title="Permanent link">&para;</a></h3>
+<h3 id="5-informe-cto">5) Informe CTO<a class="headerlink" href="#5-informe-cto" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Monitorear los desarrollos de hardware de Nvidia para su posible integración en infraestructura de IA.</li>
-<li>Mantenerse actualizado en discusiones de políticas de IA para asegurar cumplimiento y alineamiento estratégico.</li>
+<li>Monitorear desarrollos de hardware de Nvidia para posible integración en infraestructuras de IA.</li>
+<li>Mantenerse actualizado en discusiones de políticas de IA para garantizar cumplimiento y alineación estratégica.</li>
 <li>Evaluar el impacto de nuevas soluciones de almacenamiento en prácticas de gestión de datos de IA.</li>
 </ul>
 <hr />
 <h3 id="6-notas-de-rohit">6) Notas de Rohit<a class="headerlink" href="#6-notas-de-rohit" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Sorprendido por el rápido ritmo de innovación en hardware para IA.</li>
-<li>Necesidad de revisar la escalabilidad de nuevas arquitecturas de almacenamiento.</li>
-<li>Indicará al equipo priorizar la seguridad en los despliegues de IA.</li>
+<li>Necesita volver a verificar la escalabilidad de nuevas arquitecturas de almacenamiento.</li>
+<li>Recomendado al equipo priorizar la seguridad en los despliegues de IA.</li>
 </ul>
 <hr />
 <h3 id="7-ejercicio-de-diseno">7) Ejercicio de diseño<a class="headerlink" href="#7-ejercicio-de-diseno" title="Permanent link">&para;</a></h3>
@@ -1014,16 +1018,16 @@
 - Integración con sistemas existentes de registros electrónicos de salud (EHR).
 - Escalabilidad para manejar volúmenes crecientes de datos de pacientes.</p>
 <p><strong>Preguntas guía:</strong>
-- ¿Cómo asegurar la seguridad de datos y privacidad de los pacientes en el sistema de IA?
-- ¿Cuáles son los requisitos técnicos para integrar IA con los sistemas EHR existentes?
-- ¿Cómo diseñar el sistema para escalar con el crecimiento de datos?
+- ¿Cómo podemos asegurar la seguridad de datos y privacidad de pacientes en el sistema de IA?
+- ¿Cuáles son los requisitos técnicos para integrar IA con sistemas EHR existentes?
+- ¿Cómo diseñamos el sistema para escalar con el crecimiento de los datos?
 - ¿Cuáles son los desafíos potenciales al desplegar IA en múltiples ubicaciones?
-- ¿Cómo medir la efectividad del sistema de IA en mejorar resultados de pacientes?</p>
+- ¿Cómo podemos medir la efectividad del sistema de IA en la mejora de resultados para pacientes?</p>
 <hr />
 <!-- AII_TODAY_START -->
 <p><a id="aii-today"></a></p>
-<h3 id="indice-de-implicaciones-arquitectonicas-hoy">Índice de Implicaciones Arquitectónicas (Hoy)<a class="headerlink" href="#indice-de-implicaciones-arquitectonicas-hoy" title="Permanent link">&para;</a></h3>
-<!-- 3–5 viñetas. Cada una debe comenzar con una clave temática + etiqueta humana. Una línea cada una. Deben incluir Componente + Decisión. -->
+<h3 id="indice-de-implicaciones-arquitectonicas-hoy">Índice de implicaciones arquitectónicas (Hoy)<a class="headerlink" href="#indice-de-implicaciones-arquitectonicas-hoy" title="Permanent link">&para;</a></h3>
+<!-- 3–5 puntos. Cada uno debe iniciar con la clave del tema + etiqueta humana. Una línea cada uno. Debe incluir Componente + Decisión. -->
 
 <ul>
 <li>[DATA] Datos, RAG y Conocimiento — Componente: sistema de almacenamiento; Decisión: integrar soluciones de almacenamiento de alto rendimiento para manejar datos de IA a gran escala eficientemente.</li>

@@ -920,111 +920,115 @@
   
 
 
-<!-- SOURCE_SHA256: dc5f2b2cb4695dc1aefbeb3bf102d219d21cafa7454e500393ceb74cda06064f -->
+<!-- SOURCE_SHA256: dc73fb41b0bed218b9fe4e3bfbd343a3752cf598ebd7669ca1104ed81a419a6d -->
+<hr />
+<p>title: 'Cloudflare LLM Fabric, Agentes SRE de Meta AI y Terrenos Cercanos a la Energía — 4 de mayo de 2026'
+description: 'Cloudflare lanza una infraestructura de ejecución LLM en el borde global con Memoria de Agentes; Meta despliega agentes SRE autónomos; el Pentágono adopta una pila AI multimarca; Coatue considera la tierra como un activo de IA.'</p>
+<hr />
 <h1 id="2026-05-04">2026-05-04<a class="headerlink" href="#2026-05-04" title="Permanent link">&para;</a></h1>
-<h2 id="marco-diario-para-2026-05-04">Marco diario para 2026-05-04<a class="headerlink" href="#marco-diario-para-2026-05-04" title="Permanent link">&para;</a></h2>
+<h2 id="marco-diario-para-2026-05-04">Marco Diario para 2026-05-04<a class="headerlink" href="#marco-diario-para-2026-05-04" title="Permanent link">&para;</a></h2>
 <p>Cómo leo esta página:
-- [REL] Fiabilidad y Evaluación — ¿Qué falla en producción? ¿Cómo lo probamos y observamos?
+- [REL] Confiabilidad y Evaluación — ¿Qué falla en producción? ¿Cómo lo probamos y observamos?
 - [AGENT] Agentes y Orquestación — ¿Qué ejecuta el ciclo? ¿Qué acciones puede tomar?
 - [DATA] Datos, RAG y Conocimiento — ¿De dónde viene el contexto? ¿Cómo se recupera?
-- [GOV] Seguridad, Privacidad y Gobernanza — ¿Qué necesita políticas, permisos y auditoría?
-- [COST] Infraestructura, Hardware y Costos — ¿Qué se vuelve costoso (latencia/tokens/GPU/operaciones)? ¿Cómo lo limitamos?
-- [OPS] Producto y Modelo Operativo — ¿Quién es el responsable semanal? ¿Cómo lo implementamos de forma segura?</p>
-<p>Mapa rápido del sistema (para ubicar cada ítem): Modelo → Contexto (RAG/memoria) → Orquestador → Herramientas → Evaluaciones/Seguimiento → Gobernanza.</p>
+- [GOV] Seguridad, Privacidad y Gobernanza — ¿Qué necesita política, permisos y auditoría?
+- [COST] Infraestructura, Hardware y Costos — ¿Qué se vuelve caro (latencia/tokens/GPU/operaciones)? ¿Cómo lo limitamos?
+- [OPS] Producto y Modelo Operativo — ¿Quién es responsable semanalmente? ¿Cómo se despliega con seguridad?</p>
+<p>Mapa rápido del sistema (para ubicar cada elemento): Modelo → Contexto (RAG/memoria) → Orquestador → Herramientas → Evaluaciones/Rastreo → Gobernanza.</p>
 <h3 id="1-senales-de-hoy">1) Señales de hoy<a class="headerlink" href="#1-senales-de-hoy" title="Permanent link">&para;</a></h3>
 <ul>
-<li><strong>2026-05-04</strong>: <a href="https://theartofcto.com/daily-sync/2026-05-04-daily-sync">Cloudflare construye una infraestructura global para tiempo de ejecución de LLM</a> — Cloudflare anunció una nueva infraestructura para ejecutar modelos de lenguaje grandes a través de su red global de borde, dividiendo el procesamiento de entrada y la generación de salida en sistemas optimizados de manera diferente. Combinado con su nuevo servicio Agent Memory, Cloudflare se está posicionando como un sustrato de baja latencia y costo eficiente para agentes de IA que viven cerca de los usuarios y datos. Para CTOs, esta es otra alternativa creíble a los hyperscalers para IA sensible a la latencia, especialmente cuando los costos de residencia de datos y egreso afectan.</li>
-<li><strong>2026-05-04</strong>: <a href="https://theartofcto.com/daily-sync/2026-05-04-daily-sync">Meta automatiza el ajuste de infraestructura con agentes de IA unificados</a> — Meta detalló una plataforma en producción donde agentes de IA detectan y remedián automáticamente problemas de rendimiento en toda su infraestructura global. Esto no es solo detección de anomalías; los agentes cierran el ciclo con planificación de capacidad y remediación en vivo, convirtiéndose efectivamente en una capa de SRE de IA a hiperescala. Se espera que este patrón—agentes autónomos de operaciones con fuertes controles—se incorpore a herramientas comerciales y eleve las expectativas internas para sistemas auto reparables.</li>
-<li><strong>2026-05-04</strong>: <a href="https://theartofcto.com/daily-sync/2026-05-04-daily-sync">El Pentágono reafirma su apuesta por un stack de IA multi-vendedor</a> — El Departamento de Defensa de EE. UU. ha cerrado nuevos acuerdos con Nvidia, Microsoft y AWS para desplegar IA en redes clasificadas, diversificándose explícitamente para no depender de un solo proveedor de modelos tras una disputa pública con Anthropic. Esta es una señal fuerte de que incluso los compradores más sensibles en seguridad ahora ven la IA como infraestructura estratégica que debe ser multi-fuente y gobernada por políticas. Se espera que los equipos de compras, cumplimiento y seguridad en grandes empresas reflejen esta postura en los próximos 12–18 meses.</li>
-<li><strong>2026-05-04</strong>: <a href="https://theartofcto.com/daily-sync/2026-05-04-daily-sync">Coatue reúne sigilosamente terrenos para centros de datos cerca de fuentes de energía</a> — Coatue está construyendo una iniciativa para comprar terrenos cerca de grandes fuentes de energía, aparentemente con la vista puesta en futuros campus de centros de datos, posiblemente vinculados a Anthropic. La limitación en infra de IA está desplazándose de capital y chips a energía y permisos; los jugadores financieros ahora están tratando terrenos cerca de fuentes de energía como una clase estratégica de activos. Si planeas una expansión importante de IA o GPU, el verdadero cuello de botella puede ser el acceso a la red eléctrica más que los SKUs en la nube.</li>
-<li><strong>2026-05-04</strong>: <a href="https://theartofcto.com/daily-sync/2026-05-04-daily-sync">El capital semilla se concentra aún más en el área de la Bahía para IA</a> — Nuevos datos de Crunchbase muestran que el área de la Bahía incrementó su parte de acuerdos y dólares semilla en EE. UU. en 2025, aunque las startups siguen geográficamente dispersas. Más de la mitad de los dólares semilla ahora van a rondas de más de $10M, y una gran fracción de los nuevos unicornios están enfocados en IA. Esta bifurcación—mega-semillas para unos pocos núcleos centrales, financiamiento más delgado en otros lugares—moldeará dónde se concentran talento senior, asociaciones de infraestructura y ecosistemas.</li>
+<li><strong>2026-05-04</strong>: <a href="https://theartofcto.com/daily-sync/2026-05-04-daily-sync">Cloudflare construye infraestructura global LLM</a> — Cloudflare anunció una nueva infraestructura para ejecutar modelos de lenguaje grandes a través de su red global de borde, separando el procesamiento de entrada y la generación de salida en sistemas optimizados de manera diferente. Combinado con su nuevo servicio de Memoria de Agentes, Cloudflare se está posicionando como un sustrato de baja latencia y costo eficiente para agentes de IA que viven cerca de usuarios y datos. Para CTOs, esta es otra alternativa creíble a los hyperscalers para IA sensible a la latencia, especialmente donde la residencia de datos y los costos de salida son problemáticos.</li>
+<li><strong>2026-05-04</strong>: <a href="https://theartofcto.com/daily-sync/2026-05-04-daily-sync">Meta automatiza la sintonización de infraestructura con agentes AI unificados</a> — Meta detalló una plataforma de producción donde agentes de IA detectan y remedian automáticamente problemas de rendimiento en su infraestructura global. Esto no es solo detección de anomalías; los agentes cierran el ciclo con planificación de capacidad y remediación en vivo, convirtiéndose efectivamente en una capa SRE de IA a gran escala. Espere que este patrón, agentes operativos autónomos con protecciones fuertes, se infiltre en herramientas comerciales y eleve las expectativas internas para sistemas de autocuración.</li>
+<li><strong>2026-05-04</strong>: <a href="https://theartofcto.com/daily-sync/2026-05-04-daily-sync">El Pentágono refuerza su pila AI multimarca</a> — El Departamento de Defensa de EE.UU. firmó nuevos contratos con Nvidia, Microsoft y AWS para desplegar IA en redes clasificadas, diversificando explícitamente para no depender de un solo proveedor de modelos tras una disputa pública con Anthropic. Esta es una señal fuerte de que incluso los compradores más sensibles a la seguridad ahora ven la IA como infraestructura estratégica que debe ser multisourcing y gobernada por políticas. Espere que equipos de compras, cumplimiento y seguridad en grandes empresas reflejen esta postura en los próximos 12–18 meses.</li>
+<li><strong>2026-05-04</strong>: <a href="https://theartofcto.com/daily-sync/2026-05-04-daily-sync">Coatue ensambla silenciosamente terrenos para centros de datos cerca de fuentes de energía</a> — Coatue está construyendo una empresa para comprar terrenos cercanos a fuentes grandes de energía, supuestamente pensando en futuros campus de centros de datos, posiblemente relacionados con Anthropic. La limitación en infraestructura de IA está cambiando de capital y chips a energía y permisos; los jugadores financieros ahora consideran la tierra cercana a la energía como una clase de activo estratégica. Si planeas una gran expansión de IA o GPU, el verdadero cuello de botella puede ser el acceso a la red eléctrica más que SKU en la nube.</li>
+<li><strong>2026-05-04</strong>: <a href="https://theartofcto.com/daily-sync/2026-05-04-daily-sync">El capital semilla se concentra aún más en la IA del Área de la Bahía</a> — Nuevos datos de Crunchbase muestran que el Área de la Bahía aumentó su participación de acuerdos e inversión semilla de EE.UU. en 2025, aunque las startups siguen dispersas geográficamente. Más de la mitad del capital semilla ahora va a rondas de más de $10M, y una gran parte de los nuevos unicornios están enfocados en IA. Esta bifurcación — mega semillas para unos pocos hubs centrales, financiamiento más delgado en otros lugares — configurará dónde se concentran talento senior, alianzas de infraestructura y ecosistemas.</li>
 </ul>
 <hr />
 <h3 id="2-genai">2) GenAI<a class="headerlink" href="#2-genai" title="Permanent link">&para;</a></h3>
-<h4 id="los-cambios-de-modelo-necesitan-una-verificacion-de-lanzamiento-mas-rigurosa">Los cambios de modelo necesitan una verificación de lanzamiento más rigurosa<a class="headerlink" href="#los-cambios-de-modelo-necesitan-una-verificacion-de-lanzamiento-mas-rigurosa" title="Permanent link">&para;</a></h4>
-<div class="admonition note">
+<h4 id="los-cambios-de-modelo-requieren-un-control-de-lanzamiento-mas-estricto">Los cambios de modelo requieren un control de lanzamiento más estricto<a class="headerlink" href="#los-cambios-de-modelo-requieren-un-control-de-lanzamiento-mas-estricto" title="Permanent link">&para;</a></h4>
+<div class="admonition nota">
 <p class="admonition-title">Implicación Arquitectónica</p>
 <ul>
-<li>[REL] Fiabilidad y Evaluación — Debo tratar un intercambio de modelo como cualquier otro riesgo de regresión y volver a correr el paquete de evaluación antes del despliegue.</li>
-<li>[AGENT] Agentes y Orquestación — Mantener el comportamiento del agente bloqueado detrás de flags cuando el comportamiento del modelo empiece a variar.</li>
-<li>[GOV] Seguridad, Privacidad y Gobernanza — Cambios en prompts y políticas que afectan decisiones deben pasar por aprobación, no ediciones silenciosas.</li>
+<li>[REL] Confiabilidad y Evaluación — Debería tratar un cambio de modelo como cualquier otro riesgo de regresión y volver a ejecutar el paquete de evaluación antes del despliegue.</li>
+<li>[AGENT] Agentes y Orquestación — Mantener el comportamiento del agente detrás de flags cuando el comportamiento del modelo comience a variar.</li>
+<li>[GOV] Seguridad, Privacidad y Gobernanza — Los cambios de prompt y política que afecten decisiones deben pasar por aprobación, no ediciones silenciosas.</li>
 </ul>
 </div>
-<h4 id="las-reglas-de-recuperacion-y-costo-deben-mantenerse-visibles">Las reglas de recuperación y costo deben mantenerse visibles<a class="headerlink" href="#las-reglas-de-recuperacion-y-costo-deben-mantenerse-visibles" title="Permanent link">&para;</a></h4>
-<div class="admonition note">
+<h4 id="las-reglas-de-recuperacion-y-costos-deben-permanecer-visibles">Las reglas de recuperación y costos deben permanecer visibles<a class="headerlink" href="#las-reglas-de-recuperacion-y-costos-deben-permanecer-visibles" title="Permanent link">&para;</a></h4>
+<div class="admonition nota">
 <p class="admonition-title">Implicación Arquitectónica</p>
 <ul>
-<li>[DATA] Datos, RAG y Conocimiento — Quiero verificaciones de frescura separadas de la síntesis de respuestas para que el contexto obsoleto sea obvio.</li>
-<li>[COST] Infraestructura, Hardware y Costos — Rastrear el presupuesto de tokens y latencia por flujo de trabajo antes de que el uso se expanda silenciosamente.</li>
-<li>[OPS] Producto y Modelo Operativo — Un responsable debería revisar fallos, desviaciones y alcance de despliegue cada semana.</li>
-</ul>
-</div>
-<hr />
-<h3 id="3-ia-agentica">3) IA Agéntica<a class="headerlink" href="#3-ia-agentica" title="Permanent link">&para;</a></h3>
-<h4 id="los-permisos-de-agentes-necesitan-un-cuadro-mas-pequeno">Los permisos de agentes necesitan un cuadro más pequeño<a class="headerlink" href="#los-permisos-de-agentes-necesitan-un-cuadro-mas-pequeno" title="Permanent link">&para;</a></h4>
-<div class="admonition note">
-<p class="admonition-title">Implicación Arquitectónica</p>
-<ul>
-<li>[AGENT] Agentes y Orquestación — Comenzar con una lista permitida de herramientas más pequeña y forzar escalada para cualquier cosa difícil de deshacer.</li>
-<li>[REL] Fiabilidad y Evaluación — Las fallas en múltiples pasos necesitan trazas reproducibles, de lo contrario la depuración se vuelve conjetura.</li>
-<li>[GOV] Seguridad, Privacidad y Gobernanza — Registrar quién aprobó una acción autónoma y qué contexto tenía el sistema en ese punto.</li>
-</ul>
-</div>
-<h4 id="el-manejo-del-estado-es-donde-aparece-el-dolor-en-produccion">El manejo del estado es donde aparece el dolor en producción<a class="headerlink" href="#el-manejo-del-estado-es-donde-aparece-el-dolor-en-produccion" title="Permanent link">&para;</a></h4>
-<div class="admonition note">
-<p class="admonition-title">Implicación Arquitectónica</p>
-<ul>
-<li>[DATA] Datos, RAG y Conocimiento — Las escrituras en memoria deben mantenerse acotadas, revisadas y reversibles para evitar contaminación del contexto.</li>
-<li>[COST] Infraestructura, Hardware y Costos — Limitar la profundidad de reintentos y la expansión de llamadas a herramientas antes de que las tareas largas se vuelvan caras y extrañas.</li>
-<li>[OPS] Producto y Modelo Operativo — Alguien debe ser responsable de los runbooks para tareas atascadas, memoria mala y tormentas de reintentos.</li>
+<li>[DATA] Datos, RAG y Conocimiento — Quiero que las verificaciones de frescura estén separadas de la síntesis de respuestas para que el contexto obsoleto sea obvio.</li>
+<li>[COST] Infraestructura, Hardware y Costos — Rastrear presupuesto de tokens y latencia por flujo de trabajo antes de que el uso se expanda silenciosamente.</li>
+<li>[OPS] Producto y Modelo Operativo — Un responsable debe revisar fallos, desviaciones y el alcance del despliegue cada semana.</li>
 </ul>
 </div>
 <hr />
-<h3 id="4-radar-de-ia">4) Radar de IA<a class="headerlink" href="#4-radar-de-ia" title="Permanent link">&para;</a></h3>
-<h4 id="una-nueva-capacidad-debe-entrar-primero-a-traves-de-un-piloto-pequeno">Una nueva capacidad debe entrar primero a través de un piloto pequeño<a class="headerlink" href="#una-nueva-capacidad-debe-entrar-primero-a-traves-de-un-piloto-pequeno" title="Permanent link">&para;</a></h4>
-<div class="admonition note">
+<h3 id="3-ia-agente">3) IA Agente<a class="headerlink" href="#3-ia-agente" title="Permanent link">&para;</a></h3>
+<h4 id="los-permisos-de-agentes-necesitan-un-alcance-mas-pequeno">Los permisos de agentes necesitan un alcance más pequeño<a class="headerlink" href="#los-permisos-de-agentes-necesitan-un-alcance-mas-pequeno" title="Permanent link">&para;</a></h4>
+<div class="admonition nota">
 <p class="admonition-title">Implicación Arquitectónica</p>
 <ul>
-<li>[REL] Fiabilidad y Evaluación — Comenzar con una suite de evaluación estrecha ligada a un flujo de trabajo antes de abrir la puerta más ampliamente.</li>
-<li>[GOV] Seguridad, Privacidad y Gobernanza — Revisar las rutas de exposición de datos antes de habilitar algo nuevo en ambientes compartidos.</li>
-<li>[COST] Infraestructura, Hardware y Costos — Poner el piloto detrás de límites de uso para que el entusiasmo no se convierta en gasto sorpresa.</li>
+<li>[AGENT] Agentes y Orquestación — Empezar con una lista pequeña de herramientas permitidas y forzar escalamiento para cualquier acción difícil de deshacer.</li>
+<li>[REL] Confiabilidad y Evaluación — Fallos de múltiples pasos necesitan trazas reproducibles, de lo contrario la depuración se vuelve conjetura.</li>
+<li>[GOV] Seguridad, Privacidad y Gobernanza — Registrar quién aprobó una acción autónoma y qué contexto tenía el sistema en ese momento.</li>
+</ul>
+</div>
+<h4 id="el-manejo-del-estado-es-donde-aparecen-los-dolores-en-produccion">El manejo del estado es donde aparecen los dolores en producción<a class="headerlink" href="#el-manejo-del-estado-es-donde-aparecen-los-dolores-en-produccion" title="Permanent link">&para;</a></h4>
+<div class="admonition nota">
+<p class="admonition-title">Implicación Arquitectónica</p>
+<ul>
+<li>[DATA] Datos, RAG y Conocimiento — Las escrituras en memoria deben estar acotadas, revisadas y ser reversibles para que el contexto no se contamine.</li>
+<li>[COST] Infraestructura, Hardware y Costos — Limitar la profundidad de reintentos y la ramificación de llamadas a herramientas antes de que tareas largas se vuelvan caras y raras.</li>
+<li>[OPS] Producto y Modelo Operativo — Alguien debe encargarse de los runbooks para tareas atascadas, memoria mala y tormentas de reintentos.</li>
+</ul>
+</div>
+<hr />
+<h3 id="4-radar-ai">4) Radar AI<a class="headerlink" href="#4-radar-ai" title="Permanent link">&para;</a></h3>
+<h4 id="nuevas-capacidades-deben-entrar-primero-por-un-piloto-pequeno">Nuevas capacidades deben entrar primero por un piloto pequeño<a class="headerlink" href="#nuevas-capacidades-deben-entrar-primero-por-un-piloto-pequeno" title="Permanent link">&para;</a></h4>
+<div class="admonition nota">
+<p class="admonition-title">Implicación Arquitectónica</p>
+<ul>
+<li>[REL] Confiabilidad y Evaluación — Empezar con un conjunto de evaluación estrecho vinculado a un flujo de trabajo antes de abrir la puerta más ampliamente.</li>
+<li>[GOV] Seguridad, Privacidad y Gobernanza — Revisar rutas de exposición de datos antes de habilitar algo nuevo en ambientes compartidos.</li>
+<li>[COST] Infraestructura, Hardware y Costos — Colocar el piloto detrás de límites de uso para que la emoción no se convierta en gastos sorpresa.</li>
 </ul>
 </div>
 <hr />
 <h3 id="5-resumen-para-cto">5) Resumen para CTO<a class="headerlink" href="#5-resumen-para-cto" title="Permanent link">&para;</a></h3>
 <ul>
-<li>No ampliar la autonomía antes de que la puerta de evaluación sea aburrida y confiable.</li>
-<li>Mantener los permisos de herramientas y alcance de memoria más estrictos que lo que quiere la demo.</li>
+<li>No expandir la autonomía antes de que la puerta de evaluación sea aburrida y confiable.</li>
+<li>Mantener permisos de herramientas y el alcance de memoria más estrictos de lo que la demo desea.</li>
 <li>Reintentos, trazas y caminos de aprobación son arquitectura, no trabajo de limpieza.</li>
 </ul>
 <hr />
 <h3 id="6-notas-de-rohit">6) Notas de Rohit<a class="headerlink" href="#6-notas-de-rohit" title="Permanent link">&para;</a></h3>
 <ul>
-<li>El modelo derivó nuevamente en estructura. Buen recordatorio de que contenido y estructura no deberían depender del mismo paso.</li>
-<li>El patrón más seguro es obvio ahora: dejar que el modelo encuentre señales, luego que el código bloquee la forma de la página.</li>
+<li>El modelo derivó nuevamente en la estructura. Buen recordatorio de que contenido y diseño no deberían depender del mismo paso.</li>
+<li>El patrón más seguro es obvio ahora: dejar que el modelo encuentre señales y que luego el código fije la forma de la página.</li>
 </ul>
 <hr />
 <h3 id="7-ejercicio-de-diseno">7) Ejercicio de Diseño<a class="headerlink" href="#7-ejercicio-de-diseno" title="Permanent link">&para;</a></h3>
-<p><strong>Escenario:</strong> Un equipo de plataforma quiere aprobaciones dirigidas por agentes en un flujo de trabajo de entrega interna este trimestre.</p>
+<p><strong>Escenario:</strong> Un equipo de plataforma quiere aprobaciones impulsadas por agentes en un flujo de entrega interno este trimestre.</p>
 <p><strong>Restricciones:</strong>
 - Los controles de auditoría existentes no pueden debilitarse
 - El costo debe mantenerse dentro del presupuesto actual de la plataforma
-- Las fallas deben tener una vía manual de respaldo en minutos</p>
+- Las fallas deben caer a un camino manual en minutos</p>
 <p><strong>Preguntas guía:</strong>
-- ¿Qué acciones permanecen de solo lectura por defecto?
-- ¿Dónde sigue siendo obligatoria la aprobación humana?
+- ¿Qué acciones permanecen como solo lectura por defecto?
+- ¿Dónde es aún obligatoria la aprobación humana?
 - ¿Cómo se limitarán y observarán los reintentos?
-- ¿Qué escrituras en memoria están permitidas y son reversibles?
-- ¿Qué evaluaciones deciden si el piloto se amplía?</p>
+- ¿Qué escrituras de memoria están permitidas y son reversibles?
+- ¿Qué evaluaciones deciden si el piloto se expande?</p>
 <hr />
 <!-- AII_TODAY_START -->
 <p><a id="aii-today"></a></p>
 <h3 id="indice-de-implicaciones-arquitectonicas-hoy">Índice de Implicaciones Arquitectónicas (Hoy)<a class="headerlink" href="#indice-de-implicaciones-arquitectonicas-hoy" title="Permanent link">&para;</a></h3>
-<!-- 3–5 bullets. Each must start with a theme key + human label. One line each. Must include Component + Decision. -->
+<!-- 3–5 viñetas. Cada una debe comenzar con una clave temática + etiqueta humana. Una línea cada una. Debe incluir Componente + Decisión. -->
 
 <ul>
-<li>[REL] Fiabilidad y Evaluación — Componente: puerta de evaluación; Decisión: bloquear despliegue hasta que las verificaciones de regresión pasen después de cambios en modelo o herramientas.</li>
-<li>[AGENT] Agentes y Orquestación — Componente: política de herramientas; Decisión: mantener permisos estrechos y forzar escalada para acciones sensibles.</li>
+<li>[REL] Confiabilidad y Evaluación — Componente: puerta de evaluación; Decisión: bloquear despliegue hasta que las comprobaciones de regresión pasen tras cambios de modelo o herramientas.</li>
+<li>[AGENT] Agentes y Orquestación — Componente: política de herramientas; Decisión: mantener permisos estrechos y forzar escalamiento para acciones sensibles.</li>
 <li>[DATA] Datos, RAG y Conocimiento — Componente: capa de memoria; Decisión: acotar escrituras y hacerlas reversibles antes de uso prolongado.</li>
 <li>[GOV] Seguridad, Privacidad y Gobernanza — Componente: auditoría de aprobación; Decisión: capturar actor, contexto y camino de decisión para pasos autónomos.</li>
 </ul>
