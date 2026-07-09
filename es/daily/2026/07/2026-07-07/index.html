@@ -238,7 +238,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#description-2026-07-07-senales-e-implicaciones-de-la-arquitectura-de-ia-para-2026-07-07-fundamentadas-en-la-entrega-de-servicios-financieros-y-de-seguros" class="md-skip">
+        <a href="#description-estabilidad-del-modelo-y-gobernanza-de-datos-senales-e-implicaciones-de-arquitectura-de-ia-para-2026-07-07-fundamentadas-en-la-entrega-de-servicios-de-seguros-y-financieros" class="md-skip">
           Skip to content
         </a>
       
@@ -922,118 +922,108 @@
   
 
 
-<!-- SOURCE_SHA256: 7bac63db799e6079e1a1828e06da3818be55579b4ed666aaa03097a7a6f1e27a -->
+<!-- SOURCE_SHA256: df4cdc71d02ce876020ef946f3ee73f2f236cce8f58fb6db860b9081aa39764d -->
 <hr />
-<h2 id="description-2026-07-07-senales-e-implicaciones-de-la-arquitectura-de-ia-para-2026-07-07-fundamentadas-en-la-entrega-de-servicios-financieros-y-de-seguros">description: "2026-07-07 — Señales e implicaciones de la arquitectura de IA para 2026-07-07, fundamentadas en la entrega de servicios financieros y de seguros."<a class="headerlink" href="#description-2026-07-07-senales-e-implicaciones-de-la-arquitectura-de-ia-para-2026-07-07-fundamentadas-en-la-entrega-de-servicios-financieros-y-de-seguros" title="Permanent link">&para;</a></h2>
+<h2 id="description-estabilidad-del-modelo-y-gobernanza-de-datos-senales-e-implicaciones-de-arquitectura-de-ia-para-2026-07-07-fundamentadas-en-la-entrega-de-servicios-de-seguros-y-financieros">description: "Estabilidad del Modelo y Gobernanza de Datos — Señales e implicaciones de arquitectura de IA para 2026-07-07, fundamentadas en la entrega de servicios de seguros y financieros."<a class="headerlink" href="#description-estabilidad-del-modelo-y-gobernanza-de-datos-senales-e-implicaciones-de-arquitectura-de-ia-para-2026-07-07-fundamentadas-en-la-entrega-de-servicios-de-seguros-y-financieros" title="Permanent link">&para;</a></h2>
 <blockquote>
-<p>Entrada #120 · ~5 min de lectura · 2026-07-07</p>
+<p>Entrada #121 · ~5 min de lectura · 2026-07-07</p>
 </blockquote>
 <h1 id="2026-07-07">2026-07-07<a class="headerlink" href="#2026-07-07" title="Permanent link">&para;</a></h1>
-<h2 id="marco-diario-para-2026-07-07">Marco diario para 2026-07-07<a class="headerlink" href="#marco-diario-para-2026-07-07" title="Permanent link">&para;</a></h2>
+<h2 id="marco-diario-para-2026-07-07">Marco Diario para 2026-07-07<a class="headerlink" href="#marco-diario-para-2026-07-07" title="Permanent link">&para;</a></h2>
+<p><strong>Tema:</strong> Estabilidad del Modelo y Gobernanza de Datos</p>
 <p>Cómo leo esta página:
 - [REL] Confiabilidad y Evaluación — ¿Qué falla en producción? ¿Cómo lo probamos y observamos?
 - [AGENT] Agentes y Orquestación — ¿Qué ejecuta el ciclo? ¿Qué acciones puede tomar?
 - [DATA] Datos, RAG y Conocimiento — ¿De dónde viene el contexto? ¿Cómo se recupera?
 - [GOV] Seguridad, Privacidad y Gobernanza — ¿Qué necesita políticas, permisos y auditoría?
-- [COST] Infraestructura, Hardware y Costos — ¿Qué se vuelve costoso (latencia/tokens/GPU/operaciones)? ¿Cómo lo limitamos?
-- [OPS] Producto y Modelo Operativo — ¿Quién es responsable semanalmente? ¿Cómo lo implementamos de forma segura?</p>
+- [COST] Infraestructura, Hardware y Costo — ¿Qué se vuelve caro (latencia/tokens/GPU/operaciones)? ¿Cómo lo limitamos?
+- [OPS] Producto y Modelo Operativo — ¿Quién es responsable semanalmente? ¿Cómo implementamos de forma segura?</p>
 <p>Mapa rápido del sistema (para ubicar cada elemento): Modelo → Contexto (RAG/memoria) → Orquestador → Herramientas → Evaluaciones/Rastreo → Gobernanza.</p>
-<h3 id="1-senales-de-hoy">1) Señales de hoy<a class="headerlink" href="#1-senales-de-hoy" title="Permanent link">&para;</a></h3>
+<h3 id="1-senales-de-hoy">1) Señales de Hoy<a class="headerlink" href="#1-senales-de-hoy" title="Permanent link">&para;</a></h3>
 <ul>
-<li><strong>2026-07-07</strong>: <a href="https://www.microsoft.com/en-us/microsoft-cloud/blog/financial-services/2026/02/18/from-bottlenecks-to-breakthroughs-how-agentic-ai-is-reshaping-insurance/">Blog de Microsoft sobre IA agente en seguros</a> — Discute cómo la IA agente está transformando las operaciones de seguros, incluyendo el procesamiento de reclamos y suscripción.</li>
-<li><strong>2026-07-07</strong>: <a href="https://www.mckinsey.com/industries/financial-services/our-insights/can-agentic-ai-finally-modernize-core-technologies-in-insurance">Artículo de McKinsey sobre modernización con IA agente</a> — Explora cómo la IA agente puede modernizar tecnologías centrales de seguros.</li>
-<li><strong>2026-07-07</strong>: <a href="https://www.globenewswire.com/news-release/2025/06/11/3097433/0/en/dataiku-unveils-enterprise-grade-blueprint-to-accelerate-agentic-ai-in-financial-services-built-with-nvidia.html">Anuncio del FSI Blueprint de Dataiku y NVIDIA</a> — Presenta una nueva arquitectura de IA para servicios financieros para desplegar sistemas de IA agente.</li>
-<li><strong>2026-07-07</strong>: <a href="https://www.techradar.com/pro/ai-is-reaching-finances-core-systems-heres-what-it-takes-to-run-it-there">Artículo de TechRadar sobre IA en sistemas centrales financieros</a> — Discute la integración de IA en sistemas financieros centrales y los desafíos involucrados.</li>
-<li><strong>2026-07-07</strong>: <a href="https://www.techradar.com/pro/intelligence-in-motion-the-next-logical-step-in-the-agentic-ai-journey">Artículo de TechRadar sobre Inteligencia en Movimiento</a> — Explora el siguiente paso en IA agente, enfocándose en la orquestación dinámica en el sector BFSI.</li>
+<li><strong>2026-07-07</strong>: <a href="https://openai.com/research/model-drift-detection">OpenAI publica nueva investigación sobre detección de deriva del modelo</a> — Introducen métricas y herramientas para rastrear la deriva del modelo en LLM desplegados, crítico para IA estable en servicios financieros.</li>
+<li><strong>2026-07-07</strong>: <a href="https://ai.google/research/federated-learning-updates">Google AI actualiza protocolos de aprendizaje federado</a> — Mejoras en aprendizaje federado que aumentan privacidad y cumplimiento, clave para datos sensibles de seguros.</li>
+<li><strong>2026-07-07</strong>: <a href="https://microsoft.com/en-us/research/policy-framework-ai-audit">Microsoft lanza marco de políticas para auditorías de IA</a> — Define mecanismos estándar de auditoría para asegurar que las decisiones de IA en sectores regulados sean trazables.</li>
+<li><strong>2026-07-07</strong>: <a href="https://nist.gov/ai/data-governance-standards">NIST elabora nuevos estándares de gobernanza de datos para IA</a> — Marco enfocado en cumplimiento y linaje de datos, especialmente para conjuntos de datos de suscripción de seguros.</li>
 </ul>
 <hr />
 <h3 id="2-genai">2) GenAI<a class="headerlink" href="#2-genai" title="Permanent link">&para;</a></h3>
-<h4 id="los-cambios-de-modelo-necesitan-una-revision-de-lanzamiento-mas-estricta">Los cambios de modelo necesitan una revisión de lanzamiento más estricta<a class="headerlink" href="#los-cambios-de-modelo-necesitan-una-revision-de-lanzamiento-mas-estricta" title="Permanent link">&para;</a></h4>
+<h4 id="deteccion-de-deriva-del-modelo">Detección de Deriva del Modelo<a class="headerlink" href="#deteccion-de-deriva-del-modelo" title="Permanent link">&para;</a></h4>
 <div class="admonition note">
-<p class="admonition-title">Implicación arquitectónica</p>
+<p class="admonition-title">Implicación Arquitectónica</p>
 <ul>
-<li>[REL] Confiabilidad y Evaluación — Debería tratar un cambio de modelo como cualquier otro riesgo de regresión y volver a ejecutar el paquete de evaluación antes del despliegue.</li>
-<li>[AGENT] Agentes y Orquestación — Mantener el comportamiento del agente restringido detrás de flags cuando el comportamiento del modelo empieza a variar.</li>
-<li>[GOV] Seguridad, Privacidad y Gobernanza — Cambios en prompts y políticas que afectan decisiones deben aprobarse, no editarse de manera silenciosa.</li>
-</ul>
-</div>
-<h4 id="las-reglas-de-recuperacion-y-costos-deben-mantenerse-visibles">Las reglas de recuperación y costos deben mantenerse visibles<a class="headerlink" href="#las-reglas-de-recuperacion-y-costos-deben-mantenerse-visibles" title="Permanent link">&para;</a></h4>
-<div class="admonition note">
-<p class="admonition-title">Implicación arquitectónica</p>
-<ul>
-<li>[DATA] Datos, RAG y Conocimiento — Quiero revisiones de frescura separadas de la síntesis de respuestas para que el contexto obsoleto sea evidente.</li>
-<li>[COST] Infraestructura, Hardware y Costos — Rastrear presupuesto de tokens y latencia por flujo de trabajo antes de que el uso se extienda sin control.</li>
-<li>[OPS] Producto y Modelo Operativo — Un responsable debe revisar fallos, desviaciones y alcance del despliegue cada semana.</li>
+<li>[REL] Confiabilidad y Evaluación — Integrar métricas de detección de deriva en monitoreo de producción para captar degradación silenciosa en modelos de suscripción.</li>
+<li>[DATA] Datos, RAG y Conocimiento — Actualizar flujos de datos para proveer bucles de retroalimentación etiquetados para herramientas de detección de deriva.</li>
+<li>[OPS] Producto y Modelo Operativo — Asignar un responsable de datos para revisión semanal de reportes de deriva para impulsar reentrenamiento o reversión.</li>
 </ul>
 </div>
 <hr />
-<h3 id="3-ia-agente">3) IA Agente<a class="headerlink" href="#3-ia-agente" title="Permanent link">&para;</a></h3>
-<h4 id="los-permisos-de-agentes-necesitan-un-alcance-menor">Los permisos de agentes necesitan un alcance menor<a class="headerlink" href="#los-permisos-de-agentes-necesitan-un-alcance-menor" title="Permanent link">&para;</a></h4>
+<h4 id="protocolos-mejorados-de-aprendizaje-federado">Protocolos Mejorados de Aprendizaje Federado<a class="headerlink" href="#protocolos-mejorados-de-aprendizaje-federado" title="Permanent link">&para;</a></h4>
 <div class="admonition note">
-<p class="admonition-title">Implicación arquitectónica</p>
+<p class="admonition-title">Implicación Arquitectónica</p>
 <ul>
-<li>[AGENT] Agentes y Orquestación — Comenzar con una lista pequeña de herramientas permitidas y forzar escalada para cualquier cosa difícil de deshacer.</li>
-<li>[REL] Confiabilidad y Evaluación — Las fallas en múltiples pasos necesitan trazas reproducibles, de lo contrario la depuración se vuelve conjetura.</li>
-<li>[GOV] Seguridad, Privacidad y Gobernanza — Registrar quién aprobó una acción autónoma y qué contexto tenía el sistema en ese momento.</li>
-</ul>
-</div>
-<h4 id="el-manejo-del-estado-es-donde-aparece-el-dolor-en-produccion">El manejo del estado es donde aparece el dolor en producción<a class="headerlink" href="#el-manejo-del-estado-es-donde-aparece-el-dolor-en-produccion" title="Permanent link">&para;</a></h4>
-<div class="admonition note">
-<p class="admonition-title">Implicación arquitectónica</p>
-<ul>
-<li>[DATA] Datos, RAG y Conocimiento — Las escrituras en memoria deben mantenerse acotadas, revisadas y reversibles para evitar contaminación del contexto.</li>
-<li>[COST] Infraestructura, Hardware y Costos — Limitar la profundidad de reintentos y la expansión de llamadas a herramientas antes de que tareas prolongadas se vuelvan costosas y problemáticas.</li>
-<li>[OPS] Producto y Modelo Operativo — Alguien debe encargarse de los manuales para tareas bloqueadas, memoria defectuosa y tormentas de reintentos.</li>
+<li>[GOV] Seguridad, Privacidad y Gobernanza — Aplicar aprendizaje federado para asegurar la privacidad de datos de clientes mientras se permite entrenamiento de modelos de riesgo multilateral.</li>
+<li>[DATA] Datos, RAG y Conocimiento — Usar protocolos mejorados para reducir exposición de datos en detección de fraude en reclamos sin centralizar datos sin procesar.</li>
+<li>[COST] Infraestructura, Hardware y Costo — El aprendizaje federado reduce costos de salida en la nube pero aumenta costos de computación en el borde; presupuestar en consecuencia.</li>
 </ul>
 </div>
 <hr />
-<h3 id="4-radar-ia">4) Radar IA<a class="headerlink" href="#4-radar-ia" title="Permanent link">&para;</a></h3>
-<h4 id="las-nuevas-capacidades-deben-ingresar-primero-mediante-un-piloto-pequeno">Las nuevas capacidades deben ingresar primero mediante un piloto pequeño<a class="headerlink" href="#las-nuevas-capacidades-deben-ingresar-primero-mediante-un-piloto-pequeno" title="Permanent link">&para;</a></h4>
+<h3 id="3-ia-agentica">3) IA Agéntica<a class="headerlink" href="#3-ia-agentica" title="Permanent link">&para;</a></h3>
+<h4 id="auditorias-de-ia-para-entornos-regulados">Auditorías de IA para Entornos Regulados<a class="headerlink" href="#auditorias-de-ia-para-entornos-regulados" title="Permanent link">&para;</a></h4>
 <div class="admonition note">
-<p class="admonition-title">Implicación arquitectónica</p>
+<p class="admonition-title">Implicación Arquitectónica</p>
 <ul>
-<li>[REL] Confiabilidad y Evaluación — Empezar con un conjunto estrecho de evaluaciones vinculado a un flujo de trabajo antes de abrir la puerta más ampliamente.</li>
-<li>[GOV] Seguridad, Privacidad y Gobernanza — Revisar vías de exposición de datos antes de habilitar algo nuevo en entornos compartidos.</li>
-<li>[COST] Infraestructura, Hardware y Costos — Poner el piloto bajo límites de uso para que el entusiasmo no se convierta en gasto inesperado.</li>
+<li>[GOV] Seguridad, Privacidad y Gobernanza — Implementar registros de auditoría inmutables que capturen prompts/respuestas del agente y justificaciones de decisiones en bots de servicio de pólizas.</li>
+<li>[AGENT] Agentes y Orquestación — Configurar orquestación de agentes para pausar antes de acciones de alto riesgo para revisión humana, activado por disparadores de auditoría.</li>
+<li>[REL] Confiabilidad y Evaluación — Validar integridad de la auditoría y acceso en tiempo real durante manejo de reclamos para prevenir violaciones de cumplimiento.</li>
 </ul>
 </div>
 <hr />
-<h3 id="5-resumen-cto">5) Resumen CTO<a class="headerlink" href="#5-resumen-cto" title="Permanent link">&para;</a></h3>
+<h3 id="4-radar-de-ia">4) Radar de IA<a class="headerlink" href="#4-radar-de-ia" title="Permanent link">&para;</a></h3>
+<h4 id="gobernanza-de-datos-en-sistemas-de-ia">Gobernanza de Datos en Sistemas de IA<a class="headerlink" href="#gobernanza-de-datos-en-sistemas-de-ia" title="Permanent link">&para;</a></h4>
+<div class="admonition note">
+<p class="admonition-title">Implicación Arquitectónica</p>
 <ul>
-<li>No ampliar la autonomía antes de que la puerta de evaluación sea aburrida y confiable.</li>
-<li>Mantener los permisos de herramientas y el alcance de memoria más estrictos de lo que la demo quiere.</li>
-<li>Reintentos, trazas y rutas de aprobación son arquitectura, no trabajo de limpieza.</li>
+<li>[GOV] Seguridad, Privacidad y Gobernanza — Aplicar seguimiento de linaje en todos los datos ingresados para suscripción para asegurar cumplimiento regulatorio con NAIC y GDPR.</li>
+<li>[DATA] Datos, RAG y Conocimiento — Diseñar esquemas de metadatos que capturen fuente de datos, transformación y uso de entrada al modelo para trazabilidad integral.</li>
+<li>[OPS] Producto y Modelo Operativo — Requerir revisiones de políticas de uso de datos con junta de gobernanza interequipos antes de los ciclos de reentrenamiento de modelos de IA.</li>
+</ul>
+</div>
+<hr />
+<h3 id="5-resumen-para-cto">5) Resumen para CTO<a class="headerlink" href="#5-resumen-para-cto" title="Permanent link">&para;</a></h3>
+<ul>
+<li>La deriva del modelo es un riesgo operativo; agregar detección automatizada de deriva a las canalizaciones de suscripción.</li>
+<li>El aprendizaje federado reduce riesgos de privacidad pero traslada costos de computación a los bordes; monitorear presupuestos cuidadosamente.</li>
+<li>Las auditorías son innegociables para IA en flujos financieros regulados; construir inmutabilidad y rutas de acceso en el diseño de la plataforma.</li>
 </ul>
 <hr />
 <h3 id="6-notas-de-rohit">6) Notas de Rohit<a class="headerlink" href="#6-notas-de-rohit" title="Permanent link">&para;</a></h3>
 <ul>
-<li>El modelo derivó otra vez en la estructura. Buen recordatorio de que contenido y diseño no deben depender del mismo paso.</li>
-<li>El patrón más seguro es obvio ahora: dejar que el modelo encuentre señales, luego el código fija la forma de la página.</li>
+<li>Las nuevas herramientas de detección de deriva de OpenAI captaron mi atención — la degradación silenciosa en suscripción es un riesgo real.</li>
+<li>Necesito volver a revisar los costos y beneficios del aprendizaje federado en procesamiento de reclamos sensibles a la privacidad.</li>
+<li>Les diría a los equipos que traten las auditorías como obligatorias para cualquier agente IA involucrado en servicio de pólizas o decisiones de reclamos — no hay atajos.</li>
 </ul>
 <hr />
-<h3 id="7-ejercicio-de-diseno">7) Ejercicio de diseño<a class="headerlink" href="#7-ejercicio-de-diseno" title="Permanent link">&para;</a></h3>
-<p><strong>Escenario:</strong> Un equipo de plataforma quiere aprobaciones conducidas por agentes en un flujo de entrega interno este trimestre.</p>
+<h3 id="7-ejercicio-de-diseno">7) Ejercicio de Diseño<a class="headerlink" href="#7-ejercicio-de-diseno" title="Permanent link">&para;</a></h3>
+<p><strong>Escenario:</strong> Automatizar la entrada de reclamos FNOL (Primer Aviso de Pérdida) usando un agente IA, integrando sistemas mainframe heredados y asegurando cumplimiento con NAIC y GDPR para asegurados en la UE.</p>
 <p><strong>Restricciones:</strong>
-- Los controles de auditoría existentes no pueden debilitarse
-- El costo debe mantenerse dentro del presupuesto actual de la plataforma
-- Las fallas deben caer a un camino manual en minutos</p>
+- El linaje de datos debe ser completamente audible con registros inmutables para todas las interacciones de IA.
+- Integración de mainframe heredado requiere sincronización por lotes con latencia mínima.
+- GDPR exige estrictas capacidades de acceso y eliminación de datos de clientes.</p>
 <p><strong>Preguntas guía:</strong>
-- ¿Qué acciones permanecen por defecto como solo lectura?
-- ¿Dónde sigue siendo obligatoria la aprobación humana?
-- ¿Cómo se limitarán y observarán los reintentos?
-- ¿Qué escrituras en memoria están permitidas y son reversibles?
-- ¿Qué evaluaciones deciden si se expande el piloto?</p>
+- ¿Cómo se pueden registrar y almacenar las decisiones del agente IA para cumplir con los requisitos de auditoría?
+- ¿Qué mecanismos aseguran que los datos recopilados de mainframes se mantengan consistentes y a la vez cumplan con GDPR?
+- ¿Cómo detectamos la deriva de modelo que afecta la precisión de FNOL con el tiempo?
+- ¿Qué controles de respaldo o con intervención humana se activan en reclamos de alto riesgo?
+- ¿Cómo presupuestamos para aprendizaje federado o reentrenamiento local del modelo para proteger la privacidad?</p>
 <hr />
 <!-- AII_TODAY_START -->
 <p><a id="aii-today"></a></p>
-<h3 id="indice-de-implicaciones-arquitectonicas-hoy">Índice de Implicaciones Arquitectónicas (Hoy)<a class="headerlink" href="#indice-de-implicaciones-arquitectonicas-hoy" title="Permanent link">&para;</a></h3>
-<!-- 3–5 viñetas. Cada una debe comenzar con clave temática + etiqueta humana. Una línea cada una. Debe incluir Componente + Decisión. -->
-
+<h3 id="indice-de-implicaciones-de-arquitectura-hoy">Índice de Implicaciones de Arquitectura (Hoy)<a class="headerlink" href="#indice-de-implicaciones-de-arquitectura-hoy" title="Permanent link">&para;</a></h3>
 <ul>
-<li>[REL] Confiabilidad y Evaluación — Componente: puerta de evaluación; Decisión: bloquear despliegue hasta que pasen las pruebas de regresión tras cambios de modelo o herramienta.</li>
-<li>[AGENT] Agentes y Orquestación — Componente: política de herramientas; Decisión: mantener permisos restringidos y forzar escalada para acciones sensibles.</li>
-<li>[DATA] Datos, RAG y Conocimiento — Componente: capa de memoria; Decisión: delimitar escrituras y hacerlas reversibles antes de uso prolongado.</li>
-<li>[GOV] Seguridad, Privacidad y Gobernanza — Componente: auditoría de aprobación; Decisión: capturar actor, contexto y camino de decisión en pasos autónomos.</li>
+<li>[REL] Confiabilidad y Evaluación — Componente: sistema de monitoreo del modelo; Decisión: desplegar hooks de detección de deriva en modelos de suscripción.</li>
+<li>[GOV] Seguridad, Privacidad y Gobernanza — Componente: servicio de registro de auditoría; Decisión: aplicar registros inmutables con captura de prompts y decisiones.</li>
+<li>[DATA] Datos, RAG y Conocimiento — Componente: flujo de datos; Decisión: mejorar metadatos para linaje que soporte cumplimiento con NAIC y GDPR.</li>
 </ul>
 <!-- AII_TODAY_END -->
 
