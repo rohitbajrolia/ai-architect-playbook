@@ -238,7 +238,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#description-auditorias-de-modelos-de-ia-y-controles-regulatorios-senales-de-arquitectura-de-ia-e-implicaciones-para-2026-07-14-fundamentadas-en-la-prestacion-de-servicios-de-seguros-y-financieros" class="md-skip">
+        <a href="#description-desarrollos-de-hardware-de-ia-y-cambios-de-politicas-senales-de-arquitectura-de-ia-e-implicaciones-para-2026-07-14-basadas-en-seguros-y-prestacion-de-servicios-financieros" class="md-skip">
           Skip to content
         </a>
       
@@ -922,126 +922,110 @@
   
 
 
-<!-- SOURCE_SHA256: 5a51f8c5071c384130a1f3ee208c96b09fd6a4eedb45a4e75016d0fbdeb9c00f -->
+<!-- SOURCE_SHA256: b5371bac255b8bd197f6b4773331b818d346c06f012a8f23ad8745bf1dbc2e5a -->
 <hr />
-<h2 id="description-auditorias-de-modelos-de-ia-y-controles-regulatorios-senales-de-arquitectura-de-ia-e-implicaciones-para-2026-07-14-fundamentadas-en-la-prestacion-de-servicios-de-seguros-y-financieros">description: "Auditorías de modelos de IA y controles regulatorios — Señales de arquitectura de IA e implicaciones para 2026-07-14, fundamentadas en la prestación de servicios de seguros y financieros."<a class="headerlink" href="#description-auditorias-de-modelos-de-ia-y-controles-regulatorios-senales-de-arquitectura-de-ia-e-implicaciones-para-2026-07-14-fundamentadas-en-la-prestacion-de-servicios-de-seguros-y-financieros" title="Permanent link">&para;</a></h2>
+<h2 id="description-desarrollos-de-hardware-de-ia-y-cambios-de-politicas-senales-de-arquitectura-de-ia-e-implicaciones-para-2026-07-14-basadas-en-seguros-y-prestacion-de-servicios-financieros">description: "Desarrollos de Hardware de IA y Cambios de Políticas — Señales de arquitectura de IA e implicaciones para 2026-07-14, basadas en seguros y prestación de servicios financieros."<a class="headerlink" href="#description-desarrollos-de-hardware-de-ia-y-cambios-de-politicas-senales-de-arquitectura-de-ia-e-implicaciones-para-2026-07-14-basadas-en-seguros-y-prestacion-de-servicios-financieros" title="Permanent link">&para;</a></h2>
 <blockquote>
-<p>Entrada #127 · ~6 min de lectura · 2026-07-14</p>
+<p>Entrada #128 · ~4 min de lectura · 2026-07-14</p>
 </blockquote>
 <h1 id="2026-07-14">2026-07-14<a class="headerlink" href="#2026-07-14" title="Permanent link">&para;</a></h1>
-<h2 id="marco-diario-para-2026-07-14">Marco diario para 2026-07-14<a class="headerlink" href="#marco-diario-para-2026-07-14" title="Permanent link">&para;</a></h2>
-<p><strong>Tema:</strong> Auditorías de Modelos de IA y Controles Regulatorios</p>
+<h2 id="marco-diario-para-2026-07-14">Marco Diario para 2026-07-14<a class="headerlink" href="#marco-diario-para-2026-07-14" title="Permanent link">&para;</a></h2>
+<p><strong>Tema:</strong> Desarrollos de Hardware de IA y Cambios de Políticas</p>
 <p>Cómo leo esta página:
 - [REL] Confiabilidad y Evaluación — ¿Qué falla en producción? ¿Cómo lo probamos y observamos?
 - [AGENT] Agentes y Orquestación — ¿Qué ejecuta el ciclo? ¿Qué acciones puede tomar?
-- [DATA] Datos, RAG y Conocimiento — ¿De dónde proviene el contexto? ¿Cómo se recupera?
-- [GOV] Seguridad, Privacidad y Gobernanza — ¿Qué necesita políticas, permisos y auditoría?
-- [COST] Infraestructura, Hardware y Costos — ¿Qué se vuelve costoso (latencia/tokens/GPU/operaciones)? ¿Cómo lo limitamos?
-- [OPS] Producto y Modelo Operativo — ¿Quién es responsable semanalmente? ¿Cómo lo implementamos de forma segura?</p>
-<p>Mapa rápido del sistema (para ubicar cada ítem): Modelo → Contexto (RAG/memoria) → Orquestador → Herramientas → Evaluaciones/Rastreo → Gobernanza.</p>
+- [DATA] Datos, RAG y Conocimiento — ¿De dónde viene el contexto? ¿Cómo se recupera?
+- [GOV] Seguridad, Privacidad y Gobernanza — ¿Qué requiere políticas, permisos y auditoría?
+- [COST] Infraestructura, Hardware y Costos — ¿Qué se encarece (latencia/tokens/GPU/operaciones)? ¿Cómo lo limitamos?
+- [OPS] Producto y Modelo Operativo — ¿Quién es responsable esta semana? ¿Cómo lo implementamos de forma segura?</p>
+<p>Mapa rápido del sistema (para ubicar cada elemento): Modelo → Contexto (RAG/memoria) → Orquestador → Herramientas → Evaluaciones/Seguimiento → Gobernanza.</p>
 <h3 id="1-senales-de-hoy">1) Señales de Hoy<a class="headerlink" href="#1-senales-de-hoy" title="Permanent link">&para;</a></h3>
 <ul>
-<li><strong>2026-07-14</strong>: <a href="https://openai.com/research/ai-model-auditing">Artículo reciente de OpenAI sobre prácticas de auditoría de modelos de IA</a> — OpenAI detalla marcos estandarizados para auditar grandes modelos de lenguaje enfocados en sesgo, robustez y cumplimiento, señalando una gobernanza más fuerte en modelos generativos.</li>
-<li><strong>2026-07-14</strong>: <a href="https://www.microsoft.com/en-us/research/publication/real-time-anomaly-detection-large-ai-systems/">Investigación de Microsoft sobre detección de anomalías en IA en tiempo real</a> — Microsoft presenta nuevos métodos para detectar deriva y problemas de confianza en inferencias de ML desplegadas, esencial para mantener la precisión en suscripción bajo datos cambiantes.</li>
-<li><strong>2026-07-14</strong>: <a href="https://ai.googleblog.com/2026/07/implementing-differential-privacy-in-lm.html">Blog de Google AI sobre privacidad diferencial en modelos de lenguaje</a> — La publicación aborda la integración de privacidad diferencial en pipelines de entrenamiento de transformadores, impactando directamente la privacidad de datos de clientes para herramientas personalizadas de asesoría financiera.</li>
-<li><strong>2026-07-14</strong>: <a href="https://www.nist.gov/news-events/news/2026/07/nist-publishes-updated-ai-risk-management-framework">Actualización de directrices del NIST US sobre marco de gestión de riesgos en IA</a> — NIST actualiza su Marco de Gestión de Riesgos en IA para alinearse con requisitos regulatorios evolutivos, clave para el cumplimiento en automatización de pólizas de seguros.</li>
-<li><strong>2026-07-14</strong>: <a href="https://huggingface.co/blog/scaling-open-source-models">Blog de Hugging Face sobre despliegue a escala de modelos open-source</a> — Discute innovaciones en despliegues costo-efectivos de LLMs para casos de uso empresarial, enfatizando el servicio de inferencia multi-inquilino y optimización de latencia.</li>
-<li><strong>2026-07-14</strong>: <a href="https://techcrunch.com/2026/07/14/ai-regulation-financial-services/">TechCrunch sobre movimientos regulatorios para IA en servicios financieros</a> — Destaca leyes emergentes de la UE que exigen transparencia obligatoria y registros de auditoría en scoring crediticio y automatización de reclamaciones impulsados por IA.</li>
+<li><strong>2026-07-09</strong>: <a href="https://techcrunch.com/2026/07/09/metas-new-ai-chips-will-begin-production-in-september/">Los nuevos chips de IA de Meta comenzarán producción en septiembre</a> — Meta iniciará la producción de sus últimos chips específicos para IA en septiembre, con el objetivo de reducir costos de GPU en medio de una escasez de componentes.</li>
+<li><strong>2026-07-02</strong>: <a href="https://techcrunch.com/2026/07/02/anthropic-is-discussing-a-new-custom-chip-with-samsung/">Anthropic está discutiendo un nuevo chip personalizado con Samsung</a> — Anthropic está en conversaciones con Samsung para desarrollar un nuevo chip de IA, aunque los detalles aún no se han decidido.</li>
+<li><strong>2026-07-06</strong>: <a href="https://techcrunch.com/2026/07/06/the-running-list-major-tech-layoffs-in-2026-where-employers-cited-ai/">Todos los despidos importantes en tecnología en 2026 que han mencionado IA</a> — Microsoft anunció despidos que afectan al 2.1% de su fuerza laboral, citando el impacto de la IA en la automatización de tareas.</li>
+<li><strong>2026-07-05</strong>: <a href="https://techcrunch.com/2026/07/05/amazon-will-stop-accepting-new-customers-for-mechanical-turk/">Amazon dejará de aceptar nuevos clientes para Mechanical Turk</a> — Amazon planea dejar de aceptar nuevos clientes para Mechanical Turk, aunque los usuarios existentes pueden continuar.</li>
+<li><strong>2026-06-30</strong>: <a href="https://techcrunch.com/2026/06/30/trump-drops-restrictions-on-anthropics-mythos-and-fable-models/">Trump elimina restricciones a los modelos Mythos y Fable de Anthropic</a> — El gobierno estadounidense levantó las restricciones de exportación sobre los avanzados modelos de IA de Anthropic, restaurando el acceso público.</li>
 </ul>
 <hr />
 <h3 id="2-genai">2) GenAI<a class="headerlink" href="#2-genai" title="Permanent link">&para;</a></h3>
-<h4 id="marcos-para-auditoria-de-modelos-de-ia">Marcos para Auditoría de Modelos de IA<a class="headerlink" href="#marcos-para-auditoria-de-modelos-de-ia" title="Permanent link">&para;</a></h4>
+<h4 id="produccion-de-chips-de-ia-de-meta">Producción de Chips de IA de Meta<a class="headerlink" href="#produccion-de-chips-de-ia-de-meta" title="Permanent link">&para;</a></h4>
 <div class="admonition note">
 <p class="admonition-title">Implicación Arquitectónica</p>
 <ul>
-<li>[REL] Confiabilidad y Evaluación — Las herramientas de auditoría automatizada necesitan integrarse temprano en los pipelines de modelos para detectar sesgos y degradación antes del despliegue en producción en suscripción.</li>
-<li>[GOV] Seguridad, Privacidad y Gobernanza — Los registros de auditoría deben ser a prueba de manipulaciones y accesibles para revisiones de cumplimiento, especialmente para decisiones de IA en procesamiento de reclamaciones.</li>
-<li>[OPS] Producto y Modelo Operativo — Un equipo dedicado de auditoría debe gestionar estos procesos de forma continua, no solo en el despliegue inicial, para alinearse con regulaciones en evolución.</li>
+<li>[COST] Infraestructura, Hardware y Costos — Componente: infraestructura GPU; Decisión: Evaluar el costo-beneficio de integrar los próximos chips de Meta frente a las soluciones actuales.</li>
 </ul>
 </div>
 <p>Preguntas abiertas
-- ¿Qué grado de detalle en la auditoría es necesario para satisfacer tanto la supervisión actuarial de riesgos como las restricciones de privacidad?</p>
-<h4 id="privacidad-diferencial-en-modelos">Privacidad Diferencial en Modelos<a class="headerlink" href="#privacidad-diferencial-en-modelos" title="Permanent link">&para;</a></h4>
+- ¿Cómo se compararán en rendimiento los nuevos chips de Meta con las GPUs existentes?</p>
+<h4 id="colaboracion-de-chip-personalizado-de-anthropic">Colaboración de Chip Personalizado de Anthropic<a class="headerlink" href="#colaboracion-de-chip-personalizado-de-anthropic" title="Permanent link">&para;</a></h4>
 <div class="admonition note">
 <p class="admonition-title">Implicación Arquitectónica</p>
 <ul>
-<li>[GOV] Seguridad, Privacidad y Gobernanza — Integrar mecanismos de privacidad diferencial en el entrenamiento del modelo para proteger datos personales de asegurados durante actualizaciones de modelos de detección de fraude.</li>
-<li>[COST] Infraestructura, Hardware y Costos — La privacidad diferencial incrementa la complejidad del entrenamiento; el presupuesto debe contemplar computación extra al escalar modelos para conjuntos de datos financieros empresariales.</li>
-<li>[DATA] Datos, RAG y Conocimiento — Las incrustaciones que preservan la privacidad complican la calidad de recuperación; es necesario afinar los recuperadores para evitar pérdida de precisión en modelos de suscripción.</li>
+<li>[COST] Infraestructura, Hardware y Costos — Componente: adquisición de hardware para IA; Decisión: Evaluar los beneficios potenciales del chip personalizado de Anthropic para cargas de trabajo específicas de IA.</li>
 </ul>
 </div>
+<p>Preguntas abiertas
+- ¿Cuáles son las mejoras de rendimiento proyectadas del chip personalizado de Anthropic?</p>
 <hr />
-<h3 id="3-ia-agentica">3) IA Agéntica<a class="headerlink" href="#3-ia-agentica" title="Permanent link">&para;</a></h3>
-<h4 id="agentes-para-deteccion-de-anomalias-en-tiempo-real">Agentes para Detección de Anomalías en Tiempo Real<a class="headerlink" href="#agentes-para-deteccion-de-anomalias-en-tiempo-real" title="Permanent link">&para;</a></h4>
+<h3 id="3-ia-agente">3) IA Agente<a class="headerlink" href="#3-ia-agente" title="Permanent link">&para;</a></h3>
+<h4 id="rol-de-microsoft-discovery-en-el-desarrollo-de-chips-cuanticos">Rol de Microsoft Discovery en el Desarrollo de Chips Cuánticos<a class="headerlink" href="#rol-de-microsoft-discovery-en-el-desarrollo-de-chips-cuanticos" title="Permanent link">&para;</a></h4>
 <div class="admonition note">
 <p class="admonition-title">Implicación Arquitectónica</p>
 <ul>
-<li>[AGENT] Agentes y Orquestación — Agentes que gestionan flujos de evaluación de reclamaciones requieren detección integrada de deriva en tiempo real para evitar pagos erróneos causados por decadencia de modelos.</li>
-<li>[REL] Confiabilidad y Evaluación — Las métricas de evaluación continua deben ser monitoreadas en vivo con alertas para prevenir fallas silenciosas en automatización de suscripción.</li>
-<li>[GOV] Seguridad, Privacidad y Gobernanza — Las anomalías señaladas por agentes deben generar evidencia de auditoría para satisfacer a reguladores en servicios financieros.</li>
+<li>[AGENT] Agentes y Orquestación — Componente: agentes de computación cuántica; Decisión: Integrar la IA agente de Microsoft Discovery para mejorar la fiabilidad de chips cuánticos.</li>
 </ul>
 </div>
 <p>Preguntas abiertas
-- ¿Puede la detección en tiempo real mitigar suficientemente el riesgo sin aumentar falsos positivos que interrumpan el flujo de reclamaciones?</p>
-<h4 id="servicio-de-modelos-multi-inquilino">Servicio de Modelos Multi-Inquilino<a class="headerlink" href="#servicio-de-modelos-multi-inquilino" title="Permanent link">&para;</a></h4>
-<div class="admonition note">
-<p class="admonition-title">Implicación Arquitectónica</p>
-<ul>
-<li>[COST] Infraestructura, Hardware y Costos — La infraestructura compartida de inferencia requiere aplicación estricta de SLA y políticas de aislamiento para evitar filtración de datos entre inquilinos en IA para servicio de pólizas.</li>
-<li>[OPS] Producto y Modelo Operativo — Los equipos de DevOps deben implementar agentes de monitoreo para desempeño específico por inquilino y posición de cumplimiento.</li>
-<li>[DATA] Datos, RAG y Conocimiento — Los componentes de recuperación de contexto deben respetar la separación de inquilinos permitiendo acceso eficiente a la base de conocimiento.</li>
-</ul>
-</div>
+- ¿Qué mejoras específicas en fiabilidad se pueden esperar de esta integración?</p>
 <hr />
 <h3 id="4-radar-de-ia">4) Radar de IA<a class="headerlink" href="#4-radar-de-ia" title="Permanent link">&para;</a></h3>
-<h4 id="requisitos-regulatorios-evolutivos-de-ia-en-la-ue">Requisitos Regulatorios Evolutivos de IA en la UE<a class="headerlink" href="#requisitos-regulatorios-evolutivos-de-ia-en-la-ue" title="Permanent link">&para;</a></h4>
+<h4 id="cambios-de-politica-en-regulaciones-de-exportacion-de-ia">Cambios de Política en Regulaciones de Exportación de IA<a class="headerlink" href="#cambios-de-politica-en-regulaciones-de-exportacion-de-ia" title="Permanent link">&para;</a></h4>
 <div class="admonition note">
 <p class="admonition-title">Implicación Arquitectónica</p>
 <ul>
-<li>[GOV] Seguridad, Privacidad y Gobernanza — La arquitectura debe incluir características de transparencia como explicabilidad de decisiones y procedencia de datos para scoring crediticio y suscripción de seguros.</li>
-<li>[REL] Confiabilidad y Evaluación — Los sistemas deben incorporar casos de prueba de cumplimiento validando auditoría y explicabilidad de forma continua en pipelines de CI/CD.</li>
-<li>[COST] Infraestructura, Hardware y Costos — El registro impulsado por el cumplimiento y la explicabilidad elevan necesidades de almacenamiento y cómputo; el presupuesto debe anticipar estos costos en productos de IA para servicios financieros.</li>
+<li>[GOV] Seguridad, Privacidad y Gobernanza — Componente: cumplimiento de exportación de modelos de IA; Decisión: Revisar y ajustar las políticas de exportación tras el levantamiento de restricciones por parte del gobierno de EE. UU.</li>
 </ul>
 </div>
 <p>Preguntas abiertas
-- ¿Cuál es la granularidad mínima de explicabilidad que satisface a los reguladores de la UE sin exponer modelos propietarios?</p>
+- ¿Cómo impactará la eliminación de restricciones de exportación en las colaboraciones internacionales?</p>
 <hr />
-<h3 id="5-resumen-para-cto">5) Resumen para CTO<a class="headerlink" href="#5-resumen-para-cto" title="Permanent link">&para;</a></h3>
+<h3 id="5-resumen-del-cto">5) Resumen del CTO<a class="headerlink" href="#5-resumen-del-cto" title="Permanent link">&para;</a></h3>
 <ul>
-<li>La auditoría continua de modelos y la detección de anomalías serán la base para cualquier automatización de suscripción o reclamaciones para evitar riesgos regulatorios y financieros.</li>
-<li>El entrenamiento de modelos que preservan la privacidad no es opcional, dada la legislación de protección de datos de consumidores en servicios financieros en varias jurisdicciones.</li>
-<li>La infraestructura debe soportar aislamiento multi-inquilino, SLA de rendimiento y registros robustos de cumplimiento para operar a escala en seguros y banca.</li>
+<li>Monitorear la producción de chips de IA de Meta para posibles ahorros en costos.</li>
+<li>Evaluar las implicaciones del chip personalizado de Anthropic en la estrategia de hardware.</li>
+<li>Mantenerse actualizado sobre cambios en políticas que afectan exportaciones de modelos de IA.</li>
 </ul>
 <hr />
 <h3 id="6-notas-de-rohit">6) Notas de Rohit<a class="headerlink" href="#6-notas-de-rohit" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Sorpresa por la oportuna actualización del NIST vinculando la gestión de riesgos de IA con cumplimiento regulatorio en usos financieros.</li>
-<li>Necesidad de re-verificar si el pipeline actual incluye pistas de auditoría adecuadas y detección de deriva en tiempo real para despliegues de IA en suscripción.</li>
-<li>Advertiría a mi equipo que traten la auditabilidad y privacidad como características, no como consideraciones secundarias, especialmente en flujos de trabajo de reclamaciones y servicio de pólizas.</li>
+<li>Sorprendido por el ritmo acelerado de los desarrollos en hardware de IA.</li>
+<li>Necesidad de revisar el impacto de los cambios de políticas en nuestras colaboraciones internacionales de IA.</li>
+<li>Enfocarse en evaluar nuevas opciones de hardware para optimizar costos.</li>
 </ul>
 <hr />
 <h3 id="7-ejercicio-de-diseno">7) Ejercicio de Diseño<a class="headerlink" href="#7-ejercicio-de-diseno" title="Permanent link">&para;</a></h3>
-<p><strong>Escenario:</strong> Implementación de un pipeline de procesamiento de reclamaciones impulsado por IA para un asegurador multinacional enfrentando nuevas regulaciones de IA de la UE y cumplimiento NAIC, que requieren transparencia y garantías de privacidad.</p>
+<p><strong>Escenario:</strong> Implementación de un nuevo sistema de procesamiento de reclamos impulsado por IA.</p>
 <p><strong>Restricciones:</strong>
-- Debe cumplir con los requisitos de transparencia y privacidad de datos del Acta de IA de la UE.
-- El sistema integra datos heredados de mainframe de reclamaciones con capas modernas de inferencia IA.
-- Las decisiones de IA necesitan registros de auditoría y trazabilidad accesibles para oficiales de cumplimiento.</p>
-<p><strong>Preguntas guía:</strong>
-- ¿Cómo arquitecturar pipelines de datos para habilitar privacidad diferencial sin perder fidelidad en datos de reclamaciones?
-- ¿Qué componentes deben manejar registro a prueba de manipulaciones para auditabilidad de decisiones de IA?
-- ¿Cómo asegurar que los agentes de IA realizando clasificación de reclamaciones respeten las barreras de cumplimiento?
-- ¿Qué métricas de evaluación confirman equidad y robustez en poblaciones diversas de asegurados?
-- ¿Cómo integrar detección de anomalías en tiempo real en IA de reclamaciones sin añadir latencia excesiva o falsos positivos?</p>
+- Cumplimiento con las leyes modelo NAIC.
+- Integración con sistemas mainframe heredados.
+- Necesidad de aprobación actuarial en las salidas del modelo.</p>
+<p><strong>Preguntas clave:</strong>
+- ¿Cómo podemos asegurar que el nuevo sistema cumpla con los requerimientos regulatorios?
+- ¿Qué pasos son necesarios para integrar con la infraestructura mainframe existente?
+- ¿Cómo obtenemos la aprobación actuarial para las decisiones del modelo de IA?
+- ¿Qué formación es necesaria para el personal para usar el nuevo sistema efectivamente?
+- ¿Cómo monitorearemos y auditaremos el rendimiento del sistema tras la implementación?</p>
 <hr />
 <!-- AII_TODAY_START -->
 <p><a id="aii-today"></a></p>
 <h3 id="indice-de-implicaciones-arquitectonicas-hoy">Índice de Implicaciones Arquitectónicas (Hoy)<a class="headerlink" href="#indice-de-implicaciones-arquitectonicas-hoy" title="Permanent link">&para;</a></h3>
 <ul>
-<li>[REL] Confiabilidad y Evaluación — Componente: pipeline CI/CD; Decisión: incorporar auditorías automatizadas de sesgo y robustez antes de producción de modelos de suscripción.</li>
-<li>[AGENT] Agentes y Orquestación — Componente: agentes de clasificación de reclamaciones; Decisión: implementar agentes de detección de anomalías en tiempo real con alertas y registro de auditoría.</li>
-<li>[GOV] Seguridad, Privacidad y Gobernanza — Componente: sistema de registro de auditoría; Decisión: aplicar registro a prueba de manipulaciones accesible para revisión regulatoria en reclamaciones y servicio de pólizas.</li>
-<li>[COST] Infraestructura, Hardware y Costos — Componente: infraestructura de entrenamiento; Decisión: presupuestar aumento de cómputo debido a privacidad diferencial en reentrenamiento de modelos de detección de fraude.</li>
-<li>[DATA] Datos, RAG y Conocimiento — Componente: subsistema recuperador; Decisión: optimizar incrustaciones que preservan privacidad para mantener relevancia de recuperación en suscripción.</li>
+<li>[COST] Infraestructura, Hardware y Costos — Componente: infraestructura GPU; Decisión: Evaluar el costo-beneficio de integrar los próximos chips de Meta frente a las soluciones actuales.</li>
+<li>[COST] Infraestructura, Hardware y Costos — Componente: adquisición de hardware para IA; Decisión: Evaluar los beneficios potenciales del chip personalizado de Anthropic para cargas de trabajo específicas de IA.</li>
+<li>[AGENT] Agentes y Orquestación — Componente: agentes de computación cuántica; Decisión: Integrar la IA agente de Microsoft Discovery para mejorar la fiabilidad de chips cuánticos.</li>
+<li>[GOV] Seguridad, Privacidad y Gobernanza — Componente: cumplimiento de exportación de modelos de IA; Decisión: Revisar y ajustar las políticas de exportación tras el levantamiento de restricciones por parte del gobierno de EE. UU.</li>
+<li>[OPS] Producto y Modelo Operativo — Componente: sistema de procesamiento de reclamos; Decisión: Implementar sistema impulsado por IA con cumplimiento regulatorio e integración heredada.</li>
 </ul>
 <!-- AII_TODAY_END -->
 
