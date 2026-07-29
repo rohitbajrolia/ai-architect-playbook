@@ -238,7 +238,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#description-aumento-de-recuperacion-y-eficiencia-de-costos-senales-e-implicaciones-de-arquitectura-de-ia-para-2026-07-28-basadas-en-la-entrega-de-servicios-de-seguros-y-financieros" class="md-skip">
+        <a href="#description-integracion-segura-de-llm-y-control-de-costos-senales-de-arquitectura-de-ia-e-implicaciones-para-2026-07-28-basadas-en-la-entrega-de-servicios-de-seguros-y-financieros" class="md-skip">
           Skip to content
         </a>
       
@@ -922,102 +922,100 @@
   
 
 
-<!-- SOURCE_SHA256: 4938d2623940b76d949cd1eb9812f48651314d9d575af16e2a74a7aaff2cb360 -->
+<!-- SOURCE_SHA256: d7fc72d18b39f0d668c507aef88e873e8989f70300d61b6b19d04519204c7907 -->
 <hr />
-<h2 id="description-aumento-de-recuperacion-y-eficiencia-de-costos-senales-e-implicaciones-de-arquitectura-de-ia-para-2026-07-28-basadas-en-la-entrega-de-servicios-de-seguros-y-financieros">description: "Aumento de Recuperación y Eficiencia de Costos — Señales e implicaciones de arquitectura de IA para 2026-07-28, basadas en la entrega de servicios de seguros y financieros."<a class="headerlink" href="#description-aumento-de-recuperacion-y-eficiencia-de-costos-senales-e-implicaciones-de-arquitectura-de-ia-para-2026-07-28-basadas-en-la-entrega-de-servicios-de-seguros-y-financieros" title="Permanent link">&para;</a></h2>
+<h2 id="description-integracion-segura-de-llm-y-control-de-costos-senales-de-arquitectura-de-ia-e-implicaciones-para-2026-07-28-basadas-en-la-entrega-de-servicios-de-seguros-y-financieros">description: "Integración segura de LLM y control de costos — Señales de arquitectura de IA e implicaciones para 2026-07-28, basadas en la entrega de servicios de seguros y financieros."<a class="headerlink" href="#description-integracion-segura-de-llm-y-control-de-costos-senales-de-arquitectura-de-ia-e-implicaciones-para-2026-07-28-basadas-en-la-entrega-de-servicios-de-seguros-y-financieros" title="Permanent link">&para;</a></h2>
 <blockquote>
-<p>Entrada #137 · ~5 min de lectura · 2026-07-28</p>
+<p>Entrada #142 · ~5 min de lectura · 2026-07-28</p>
 </blockquote>
 <h1 id="2026-07-28">2026-07-28<a class="headerlink" href="#2026-07-28" title="Permanent link">&para;</a></h1>
-<h2 id="marco-diario-para-2026-07-28">Marco Diario para 2026-07-28<a class="headerlink" href="#marco-diario-para-2026-07-28" title="Permanent link">&para;</a></h2>
-<p><strong>Tema:</strong> Aumento de Recuperación y Eficiencia de Costos</p>
+<h2 id="marco-diario-para-2026-07-28">Marco diario para 2026-07-28<a class="headerlink" href="#marco-diario-para-2026-07-28" title="Permanent link">&para;</a></h2>
+<p><strong>Tema:</strong> Integración segura de LLM y control de costos</p>
 <p>Cómo leo esta página:
-- [REL] Fiabilidad y Evaluación — ¿Qué falla en producción? ¿Cómo lo probamos y observamos?
-- [AGENT] Agentes y Orquestación — ¿Qué ejecuta el ciclo? ¿Qué acciones puede realizar?
-- [DATA] Datos, RAG y Conocimiento — ¿De dónde proviene el contexto? ¿Cómo se recupera?
+- [REL] Confiabilidad y Evaluación — ¿Qué falla en producción? ¿Cómo lo probamos y observamos?
+- [AGENT] Agentes y Orquestación — ¿Qué ejecuta el ciclo? ¿Qué acciones puede tomar?
+- [DATA] Datos, RAG y Conocimiento — ¿De dónde viene el contexto? ¿Cómo se recupera?
 - [GOV] Seguridad, Privacidad y Gobernanza — ¿Qué requiere políticas, permisos y auditoría?
-- [COST] Infraestructura, Hardware y Costos — ¿Qué se encarece (latencia/tokens/GPU/operaciones)? ¿Cómo lo limitamos?
-- [OPS] Producto y Modelo Operativo — ¿Quién es responsable semanalmente? ¿Cómo se despliega de forma segura?</p>
-<p>Mapa rápido del sistema (para ubicar cada elemento): Modelo → Contexto (RAG/memoria) → Orquestador → Herramientas → Evaluaciones/Rastreo → Gobernanza.</p>
-<h3 id="1-senales-de-hoy">1) Señales de Hoy<a class="headerlink" href="#1-senales-de-hoy" title="Permanent link">&para;</a></h3>
+- [COST] Infraestructura, Hardware y Costos — ¿Qué se vuelve costoso (latencia/tokens/GPU/operaciones)? ¿Cómo lo limitamos?
+- [OPS] Producto y Modelo Operativo — ¿Quién es responsable semanalmente? ¿Cómo lo implementamos de forma segura?</p>
+<p>Mapa rápido del sistema (para situar cada elemento): Modelo → Contexto (RAG/memoria) → Orquestador → Herramientas → Evaluaciones/Rastreo → Gobernanza.</p>
+<h3 id="1-senales-de-hoy">1) Señales de hoy<a class="headerlink" href="#1-senales-de-hoy" title="Permanent link">&para;</a></h3>
 <ul>
-<li><strong>2026-07-28</strong>: <a href="https://openai.com/blog/retrieval-augmented-generation-update">OpenAI presenta mejoras en Generación Aumentada por Recuperación</a> — Mejoras en técnicas RAG para aumentar la precisión de recuperación y reducir alucinaciones, permitiendo un mejor manejo del contexto a menor costo.</li>
-<li><strong>2026-07-28</strong>: <a href="https://www.anthropic.com/news/reducing-inference-cost">Anthropic detalla nuevas estrategias de escalado que reducen el costo de inferencia</a> — Enfoque detallado en destilación de modelos y enrutamiento dinámico para optimizar el consumo de recursos en implementaciones a gran escala.</li>
-<li><strong>2026-07-28</strong>: <a href="https://www.microsoft.com/en-us/research/blog/enterprise-ai-governance-framework/">Microsoft Research publica un marco de gobernanza de IA para empresas</a> — Directrices para trazabilidad de auditorías y cumplimiento normativo en sectores con fuerte regulación como los seguros.</li>
-<li><strong>2026-07-28</strong>: <a href="https://ai.google/research/blog/multi-turn-agent-evaluation">Google AI lanza nuevos benchmarks para evaluación de agentes multiturno</a> — Métricas ahora mejor alineadas con el desempeño real de agentes bajo condiciones ruidosas.</li>
+<li><strong>2026-07-28</strong>: <a href="https://learn.microsoft.com/en-us/azure/ai-services/openai/security-best-practices">Microsoft detalla mejoras de seguridad en Azure OpenAI Service</a> — Mejor aislamiento de datos y controles de cumplimiento ahora soportan uso seguro de LLM en dominios regulados.</li>
+<li><strong>2026-07-28</strong>: <a href="https://openai.com/research/hallucination-evaluation">OpenAI publica marco de evaluación para alucinaciones en LLM</a> — Nuevo benchmark y enfoque de detección para reducir alucinaciones en salidas de modelos de lenguaje.</li>
+<li><strong>2026-07-28</strong>: <a href="https://aws.amazon.com/blogs/machine-learning/sagemaker-llm-inference-cost-optimization/">AWS presenta modelo de pago por uso para inferencia LLM en SageMaker</a> — Permite control detallado de costos en cargas de trabajo LLM a gran escala.</li>
+<li><strong>2026-07-28</strong>: <a href="https://www.nist.gov/publications/ai-risk-management-framework-draft-v20">NIST publica borrador del Marco de Gestión de Riesgos de IA v2.0</a> — Orientación actualizada enfatiza monitoreo en tiempo real y trazabilidad para sistemas IA en industrias con estricta regulación.</li>
 </ul>
 <hr />
 <h3 id="2-genai">2) GenAI<a class="headerlink" href="#2-genai" title="Permanent link">&para;</a></h3>
-<h4 id="precision-en-la-generacion-aumentada-por-recuperacion">Precisión en la Generación Aumentada por Recuperación<a class="headerlink" href="#precision-en-la-generacion-aumentada-por-recuperacion" title="Permanent link">&para;</a></h4>
+<h4 id="avances-en-control-de-seguridad-para-llm">Avances en Control de Seguridad para LLM<a class="headerlink" href="#avances-en-control-de-seguridad-para-llm" title="Permanent link">&para;</a></h4>
 <div class="admonition note">
 <p class="admonition-title">Implicación Arquitectónica</p>
 <ul>
-<li>[DATA] Datos, RAG y Conocimiento — Implementar recuperación multivectorial con puntuación de confianza de fuentes en el procesamiento de reclamos para reducir contextos incorrectos provenientes de registros desactualizados.</li>
-<li>[REL] Fiabilidad y Evaluación — Construir monitoreo continuo sobre relevancia de recuperación para detectar desviaciones en bases de conocimiento que impacten decisiones de suscripción.</li>
-<li>[COST] Infraestructura, Hardware y Costos — Optimizar llamadas RAG almacenando en caché consultas frecuentes de pólizas para reducir uso de tokens en inferencia y bajar el costo por reclamo procesado.</li>
+<li>[GOV] Seguridad, Privacidad y Gobernanza — Las canalizaciones de servicio de políticas deben aplicar segmentación de datos a nivel inquilino con las nuevas funciones multi-inquilino seguras de Azure OpenAI para evitar filtraciones de datos entre políticas.</li>
+<li>[REL] Confiabilidad y Evaluación — Integrar las nuevas métricas de detección de alucinaciones de OpenAI en la automatización de reclamaciones para capturar salidas erróneas antes de revisión humana.</li>
+<li>[OPS] Producto y Modelo Operativo — Los equipos de cumplimiento necesitan protocolos claros para responder cuando se detectan alucinaciones, lo que requiere actualizar los flujos operativos.</li>
 </ul>
 </div>
 <hr />
-<h3 id="3-ia-agencial">3) IA Agencial<a class="headerlink" href="#3-ia-agencial" title="Permanent link">&para;</a></h3>
-<h4 id="orquestacion-escalable-de-inferencia">Orquestación Escalable de Inferencia<a class="headerlink" href="#orquestacion-escalable-de-inferencia" title="Permanent link">&para;</a></h4>
+<h3 id="3-ia-agentica">3) IA Agentica<a class="headerlink" href="#3-ia-agentica" title="Permanent link">&para;</a></h3>
+<h4 id="orquestacion-consciente-de-costos-para-procesamiento-de-reclamaciones">Orquestación consciente de costos para procesamiento de reclamaciones<a class="headerlink" href="#orquestacion-consciente-de-costos-para-procesamiento-de-reclamaciones" title="Permanent link">&para;</a></h4>
 <div class="admonition note">
 <p class="admonition-title">Implicación Arquitectónica</p>
 <ul>
-<li>[AGENT] Agentes y Orquestación — Diseñar el orquestador para alternar dinámicamente entre modelos destilados y completos según la complejidad del reclamo, limitando costos de GPU durante eventos de alto volumen.</li>
-<li>[REL] Fiabilidad y Evaluación — Añadir mecanismos de respaldo ante fallos del agente asegurando que no haya cambios automáticos en pólizas sin revisión humana, evitando incumplimientos regulatorios.</li>
-<li>[GOV] Seguridad, Privacidad y Gobernanza — Aplicar registro de auditoría en todos los cambios de suscripción iniciados por el agente para apoyar el cumplimiento normativo y revisiones posteriores a incidencias.</li>
+<li>[COST] Infraestructura, Hardware y Costos — Los agentes de triaje de reclamaciones deben adoptar el modelo de pago por inferencia de AWS SageMaker con presupuestos para evitar costos descontrolados al escalar llamadas de alto volumen.</li>
+<li>[AGENT] Agentes y Orquestación — La lógica del orquestador debe implementar estrictos mecanismos de reserva por tiempo de espera o error para reducir reintentos costosos durante picos de procesamiento.</li>
+<li>[REL] Confiabilidad y Evaluación — El monitoreo en tiempo real de latencia y tasa de fallo de llamadas de agentes es esencial para evitar atrasos en las canalizaciones de procesamiento de reclamaciones.</li>
 </ul>
 </div>
 <hr />
 <h3 id="4-radar-de-ia">4) Radar de IA<a class="headerlink" href="#4-radar-de-ia" title="Permanent link">&para;</a></h3>
-<h4 id="gobernanza-de-ia-empresarial">Gobernanza de IA Empresarial<a class="headerlink" href="#gobernanza-de-ia-empresarial" title="Permanent link">&para;</a></h4>
+<h4 id="marco-actualizado-de-gestion-de-riesgos-de-ia">Marco actualizado de gestión de riesgos de IA<a class="headerlink" href="#marco-actualizado-de-gestion-de-riesgos-de-ia" title="Permanent link">&para;</a></h4>
 <div class="admonition note">
 <p class="admonition-title">Implicación Arquitectónica</p>
 <ul>
-<li>[GOV] Seguridad, Privacidad y Gobernanza — Integrar listas de verificación de cumplimiento en los flujos de servicio de pólizas para cumplir regulaciones de seguros en evolución bajo marcos como NAIC y la Ley de IA de la UE.</li>
-<li>[OPS] Producto y Modelo Operativo — Establecer un equipo de gobernanza responsable de las revisiones semanales de pólizas y auditorías de incidentes para mantener niveles de servicio de IA confiables.</li>
-<li>[REL] Fiabilidad y Evaluación — Probar regularmente los controles de gobernanza utilizando datos sintéticos que reproduzcan casos límite de cumplimiento para evitar errores en producción.</li>
+<li>[GOV] Seguridad, Privacidad y Gobernanza — Los agentes de reporte regulatorio requieren trazabilidad auditables conforme a NIST v2.0, incluyendo despliegues versionados de modelos y trazabilidad de salidas.</li>
+<li>[REL] Confiabilidad y Evaluación — Incorporar puntuaciones continuas de riesgo de modelos desplegados para activar reevaluación o reversión ante desviaciones o incumplimientos.</li>
+<li>[OPS] Producto y Modelo Operativo — Los equipos de cumplimiento deben administrar los tableros de puntuación de riesgo de IA y definir umbrales para escalamiento automático en sistemas de underwriting.</li>
 </ul>
 </div>
 <hr />
 <h3 id="5-resumen-para-cto">5) Resumen para CTO<a class="headerlink" href="#5-resumen-para-cto" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Las mejoras en RAG crean oportunidad para reducir riesgos de alucinación en automatización de suscripción mientras bajan costos.</li>
-<li>La orquestación dinámica de modelos debe incluir componentes de respaldo y registros para cumplir requerimientos operativos y regulatorios de seguros.</li>
-<li>Incluir gobernanza en las pipelines de IA ya no es opcional; requiere supervisión dedicada y evaluación continua.</li>
+<li>El aislamiento seguro multi-inquilino de datos es crítico para despliegues LLM en servicio de políticas para evitar riesgos regulatorios.</li>
+<li>El control de costos en inferencia LLM de alto rendimiento requiere modelos detallados de facturación y lógica estricta de tiempo de espera / reserva en la orquestación de agentes.</li>
+<li>Los marcos de riesgo de IA ahora exigen monitoreo continuo y trazabilidad lista para auditorías en aplicaciones de cumplimiento vinculadas a modelos de underwriting y reclamaciones.</li>
 </ul>
 <hr />
 <h3 id="6-notas-de-rohit">6) Notas de Rohit<a class="headerlink" href="#6-notas-de-rohit" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Los nuevos métodos RAG reducen alucinaciones pero la integración con sistemas de datos heredados de seguros será compleja.</li>
-<li>Hay que revisar los trade-offs de costos de orquestación multinivel para triage de reclamos, especialmente contratos de leasing de GPU.</li>
-<li>Decir a los equipos que prioricen la integración de auditoría de gobernanza temprano, no como un pensamiento posterior al despliegue.</li>
+<li>Destacan las mejoras de seguridad de Azure OpenAI; debo verificar si se integran bien con nuestras zonas internas de datos.</li>
+<li>Revisión esta semana de flujos de trabajo de detección de alucinaciones en automatización de reclamaciones para reducir falsos positivos.</li>
+<li>Recomendaría a los equipos reforzar mecanismos de reserva en agentes — los tiempos de espera y reintentos afectan directamente costos y cumplimiento de SLA en underwriting.</li>
 </ul>
 <hr />
-<h3 id="7-ejercicio-de-diseno">7) Ejercicio de Diseño<a class="headerlink" href="#7-ejercicio-de-diseno" title="Permanent link">&para;</a></h3>
-<p><strong>Escenario:</strong> Automatizar el procesamiento de reclamos con agentes de IA que recuperan datos históricos de reclamos, evalúan cobertura de pólizas y recomiendan aprobaciones o escalaciones.</p>
+<h3 id="7-ejercicio-de-diseno">7) Ejercicio de diseño<a class="headerlink" href="#7-ejercicio-de-diseno" title="Permanent link">&para;</a></h3>
+<p><strong>Escenario:</strong> Automatizar triaje de reclamaciones en un gran asegurador usando plataforma LLM con agentes que integra múltiples fuentes de datos bajo estricta normativa.</p>
 <p><strong>Restricciones:</strong>
-- Debe cumplir con regulaciones modelo NAIC y HIPAA para datos de pacientes.
-- Todas las decisiones que influyan en pagos de reclamos requieren trazabilidad y supervisión humana.
-- Los sistemas de datos heredados en mainframe contienen historial crítico de pólizas y reclamos.</p>
+- Cumplimiento con leyes modelo NAIC sobre manejo de datos personales de pólizas.
+- Mandatos GDPR para recuperación y uso de datos de asegurados en la UE.
+- Necesidad de trazabilidad operacional para auditorías regulatorias.</p>
 <p><strong>Preguntas guía:</strong>
-- ¿Cómo diseñar sistemas de recuperación que integren datos heredados con modelos RAG asegurando frescura y exactitud?
-- ¿Qué estrategias de orquestación de modelos limitan costos de inferencia mientras manejan picos de volumen en eventos catastróficos?
-- ¿Cómo aplicar políticas de gobernanza que registren decisiones del agente y detecten incumplimientos sin retrasar reclamos?
-- ¿Cuáles son protocolos aceptables de respaldo si las decisiones del agente entran en conflicto con reglas de suscripción?
-- ¿Cómo validar continuamente la relevancia de recuperación en RAG para evitar adjudicación defectuosa de reclamos?</p>
+- ¿Cómo hacer cumplir la separación de datos a nivel inquilino en operaciones de agentes para cumplir reglas de soberanía de datos?
+- ¿Qué estrategias de reserva previenen excesos costosos en inferencia LLM durante picos de reclamaciones?
+- ¿Cómo incorporar detección de alucinaciones en el pipeline de triaje sin bloquear reclamaciones urgentes?
+- ¿Qué metadatos de trazabilidad de auditoría deben capturarse para cumplir con registros NAIC y GDPR?
+- ¿Cómo pueden los equipos de cumplimiento establecer umbrales de riesgo y activar revisiones manuales dentro de la capa de orquestación?</p>
 <hr />
 <!-- AII_TODAY_START -->
 <p><a id="aii-today"></a></p>
-<h3 id="indice-de-implicaciones-de-arquitectura-hoy">Índice de Implicaciones de Arquitectura (Hoy)<a class="headerlink" href="#indice-de-implicaciones-de-arquitectura-hoy" title="Permanent link">&para;</a></h3>
-<!-- 3–5 bullets. Each must start with a theme key + human label. One line each. Must include Component + Decision. -->
-
+<h3 id="indice-de-implicaciones-arquitectonicas-hoy">Índice de Implicaciones Arquitectónicas (Hoy)<a class="headerlink" href="#indice-de-implicaciones-arquitectonicas-hoy" title="Permanent link">&para;</a></h3>
 <ul>
-<li>[DATA] Datos, RAG y Conocimiento — Componente: recuperador; Decisión: añadir recuperación multivectorial con puntuación de confianza en suscripción.</li>
-<li>[COST] Infraestructura, Hardware y Costos — Componente: orquestador; Decisión: implementar cambio dinámico de modelo basado en complejidad del reclamo.</li>
-<li>[GOV] Seguridad, Privacidad y Gobernanza — Componente: sistema de auditoría; Decisión: imponer registros en todas las acciones de suscripción impulsadas por IA.</li>
-<li>[REL] Fiabilidad y Evaluación — Componente: monitoreo de modelo; Decisión: construir verificaciones de relevancia continua para evitar desviación de datos.</li>
-<li>[OPS] Producto y Modelo Operativo — Componente: equipo de gobernanza; Decisión: establecer ciclos semanales de revisión de cumplimiento e incidentes.</li>
+<li>[GOV] Seguridad, Privacidad y Gobernanza — Componente: canalización de servicio de políticas; Decisión: implementar aislamiento de datos multi-inquilino con funciones seguras de Azure OpenAI.</li>
+<li>[REL] Confiabilidad y Evaluación — Componente: evaluadores de automatización de reclamaciones; Decisión: integrar benchmarks de detección de alucinaciones antes del despliegue.</li>
+<li>[COST] Infraestructura, Hardware y Costos — Componente: inferencia LLM en triaje de reclamaciones; Decisión: aplicar presupuestos por llamada y tiempos de espera estrictos para controlar gastos.</li>
+<li>[AGENT] Agentes y Orquestación — Componente: lógica del orquestador; Decisión: diseñar rutas de reserva ante fallo de inferencia para mantener flujo en canalización.</li>
+<li>[OPS] Producto y Modelo Operativo — Componente: flujos de trabajo del equipo de cumplimiento; Decisión: definir protocolos para gestionar alucinaciones señaladas y alertas de riesgo.</li>
 </ul>
 <!-- AII_TODAY_END -->
 
