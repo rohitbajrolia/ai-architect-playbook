@@ -927,7 +927,8 @@
 </blockquote>
 <h1 id="2026-08-06">2026-08-06<a class="headerlink" href="#2026-08-06" title="Permanent link">&para;</a></h1>
 <h2 id="daily-framework-for-2026-08-06">Daily Framework for 2026-08-06<a class="headerlink" href="#daily-framework-for-2026-08-06" title="Permanent link">&para;</a></h2>
-<p><strong>Topic:</strong> AI Security &amp; Infrastructure Challenges</p>
+<p><strong>Topic:</strong> EU AI Act Compliance Deadlines
+<strong>Topic:</strong> AI Security &amp; Infrastructure Challenges</p>
 <p>How I read this page:
 - [REL] Reliability &amp; Evaluation — What fails in prod? How do we test + observe it?
 - [AGENT] Agents &amp; Orchestration — What runs the loop? What actions can it take?
@@ -938,6 +939,11 @@
 <p>Quick system map (to place each item): Model → Context (RAG/memory) → Orchestrator → Tools → Evals/Tracing → Governance.</p>
 <h3 id="1-todays-signals">1) Today's Signals<a class="headerlink" href="#1-todays-signals" title="Permanent link">&para;</a></h3>
 <ul>
+<li><strong>2026-08-06</strong>: <a href="https://actuary.info/insights/eu-ai-act-august-2026-carrier-high-risk-compliance-gaps">EU AI Act's August 2 Deadline Just Moved: What Carriers Still Owe</a> — The EU AI Act's high-risk obligations for life and health underwriting AI have been deferred to December 2, 2027, but some obligations remain effective from August 2, 2026.</li>
+<li><strong>2026-08-06</strong>: <a href="https://www.containment.ai/blog/eu-ai-act-august-2026-financial-services-article-26">Credit Scoring Is High-Risk AI Under the EU AI Act. Financial Services Has Until the August 2 Deadline.</a> — Credit scoring, AML risk profiling, and insurance underwriting are classified as high-risk AI under the EU AI Act, with obligations effective from August 2, 2026.</li>
+<li><strong>2026-08-06</strong>: <a href="https://insurabeat.com/eiopas-two-step-ai-mandate-sets-august-2026-deadline-as-eu-insurers-face-e35m-penalties/">EIOPA’s Two-Step AI Mandate Sets August 2026 Deadline as EU Insurers Face €35M Penalties</a> — EIOPA mandates two-step impact assessments for EU insurers by August 2026, with penalties up to €35 million for non-compliance.</li>
+<li><strong>2026-08-06</strong>: <a href="https://www.notch.cx/learn/audit-ready-before-august-2026">Audit-Ready Before August 2026 | The Notch Regulatory Posture for Insurance AI</a> — Insurance carriers deploying AI in regulated workflows must be audit-ready before August 2026, with evidence of compliance required.</li>
+<li><strong>2026-08-06</strong>: <a href="https://agentinsured.eu/articles/ai-liability-insurance-pricing-benchmarks-2026">AI Liability Insurance Pricing in 2026. Benchmarks, Rate Structures, and What Drives Premium.</a> — The AI liability insurance market is in active price discovery, with no standardized rate schedule and only a handful of carriers offering products.</li>
 <li><strong>2026-08-02</strong>: <a href="https://www.infoq.com/ai-security/">AI Security &amp; Privacy Engineering Certification</a> — InfoQ announces a new certification program focusing on securing and governing production AI systems, covering sensitive data, guardrails, evaluations, and audits.</li>
 <li><strong>2026-07-27</strong>: <a href="https://blogs.microsoft.com/blog/2026/07/27/rethinking-security-for-the-age-of-ai/">Rethinking Security for the Age of AI</a> — Microsoft introduces Project Perception, a new cybersecurity framework designed to operate at the speed of AI, emphasizing continuous learning and adaptation.</li>
 <li><strong>2026-07-23</strong>: <a href="https://aws.amazon.com/blogs/security/enterprise-security-at-machine-speed-aws-black-hat-2026-preview/">Enterprise Security at Machine Speed: AWS Black Hat 2026 Preview</a> — AWS previews its participation in Black Hat 2026, focusing on delivering enterprise security solutions that match the speed of AI-driven events.</li>
@@ -946,6 +952,16 @@
 </ul>
 <hr />
 <h3 id="2-genai">2) GenAI<a class="headerlink" href="#2-genai" title="Permanent link">&para;</a></h3>
+<h4 id="eu-ai-act-compliance-deadlines">EU AI Act Compliance Deadlines<a class="headerlink" href="#eu-ai-act-compliance-deadlines" title="Permanent link">&para;</a></h4>
+<div class="admonition note">
+<p class="admonition-title">Architectural Implication</p>
+<ul>
+<li>[GOV] Security, Privacy &amp; Governance — Implement a compliance tracking system to monitor and ensure adherence to evolving AI regulations.</li>
+<li>[OPS] Product &amp; Operating Model — Design AI systems with modular components to facilitate updates in response to regulatory changes.</li>
+</ul>
+</div>
+<p>Open questions
+- How can we streamline the compliance tracking process to minimize operational overhead?</p>
 <h4 id="ai-security-privacy-engineering-certification">AI Security &amp; Privacy Engineering Certification<a class="headerlink" href="#ai-security-privacy-engineering-certification" title="Permanent link">&para;</a></h4>
 <div class="admonition note">
 <p class="admonition-title">Architectural Implication</p>
@@ -966,6 +982,16 @@
 - What specific AI-driven security threats does Project Perception address?</p>
 <hr />
 <h3 id="3-agentic-ai">3) Agentic AI<a class="headerlink" href="#3-agentic-ai" title="Permanent link">&para;</a></h3>
+<h4 id="ai-liability-insurance-market-dynamics">AI Liability Insurance Market Dynamics<a class="headerlink" href="#ai-liability-insurance-market-dynamics" title="Permanent link">&para;</a></h4>
+<div class="admonition note">
+<p class="admonition-title">Architectural Implication</p>
+<ul>
+<li>[COST] Infra, Hardware &amp; Cost — Assess the financial impact of potential AI-related liabilities and adjust risk management strategies accordingly.</li>
+<li>[OPS] Product &amp; Operating Model — Develop AI systems with built-in audit trails to support liability assessments and insurance claims.</li>
+</ul>
+</div>
+<p>Open questions
+- What are the most effective strategies for integrating audit trails into existing AI architectures?</p>
 <h4 id="enterprise-security-at-machine-speed-aws-black-hat-2026-preview">Enterprise Security at Machine Speed: AWS Black Hat 2026 Preview<a class="headerlink" href="#enterprise-security-at-machine-speed-aws-black-hat-2026-preview" title="Permanent link">&para;</a></h4>
 <div class="admonition note">
 <p class="admonition-title">Architectural Implication</p>
@@ -986,6 +1012,16 @@
 - What are the key emerging standards for AI data center security?</p>
 <hr />
 <h3 id="4-ai-radar">4) AI Radar<a class="headerlink" href="#4-ai-radar" title="Permanent link">&para;</a></h3>
+<h4 id="eiopas-ai-governance-requirements">EIOPA's AI Governance Requirements<a class="headerlink" href="#eiopas-ai-governance-requirements" title="Permanent link">&para;</a></h4>
+<div class="admonition note">
+<p class="admonition-title">Architectural Implication</p>
+<ul>
+<li>[GOV] Security, Privacy &amp; Governance — Establish governance frameworks that align with EIOPA's two-step impact assessment requirements.</li>
+<li>[OPS] Product &amp; Operating Model — Ensure AI system designs facilitate comprehensive impact assessments and documentation.</li>
+</ul>
+</div>
+<p>Open questions
+- How can we balance the need for detailed impact assessments with the desire for agile AI development?</p>
 <h4 id="grafanas-pyroscope-20-makes-continuous-profiling-practical-at-scale">Grafana's Pyroscope 2.0 Makes Continuous Profiling Practical at Scale<a class="headerlink" href="#grafanas-pyroscope-20-makes-continuous-profiling-practical-at-scale" title="Permanent link">&para;</a></h4>
 <div class="admonition note">
 <p class="admonition-title">Architectural Implication</p>
@@ -998,6 +1034,9 @@
 <hr />
 <h3 id="5-cto-brief">5) CTO Brief<a class="headerlink" href="#5-cto-brief" title="Permanent link">&para;</a></h3>
 <ul>
+<li>Monitor regulatory deadlines to ensure timely compliance.</li>
+<li>Integrate compliance tracking into AI development processes.</li>
+<li>Prepare for potential financial implications of AI-related liabilities.</li>
 <li>Implement AI security certifications to ensure compliance with evolving standards.</li>
 <li>Integrate continuous learning mechanisms to adapt to AI-driven security threats.</li>
 <li>Adopt machine-speed security tools to enhance real-time threat detection and response.</li>
@@ -1005,13 +1044,27 @@
 <hr />
 <h3 id="6-rohits-notes">6) Rohit's Notes<a class="headerlink" href="#6-rohits-notes" title="Permanent link">&para;</a></h3>
 <ul>
+<li>Surprised by the rapid evolution of AI liability insurance markets.</li>
+<li>Need to re-check our compliance status against the latest EU AI Act requirements.</li>
+<li>Remind the team to prioritize compliance in upcoming AI projects.</li>
 <li>Surprised by the rapid development of AI security certifications.</li>
 <li>Need to re-check integration strategies for AWS's security tools.</li>
 <li>Focus on implementing continuous profiling to improve system performance.</li>
 </ul>
 <hr />
 <h3 id="7-design-drill">7) Design Drill<a class="headerlink" href="#7-design-drill" title="Permanent link">&para;</a></h3>
-<p><strong>Scenario:</strong> Implementing a new AI-driven claims processing system in a large insurance company.</p>
+<p><strong>Scenario:</strong> Implementing an AI-driven underwriting system in a European insurance company.</p>
+<p><strong>Constraints:</strong>
+- Compliance with EU AI Act's high-risk provisions.
+- Integration with existing legacy systems.
+- Data privacy regulations (e.g., GDPR).</p>
+<p><strong>Guiding questions:</strong>
+- How do we ensure the AI system meets all compliance requirements?
+- What steps are needed to integrate the new system with legacy infrastructure?
+- How do we handle data privacy concerns, especially with sensitive customer information?
+- What training is required for staff to effectively use the new system?
+- How do we monitor and audit the AI system's decisions to ensure fairness and transparency?
+<strong>Scenario:</strong> Implementing a new AI-driven claims processing system in a large insurance company.</p>
 <p><strong>Constraints:</strong>
 - Compliance with NAIC model laws.
 - Integration with legacy mainframe systems.
@@ -1029,6 +1082,11 @@
 <!-- 3–5 bullets. Each must start with a theme key + human label. One line each. Must include Component + Decision. -->
 
 <ul>
+<li>[GOV] Security, Privacy &amp; Governance — Component: compliance tracking system; Decision: implement to monitor adherence to evolving AI regulations.</li>
+<li>[OPS] Product &amp; Operating Model — Component: AI system design; Decision: develop with modular components to facilitate updates in response to regulatory changes.</li>
+<li>[COST] Infra, Hardware &amp; Cost — Component: risk management strategy; Decision: adjust to account for potential AI-related liabilities.</li>
+<li>[OPS] Product &amp; Operating Model — Component: AI system audit trails; Decision: integrate to support liability assessments and insurance claims.</li>
+<li>[GOV] Security, Privacy &amp; Governance — Component: governance framework; Decision: establish to align with EIOPA's impact assessment requirements.</li>
 <li>[GOV] Security, Privacy &amp; Governance — Component: AI security certification program; Decision: Implement certification to ensure compliance with evolving AI security standards.</li>
 <li>[GOV] Security, Privacy &amp; Governance — Component: Project Perception framework; Decision: Integrate continuous learning mechanisms to adapt to AI-driven security threats.</li>
 <li>[OPS] Product &amp; Operating Model — Component: AWS security solutions; Decision: Adopt AWS's machine-speed security tools to enhance real-time threat detection and response.</li>
