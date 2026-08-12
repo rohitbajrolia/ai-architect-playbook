@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Azure AI Retirement & Healthcare AI — AI architecture signals and implications for 2026-08-11, grounded in insurance and financial services delivery.">
+        <meta name="description" content="2026-08-11 — AI architecture signals and implications for 2026-08-11, grounded in insurance and financial services delivery.">
       
       
       
@@ -923,11 +923,10 @@
 
 
 <blockquote>
-<p>Entry #155 · ~5 min read · 2026-08-11</p>
+<p>Entry #156 · ~6 min read · 2026-08-11</p>
 </blockquote>
 <h1 id="2026-08-11">2026-08-11<a class="headerlink" href="#2026-08-11" title="Permanent link">&para;</a></h1>
 <h2 id="daily-framework-for-2026-08-11">Daily Framework for 2026-08-11<a class="headerlink" href="#daily-framework-for-2026-08-11" title="Permanent link">&para;</a></h2>
-<p><strong>Topic:</strong> Azure AI Retirement &amp; Healthcare AI</p>
 <p>How I read this page:
 - [REL] Reliability &amp; Evaluation — What fails in prod? How do we test + observe it?
 - [AGENT] Agents &amp; Orchestration — What runs the loop? What actions can it take?
@@ -938,103 +937,104 @@
 <p>Quick system map (to place each item): Model → Context (RAG/memory) → Orchestrator → Tools → Evals/Tracing → Governance.</p>
 <h3 id="1-todays-signals">1) Today's Signals<a class="headerlink" href="#1-todays-signals" title="Permanent link">&para;</a></h3>
 <ul>
-<li><strong>2026-06-02</strong>: <a href="https://news.microsoft.com/source/2026/06/02/mayo-clinic-and-microsoft-collaborate-to-develop-a-frontier-ai-model-for-healthcare/">Mayo Clinic and Microsoft collaborate to develop a frontier AI model for healthcare</a> — A new AI model aims to enhance healthcare by combining Mayo Clinic's expertise with Microsoft's AI capabilities.</li>
-<li><strong>2026-06-22</strong>: <a href="https://learn.microsoft.com/en-au/answers/questions/5934023/will-azure-ai-agents-sdk-foundry-agent-service-cla">Microsoft Foundry Agent Service (classic) retirement details</a> — Clarifies that Foundry Agent Service (classic) will retire on March 31, 2027, despite the Assistants API retiring on August 26, 2026.</li>
+<li><strong>2026-08-11</strong>: <a href="https://actuary.info/insights/eu-ai-act-august-2026-carrier-high-risk-compliance-gaps">EU AI Act's August 2 Deadline Just Moved: What Carriers Still Owe</a> — The EU AI Act's high-risk obligations for life and health underwriting AI have been deferred to December 2, 2027, but some obligations remain binding on August 2, 2026.</li>
+<li><strong>2026-08-11</strong>: <a href="https://www.containment.ai/blog/eu-ai-act-august-2026-financial-services-article-26">Credit Scoring Is High-Risk AI Under the EU AI Act. Financial Services Has Until the August 2 Deadline.</a> — The EU AI Act classifies credit scoring, AML risk profiling, and insurance underwriting as "high-risk," with obligations attaching to the firm operating the system.</li>
+<li><strong>2026-08-11</strong>: <a href="https://www.notch.cx/learn/audit-ready-before-august-2026">Audit-Ready Before August 2026 | The Notch Regulatory Posture for Insurance AI</a> — Insurance carriers deploying AI in regulated workflows must be audit-ready by August 2, 2026, with regulators now seeking evidence of compliance.</li>
+<li><strong>2026-08-11</strong>: <a href="https://insurabeat.com/eiopas-two-step-ai-mandate-sets-august-2026-deadline-as-eu-insurers-face-e35m-penalties/">EIOPA's Two-Step AI Mandate Sets August 2026 Deadline as EU Insurers Face €35M Penalties</a> — EIOPA mandates two-step impact assessments for EU insurers by August 2026, with penalties up to €35 million for non-compliance.</li>
+<li><strong>2026-08-11</strong>: <a href="https://agentinsured.eu/articles/ai-liability-insurance-market-map-2026">The 2026 AI Liability Insurance Market Map. Every Carrier, Product, and Capacity.</a> — A comprehensive map of the AI liability insurance market, detailing carriers, products, and capacities as of April 2026.</li>
+<li><strong>2026-08-11</strong>: <a href="https://agentinsured.eu/articles/axa-allianz-zurich-tier1-european-insurer-ai-stance-2026">AXA, Allianz, Zurich: Where Tier-One Insurers Stand on AI</a> — Analysis of the AI liability positions of major European insurers as of June 2026.</li>
+<li><strong>2026-08-11</strong>: <a href="https://agentinsured.eu/articles/ai-liability-insurance-pricing-benchmarks-2026">AI Liability Insurance Pricing in 2026. Benchmarks, Rate Structures, and What Drives Premium.</a> — An analysis of AI liability insurance pricing, benchmarks, and premium drivers as of April 2026.</li>
+<li><strong>2026-08-11</strong>: <a href="https://www.reinsurancene.ws/ata-introduces-750m-insurance-facility-to-support-global-ai-infrastructure/">ATA introduces $750m insurance facility to support global AI infrastructure</a> — ATA launches a $750 million insurance facility to support global AI infrastructure expansion.</li>
+<li><strong>2026-08-11</strong>: <a href="https://www.mckinsey.com/industries/financial-services/our-insights/how-ai-will-reshape-the-economics-of-insurance-a-ceos-guide-to-strategy">How AI is reshaping the economics of insurance | McKinsey</a> — McKinsey discusses how AI is transforming the economics of the insurance industry as of July 2026.</li>
 </ul>
 <hr />
 <h3 id="2-genai">2) GenAI<a class="headerlink" href="#2-genai" title="Permanent link">&para;</a></h3>
-<h4 id="azure-ai-retirement">Azure AI Retirement<a class="headerlink" href="#azure-ai-retirement" title="Permanent link">&para;</a></h4>
+<h4 id="model-shifts-need-a-tighter-release-check">Model shifts need a tighter release check<a class="headerlink" href="#model-shifts-need-a-tighter-release-check" title="Permanent link">&para;</a></h4>
 <div class="admonition note">
 <p class="admonition-title">Architectural Implication</p>
 <ul>
-<li>[REL] Reliability &amp; Evaluation — Component: Assistants API; Decision: Plan migration to new APIs before August 26, 2026.</li>
-<li>[GOV] Security, Privacy &amp; Governance — Component: Data pipelines; Decision: Ensure compliance with data handling during migration.</li>
-<li>[OPS] Product &amp; Operating Model — Component: Development teams; Decision: Allocate resources for migration to new services.</li>
+<li>[REL] Reliability &amp; Evaluation — I should treat a model swap like any other regression risk and rerun the eval pack before rollout.</li>
+<li>[AGENT] Agents &amp; Orchestration — Keep agent behavior pinned behind flags when model behavior starts moving around.</li>
+<li>[GOV] Security, Privacy &amp; Governance — Prompt and policy changes that affect decisions should go through approval, not quiet edits.</li>
 </ul>
 </div>
-<p>Open questions
-- How will the retirement of the Assistants API impact existing applications?</p>
-<h4 id="healthcare-ai-collaboration">Healthcare AI Collaboration<a class="headerlink" href="#healthcare-ai-collaboration" title="Permanent link">&para;</a></h4>
+<h4 id="retrieval-and-cost-rules-need-to-stay-visible">Retrieval and cost rules need to stay visible<a class="headerlink" href="#retrieval-and-cost-rules-need-to-stay-visible" title="Permanent link">&para;</a></h4>
 <div class="admonition note">
 <p class="admonition-title">Architectural Implication</p>
 <ul>
-<li>[DATA] Data, RAG &amp; Knowledge — Component: Data integration; Decision: Establish secure data-sharing protocols with healthcare partners.</li>
-<li>[COST] Infra, Hardware &amp; Cost — Component: Cloud infrastructure; Decision: Assess cost implications of scaling AI models for healthcare.</li>
-<li>[OPS] Product &amp; Operating Model — Component: Project management; Decision: Define clear timelines and responsibilities for collaboration.</li>
+<li>[DATA] Data, RAG &amp; Knowledge — I want freshness checks separated from answer synthesis so stale context is obvious.</li>
+<li>[COST] Infra, Hardware &amp; Cost — Track token and latency budget per workflow before usage quietly spreads.</li>
+<li>[OPS] Product &amp; Operating Model — One owner should review failures, drift, and rollout scope every week.</li>
 </ul>
 </div>
-<p>Open questions
-- What specific healthcare use cases will the new AI model address?</p>
 <hr />
 <h3 id="3-agentic-ai">3) Agentic AI<a class="headerlink" href="#3-agentic-ai" title="Permanent link">&para;</a></h3>
-<h4 id="microsoft-foundry-agent-service-classic-retirement">Microsoft Foundry Agent Service (classic) Retirement<a class="headerlink" href="#microsoft-foundry-agent-service-classic-retirement" title="Permanent link">&para;</a></h4>
+<h4 id="agent-permissions-need-a-smaller-box">Agent permissions need a smaller box<a class="headerlink" href="#agent-permissions-need-a-smaller-box" title="Permanent link">&para;</a></h4>
 <div class="admonition note">
 <p class="admonition-title">Architectural Implication</p>
 <ul>
-<li>[AGENT] Agents &amp; Orchestration — Component: Agent orchestration; Decision: Transition to new agent orchestration frameworks before March 31, 2027.</li>
-<li>[REL] Reliability &amp; Evaluation — Component: Service dependencies; Decision: Conduct thorough testing to ensure service continuity post-migration.</li>
-<li>[GOV] Security, Privacy &amp; Governance — Component: Compliance checks; Decision: Review and update compliance measures in new service.</li>
+<li>[AGENT] Agents &amp; Orchestration — Start with a smaller tool allowlist and force escalation for anything hard to undo.</li>
+<li>[REL] Reliability &amp; Evaluation — Multi-step failures need replayable traces, otherwise debugging turns into guesswork.</li>
+<li>[GOV] Security, Privacy &amp; Governance — Log who approved an autonomous action and what context the system had at that point.</li>
 </ul>
 </div>
-<p>Open questions
-- What are the key differences between the classic and new Foundry Agent Services?</p>
+<h4 id="state-handling-is-where-production-pain-shows-up">State handling is where production pain shows up<a class="headerlink" href="#state-handling-is-where-production-pain-shows-up" title="Permanent link">&para;</a></h4>
+<div class="admonition note">
+<p class="admonition-title">Architectural Implication</p>
+<ul>
+<li>[DATA] Data, RAG &amp; Knowledge — Memory writes should stay scoped, reviewed, and reversible so context does not get polluted.</li>
+<li>[COST] Infra, Hardware &amp; Cost — Cap retry depth and tool-call fan-out before long-running tasks get expensive and weird.</li>
+<li>[OPS] Product &amp; Operating Model — Someone needs to own the runbooks for stuck tasks, bad memory, and retry storms.</li>
+</ul>
+</div>
 <hr />
 <h3 id="4-ai-radar">4) AI Radar<a class="headerlink" href="#4-ai-radar" title="Permanent link">&para;</a></h3>
-<h4 id="microsoft-build-2026-announcements">Microsoft Build 2026 Announcements<a class="headerlink" href="#microsoft-build-2026-announcements" title="Permanent link">&para;</a></h4>
+<h4 id="new-capability-should-enter-through-a-small-pilot-first">New capability should enter through a small pilot first<a class="headerlink" href="#new-capability-should-enter-through-a-small-pilot-first" title="Permanent link">&para;</a></h4>
 <div class="admonition note">
 <p class="admonition-title">Architectural Implication</p>
 <ul>
-<li>[REL] Reliability &amp; Evaluation — Component: Azure Cobalt 200 VMs; Decision: Evaluate performance improvements for AI workloads.</li>
-<li>[GOV] Security, Privacy &amp; Governance — Component: Agent Control Specification; Decision: Implement governance protocols for AI agents.</li>
-<li>[COST] Infra, Hardware &amp; Cost — Component: Azure Lasv5 and Laosv5 VMs; Decision: Analyze cost-effectiveness for large-scale AI deployments.</li>
+<li>[REL] Reliability &amp; Evaluation — Start with a narrow eval suite tied to one workflow before opening the gate wider.</li>
+<li>[GOV] Security, Privacy &amp; Governance — Review data exposure paths before enabling anything new in shared environments.</li>
+<li>[COST] Infra, Hardware &amp; Cost — Put the pilot behind usage caps so excitement does not turn into surprise spend.</li>
 </ul>
 </div>
-<p>Open questions
-- How do the new Azure VMs compare to existing options in terms of performance and cost?</p>
 <hr />
 <h3 id="5-cto-brief">5) CTO Brief<a class="headerlink" href="#5-cto-brief" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Plan migration from deprecated Azure AI services to new APIs.</li>
-<li>Establish secure data-sharing protocols for healthcare AI collaborations.</li>
-<li>Evaluate new Azure VMs for AI workload optimization.</li>
+<li>Do not widen autonomy before the eval gate is boring and reliable.</li>
+<li>Keep tool permissions and memory scope tighter than the demo wants.</li>
+<li>Retries, traces, and approval paths are architecture, not cleanup work.</li>
 </ul>
 <hr />
 <h3 id="6-rohits-notes">6) Rohit's Notes<a class="headerlink" href="#6-rohits-notes" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Surprised by the tight timeline for Azure AI service migrations.</li>
-<li>Need to re-check compliance requirements for healthcare data sharing.</li>
-<li>Tell the team: Prioritize migration planning and resource allocation.</li>
+<li>The model drifted on structure again. Good reminder that content and layout should not depend on the same step.</li>
+<li>The safer pattern is obvious now: let the model find signals, then let code lock the page shape.</li>
 </ul>
 <hr />
 <h3 id="7-design-drill">7) Design Drill<a class="headerlink" href="#7-design-drill" title="Permanent link">&para;</a></h3>
-<p><strong>Scenario:</strong> Implementing a new AI-driven claims processing system.</p>
+<p><strong>Scenario:</strong> A platform team wants agent-driven approvals in an internal delivery workflow this quarter.</p>
 <p><strong>Constraints:</strong>
-- Compliance with HIPAA regulations.
-- Integration with legacy mainframe systems.
-- Approval from actuarial department required.</p>
+- Existing audit controls cannot be weakened
+- Cost must stay inside the current platform budget
+- Failures must fall back to a manual path in minutes</p>
 <p><strong>Guiding questions:</strong>
-- How do we ensure data privacy and security in the new system?
-- What steps are needed to integrate with existing mainframe infrastructure?
-- How do we obtain actuarial sign-off for the new system?
-- What are the scalability requirements for handling large claim volumes?
-- How do we monitor and evaluate the system's performance post-implementation?</p>
+- Which actions stay read-only by default?
+- Where is human approval still mandatory?
+- How will retries be capped and observed?
+- Which memory writes are allowed and reversible?
+- Which evals decide whether the pilot expands?</p>
 <hr />
 <!-- AII_TODAY_START -->
 <p><a id="aii-today"></a></p>
 <h3 id="architecture-implications-index-today">Architecture Implications Index (Today)<a class="headerlink" href="#architecture-implications-index-today" title="Permanent link">&para;</a></h3>
+<!-- 3–5 bullets. Each must start with a theme key + human label. One line each. Must include Component + Decision. -->
+
 <ul>
-<li>[REL] Reliability &amp; Evaluation — Component: Assistants API; Decision: Plan migration to new APIs before August 26, 2026.</li>
-<li>[GOV] Security, Privacy &amp; Governance — Component: Data pipelines; Decision: Ensure compliance with data handling during migration.</li>
-<li>[OPS] Product &amp; Operating Model — Component: Development teams; Decision: Allocate resources for migration to new services.</li>
-<li>[DATA] Data, RAG &amp; Knowledge — Component: Data integration; Decision: Establish secure data-sharing protocols with healthcare partners.</li>
-<li>[COST] Infra, Hardware &amp; Cost — Component: Cloud infrastructure; Decision: Assess cost implications of scaling AI models for healthcare.</li>
-<li>[OPS] Product &amp; Operating Model — Component: Project management; Decision: Define clear timelines and responsibilities for collaboration.</li>
-<li>[AGENT] Agents &amp; Orchestration — Component: Agent orchestration; Decision: Transition to new agent orchestration frameworks before March 31, 2027.</li>
-<li>[REL] Reliability &amp; Evaluation — Component: Service dependencies; Decision: Conduct thorough testing to ensure service continuity post-migration.</li>
-<li>[GOV] Security, Privacy &amp; Governance — Component: Compliance checks; Decision: Review and update compliance measures in new service.</li>
-<li>[REL] Reliability &amp; Evaluation — Component: Azure Cobalt 200 VMs; Decision: Evaluate performance improvements for AI workloads.</li>
-<li>[GOV] Security, Privacy &amp; Governance — Component: Agent Control Specification; Decision: Implement governance protocols for AI agents.</li>
-<li>[COST] Infra, Hardware &amp; Cost — Component: Azure Lasv5 and Laosv5 VMs; Decision: Analyze cost-effectiveness for large-scale AI deployments.</li>
+<li>[REL] Reliability &amp; Evaluation — Component: eval gate; Decision: block rollout until regression checks pass after model or tool changes.</li>
+<li>[AGENT] Agents &amp; Orchestration — Component: tool policy; Decision: keep permissions narrow and force escalation for sensitive actions.</li>
+<li>[DATA] Data, RAG &amp; Knowledge — Component: memory layer; Decision: scope writes and make them reversible before long-running use.</li>
+<li>[GOV] Security, Privacy &amp; Governance — Component: approval audit; Decision: capture actor, context, and decision path for autonomous steps.</li>
 </ul>
 <!-- AII_TODAY_END -->
 
