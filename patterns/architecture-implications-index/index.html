@@ -1379,7 +1379,7 @@
 <h2 id="reliability-evaluation">Reliability &amp; Evaluation<a class="headerlink" href="#reliability-evaluation" title="Permanent link">&para;</a></h2>
 <h3 id="2026-08">2026-08<a class="headerlink" href="#2026-08" title="Permanent link">&para;</a></h3>
 <ul>
-<li><strong>2026-08-13</strong> — Component: monitoring dashboard; Decision: include AI governance compliance metrics alongside performance SLAs in claims triage agents. (<a href="../../daily/2026/08/2026-08-13/#aii-today">Daily</a>)</li>
+<li><strong>2026-08-13</strong> — Component: regression test suite; Decision: add end-to-end tests comparing outputs of distilled vs original models in claims text. (<a href="../../daily/2026/08/2026-08-13/#aii-today">Daily</a>)</li>
 <li><strong>2026-08-11</strong> — Component: eval gate; Decision: block rollout until regression checks pass after model or tool changes. (<a href="../../daily/2026/08/2026-08-11/#aii-today">Daily</a>)</li>
 <li><strong>2026-08-10</strong> — Component: eval gate; Decision: block rollout until regression checks pass after model or tool changes. (<a href="../../daily/2026/08/2026-08-10/#aii-today">Daily</a>)</li>
 <li><strong>2026-08-09</strong> — Component: agent orchestrator; Decision: add tool allowlists and timeout controls to prevent failure cascades in claims automation. (<a href="../../daily/2026/08/2026-08-09/#aii-today">Daily</a>)</li>
@@ -1474,7 +1474,7 @@
 <h2 id="agents-orchestration">Agents &amp; Orchestration<a class="headerlink" href="#agents-orchestration" title="Permanent link">&para;</a></h2>
 <h3 id="2026-08_1">2026-08<a class="headerlink" href="#2026-08_1" title="Permanent link">&para;</a></h3>
 <ul>
-<li><strong>2026-08-13</strong> — Component: agent escalation logic; Decision: add fail-safe escalation before underwriting agent finalizes decisions. (<a href="../../daily/2026/08/2026-08-13/#aii-today">Daily</a>)</li>
+<li><strong>2026-08-13</strong> — Component: claims triage agent; Decision: require human approval before claim denial escalations. (<a href="../../daily/2026/08/2026-08-13/#aii-today">Daily</a>)</li>
 <li><strong>2026-08-11</strong> — Component: tool policy; Decision: keep permissions narrow and force escalation for sensitive actions. (<a href="../../daily/2026/08/2026-08-11/#aii-today">Daily</a>)</li>
 <li><strong>2026-08-10</strong> — Component: tool policy; Decision: keep permissions narrow and force escalation for sensitive actions. (<a href="../../daily/2026/08/2026-08-10/#aii-today">Daily</a>)</li>
 <li><strong>2026-08-09</strong> — Component: orchestrator; Decision: embed retry logic on tool call failures in underwriting AI pipelines. (<a href="../../daily/2026/08/2026-08-09/#aii-today">Daily</a>)</li>
@@ -1602,7 +1602,6 @@
 <h2 id="data-rag-knowledge">Data, RAG &amp; Knowledge<a class="headerlink" href="#data-rag-knowledge" title="Permanent link">&para;</a></h2>
 <h3 id="2026-08_2">2026-08<a class="headerlink" href="#2026-08_2" title="Permanent link">&para;</a></h3>
 <ul>
-<li><strong>2026-08-13</strong> — Component: retrieval indexer; Decision: apply domain-specific indexing and incremental updates to improve financial data RAG accuracy and cost. (<a href="../../daily/2026/08/2026-08-13/#aii-today">Daily</a>)</li>
 <li><strong>2026-08-11</strong> — Component: memory layer; Decision: scope writes and make them reversible before long-running use. (<a href="../../daily/2026/08/2026-08-11/#aii-today">Daily</a>)</li>
 <li><strong>2026-08-10</strong> — Component: memory layer; Decision: scope writes and make them reversible before long-running use. (<a href="../../daily/2026/08/2026-08-10/#aii-today">Daily</a>)</li>
 <li><strong>2026-08-09</strong> — Component: retriever; Decision: enforce strict document freshness policies for policy servicing RAG contexts. (<a href="../../daily/2026/08/2026-08-09/#aii-today">Daily</a>)</li>
@@ -1716,7 +1715,7 @@
 <h2 id="infra-hardware-cost">Infra, Hardware &amp; Cost<a class="headerlink" href="#infra-hardware-cost" title="Permanent link">&para;</a></h2>
 <h3 id="2026-08_3">2026-08<a class="headerlink" href="#2026-08_3" title="Permanent link">&para;</a></h3>
 <ul>
-<li><strong>2026-08-13</strong> — Component: inference orchestrator; Decision: implement batch API calls with off-peak scheduling for cost control in policy servicing. (<a href="../../daily/2026/08/2026-08-13/#aii-today">Daily</a>)</li>
+<li><strong>2026-08-13</strong> — Component: inference pipeline; Decision: deploy distilled LLM variants to reduce GPU usage in underwriting. (<a href="../../daily/2026/08/2026-08-13/#aii-today">Daily</a>)</li>
 <li><strong>2026-08-12</strong> — Component: cloud billing system; Decision: implement real-time monitoring and alerting to detect and prevent runaway costs from AI agents. (<a href="../../daily/2026/08/2026-08-12/#aii-today">Daily</a>)</li>
 <li><strong>2026-08-11</strong> — Component: Cloud infrastructure; Decision: Assess cost implications of scaling AI models for healthcare. (<a href="../../daily/2026/08/2026-08-11/#aii-today">Daily</a>)</li>
 <li><strong>2026-08-11</strong> — Component: Azure Lasv5 and Laosv5 VMs; Decision: Analyze cost-effectiveness for large-scale AI deployments. (<a href="../../daily/2026/08/2026-08-11/#aii-today">Daily</a>)</li>
@@ -1852,6 +1851,7 @@
 <h2 id="product-operating-model">Product &amp; Operating Model<a class="headerlink" href="#product-operating-model" title="Permanent link">&para;</a></h2>
 <h3 id="2026-08_4">2026-08<a class="headerlink" href="#2026-08_4" title="Permanent link">&para;</a></h3>
 <ul>
+<li><strong>2026-08-13</strong> — Component: compliance review process; Decision: integrate periodic validation of AI agents’ decision logs and transparency reports. (<a href="../../daily/2026/08/2026-08-13/#aii-today">Daily</a>)</li>
 <li><strong>2026-08-12</strong> — Component: AI agent control plane; Decision: evaluate the feasibility and security implications of adopting self-hosted control (<a href="../../daily/2026/08/2026-08-12/#aii-today">Daily</a>)</li>
 <li><strong>2026-08-11</strong> — Component: Development teams; Decision: Allocate resources for migration to new services. (<a href="../../daily/2026/08/2026-08-11/#aii-today">Daily</a>)</li>
 <li><strong>2026-08-11</strong> — Component: Project management; Decision: Define clear timelines and responsibilities for collaboration. (<a href="../../daily/2026/08/2026-08-11/#aii-today">Daily</a>)</li>
@@ -1964,7 +1964,7 @@
 <h2 id="security-privacy-governance">Security, Privacy &amp; Governance<a class="headerlink" href="#security-privacy-governance" title="Permanent link">&para;</a></h2>
 <h3 id="2026-08_5">2026-08<a class="headerlink" href="#2026-08_5" title="Permanent link">&para;</a></h3>
 <ul>
-<li><strong>2026-08-13</strong> — Component: model audit pipeline; Decision: integrate fairness and transparency audits in underwriting automation. (<a href="../../daily/2026/08/2026-08-13/#aii-today">Daily</a>)</li>
+<li><strong>2026-08-13</strong> — Component: AI audit logs; Decision: enforce immutable logging and access controls in regulatory report generation agents. (<a href="../../daily/2026/08/2026-08-13/#aii-today">Daily</a>)</li>
 <li><strong>2026-08-11</strong> — Component: approval audit; Decision: capture actor, context, and decision path for autonomous steps. (<a href="../../daily/2026/08/2026-08-11/#aii-today">Daily</a>)</li>
 <li><strong>2026-08-10</strong> — Component: approval audit; Decision: capture actor, context, and decision path for autonomous steps. (<a href="../../daily/2026/08/2026-08-10/#aii-today">Daily</a>)</li>
 <li><strong>2026-08-09</strong> — Component: logging system; Decision: capture detailed agent tool invocation data for audit trails under regulatory compliance. (<a href="../../daily/2026/08/2026-08-09/#aii-today">Daily</a>)</li>
