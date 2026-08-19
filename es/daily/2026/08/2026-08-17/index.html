@@ -238,7 +238,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#description-mejoras-de-seguridad-en-ia-y-desarrollo-de-modelos-senales-de-arquitectura-de-ia-e-implicaciones-para-2026-08-17-fundamentadas-en-la-prestacion-de-servicios-de-seguros-y-financieros" class="md-skip">
+        <a href="#description-2026-08-17-senales-e-implicaciones-de-la-arquitectura-de-ia-para-2026-08-17-fundamentadas-en-la-entrega-de-servicios-de-seguros-y-financieros" class="md-skip">
           Skip to content
         </a>
       
@@ -922,126 +922,120 @@
   
 
 
-<!-- SOURCE_SHA256: a962c2c1c058a74da6297c790ffc306e479809304c89c1a1ae20d2b553ae3985 -->
+<!-- SOURCE_SHA256: 639403e61f6664ab9a948faddd67976b676cdef6755894c787d17af693d8bdfc -->
 <hr />
-<h2 id="description-mejoras-de-seguridad-en-ia-y-desarrollo-de-modelos-senales-de-arquitectura-de-ia-e-implicaciones-para-2026-08-17-fundamentadas-en-la-prestacion-de-servicios-de-seguros-y-financieros">description: "Mejoras de Seguridad en IA y Desarrollo de Modelos — Señales de arquitectura de IA e implicaciones para 2026-08-17, fundamentadas en la prestación de servicios de seguros y financieros."<a class="headerlink" href="#description-mejoras-de-seguridad-en-ia-y-desarrollo-de-modelos-senales-de-arquitectura-de-ia-e-implicaciones-para-2026-08-17-fundamentadas-en-la-prestacion-de-servicios-de-seguros-y-financieros" title="Permanent link">&para;</a></h2>
+<h2 id="description-2026-08-17-senales-e-implicaciones-de-la-arquitectura-de-ia-para-2026-08-17-fundamentadas-en-la-entrega-de-servicios-de-seguros-y-financieros">description: "2026-08-17 — Señales e implicaciones de la arquitectura de IA para 2026-08-17, fundamentadas en la entrega de servicios de seguros y financieros."<a class="headerlink" href="#description-2026-08-17-senales-e-implicaciones-de-la-arquitectura-de-ia-para-2026-08-17-fundamentadas-en-la-entrega-de-servicios-de-seguros-y-financieros" title="Permanent link">&para;</a></h2>
 <blockquote>
-<p>Entrada #161 · ~5 min de lectura · 2026-08-17</p>
+<p>Entrada #162 · ~5 min de lectura · 2026-08-17</p>
 </blockquote>
 <h1 id="2026-08-17">2026-08-17<a class="headerlink" href="#2026-08-17" title="Permanent link">&para;</a></h1>
 <h2 id="marco-diario-para-2026-08-17">Marco Diario para 2026-08-17<a class="headerlink" href="#marco-diario-para-2026-08-17" title="Permanent link">&para;</a></h2>
-<p><strong>Tema:</strong> Mejoras de Seguridad en IA y Desarrollo de Modelos</p>
 <p>Cómo leo esta página:
-- [REL] Confiabilidad y Evaluación — ¿Qué falla en producción? ¿Cómo lo testeamos y observamos?
+- [REL] Confiabilidad y Evaluación — ¿Qué falla en producción? ¿Cómo lo probamos y observamos?
 - [AGENT] Agentes y Orquestación — ¿Qué ejecuta el ciclo? ¿Qué acciones puede tomar?
 - [DATA] Datos, RAG y Conocimiento — ¿De dónde viene el contexto? ¿Cómo se recupera?
-- [GOV] Seguridad, Privacidad y Gobernanza — ¿Qué requiere políticas, permisos y auditoría?
-- [COST] Infraestructura, Hardware y Costos — ¿Qué se encarece (latencia/tokens/GPU/operaciones)? ¿Cómo lo limitamos?
+- [GOV] Seguridad, Privacidad y Gobernanza — ¿Qué necesita políticas, permisos y auditoría?
+- [COST] Infraestructura, Hardware y Costos — ¿Qué se vuelve caro (latencia/tokens/GPU/operaciones)? ¿Cómo lo limitamos?
 - [OPS] Producto y Modelo Operativo — ¿Quién es responsable semanalmente? ¿Cómo lo implementamos de forma segura?</p>
-<p>Mapa rápido del sistema (para situar cada ítem): Modelo → Contexto (RAG/memoria) → Orquestador → Herramientas → Evaluaciones/Rastreo → Gobernanza.</p>
+<p>Mapa rápido del sistema (para colocar cada item): Modelo → Contexto (RAG/memoria) → Orquestador → Herramientas → Evaluaciones/Trazas → Gobernanza.</p>
 <h3 id="1-senales-de-hoy">1) Señales de Hoy<a class="headerlink" href="#1-senales-de-hoy" title="Permanent link">&para;</a></h3>
 <ul>
-<li><strong>2026-08-17</strong>: <a href="https://aws.amazon.com/blogs/aws/aws-security-agent-adds-threat-modeling-kiro-power-and-claude-code-plugin-and-more/">AWS introduce modelado de amenazas y nuevas funciones de seguridad en AWS Security Agent</a> — Mejora medidas proactivas de seguridad para aplicaciones.</li>
-<li><strong>2026-08-17</strong>: <a href="https://www.microsoft.com/en-us/security/blog/2026/03/19/new-tools-and-guidance-announcing-zero-trust-for-ai/">Microsoft anuncia arquitectura de referencia Zero Trust para IA</a> — Refuerza la seguridad de sistemas de IA con controles de acceso basados en políticas.</li>
-<li><strong>2026-08-17</strong>: <a href="https://blogs.microsoft.com/blog/2026/06/02/microsoft-build-2026-be-yourself-at-work/">Microsoft lanza MAI-Thinking-1, un nuevo modelo de razonamiento</a> — Mejora instrucciones complejas de múltiples pasos y capacidades de generación de código.</li>
-<li><strong>2026-08-17</strong>: <a href="https://news.microsoft.com/build-2026/?msockid=18dd4de76e0c67b436515b456f2166eb">Microsoft presenta máquinas virtuales Azure Cobalt 200 optimizadas para cargas de trabajo agenticas en IA</a> — Ofrece mejora del 50% en rendimiento para aplicaciones modernas de IA.</li>
-<li><strong>2026-08-17</strong>: <a href="https://learn.microsoft.com/en-au/answers/questions/5934023/will-azure-ai-agents-sdk-foundry-agent-service-cla">Microsoft anuncia la retirada de la API de Asistentes el 26 de agosto de 2026</a> — Afecta a usuarios del Foundry Agent Service (clásico).</li>
+<li><strong>2026-08-17</strong>: <a href="https://www.microsoft.com/en-us/microsoft-cloud/blog/financial-services/2026/02/18/from-bottlenecks-to-breakthroughs-how-agentic-ai-is-reshaping-insurance/">La IA de Microsoft en Seguros</a> — Microsoft habla sobre cómo la IA agente está transformando las operaciones de seguros, desde el procesamiento de reclamaciones hasta la suscripción.</li>
+<li><strong>2026-08-17</strong>: <a href="https://siliconangle.com/2026/05/06/corgi-raises-160m-1-3b-valuation-expand-ai-native-insurance-platform/">Expansión de IA de Corgi</a> — Corgi Insurance recauda $160M para ampliar su plataforma de seguros nativa de IA.</li>
+<li><strong>2026-08-17</strong>: <a href="https://siliconangle.com/2026/07/15/agi-raises-70m-buy-transform-insurance-firms-ai-native-operations/">Transformación de IA de AGI</a> — AGI recauda $70M para adquirir y transformar firmas de seguros en operaciones nativas de IA.</li>
+<li><strong>2026-08-17</strong>: <a href="https://siliconangle.com/2026/03/24/insurance-tech-startup-shepherd-raises-42m-underwrite-physical-layer-ai/">Suscripción con IA de Shepherd</a> — Shepherd recauda $42M para suscribir la capa física de IA.</li>
+<li><strong>2026-08-17</strong>: <a href="https://aws.amazon.com/blogs/industries/rethink-everything-highlights-from-the-2026-aws-financial-services-symposium/">Aspectos Destacados del Simposio AWS</a> — AWS habla sobre agentes de IA que remodelan los servicios financieros en su simposio.</li>
 </ul>
 <hr />
-<h3 id="2-genia">2) GenIA<a class="headerlink" href="#2-genia" title="Permanent link">&para;</a></h3>
-<h4 id="mejoras-en-aws-security-agent">Mejoras en AWS Security Agent<a class="headerlink" href="#mejoras-en-aws-security-agent" title="Permanent link">&para;</a></h4>
+<h3 id="2-genai">2) GenAI<a class="headerlink" href="#2-genai" title="Permanent link">&para;</a></h3>
+<h4 id="los-cambios-de-modelo-necesitan-una-revision-de-lanzamiento-mas-estricta">Los cambios de modelo necesitan una revisión de lanzamiento más estricta<a class="headerlink" href="#los-cambios-de-modelo-necesitan-una-revision-de-lanzamiento-mas-estricta" title="Permanent link">&para;</a></h4>
 <div class="admonition note">
 <p class="admonition-title">Implicación Arquitectónica</p>
 <ul>
-<li>[REL] Confiabilidad y Evaluación — Integrar el modelado de amenazas de AWS Security Agent para identificar y mitigar proactivamente riesgos de seguridad en entornos de producción.</li>
-<li>[GOV] Seguridad, Privacidad y Gobernanza — Implementar monitoreo continuo y funciones de gobernanza de AWS Security Agent para asegurar el cumplimiento con estándares y regulaciones de la industria.</li>
+<li>[REL] Confiabilidad y Evaluación — Debo tratar un cambio de modelo como cualquier otro riesgo de regresión y volver a ejecutar el paquete de evaluación antes del despliegue.</li>
+<li>[AGENT] Agentes y Orquestación — Mantener el comportamiento del agente bloqueado detrás de flags cuando el comportamiento del modelo empiece a variar.</li>
+<li>[GOV] Seguridad, Privacidad y Gobernanza — Cambios en prompts y políticas que afecten decisiones deben pasar por aprobación, no por ediciones silenciosas.</li>
 </ul>
 </div>
-<p>Preguntas abiertas
-- ¿Cómo impactará la integración de AWS Security Agent en los flujos de trabajo de seguridad existentes y en los tiempos de respuesta a incidentes?</p>
-<h4 id="microsoft-zero-trust-para-ia">Microsoft Zero Trust para IA<a class="headerlink" href="#microsoft-zero-trust-para-ia" title="Permanent link">&para;</a></h4>
+<h4 id="las-reglas-de-recuperacion-y-costo-deben-mantenerse-visibles">Las reglas de recuperación y costo deben mantenerse visibles<a class="headerlink" href="#las-reglas-de-recuperacion-y-costo-deben-mantenerse-visibles" title="Permanent link">&para;</a></h4>
 <div class="admonition note">
 <p class="admonition-title">Implicación Arquitectónica</p>
 <ul>
-<li>[GOV] Seguridad, Privacidad y Gobernanza — Adoptar el marco Zero Trust para IA de Microsoft para aplicar controles de acceso estrictos y verificación continua, mejorando la postura de seguridad de los sistemas de IA.</li>
-<li>[OPS] Producto y Modelo Operativo — Alinear procesos de desarrollo y operación con los principios Zero Trust para garantizar un despliegue y mantenimiento seguros de aplicaciones de IA.</li>
+<li>[DATA] Datos, RAG y Conocimiento — Quiero que las verificaciones de frescura estén separadas de la síntesis de respuestas para que el contexto caducado sea evidente.</li>
+<li>[COST] Infraestructura, Hardware y Costos — Rastrear presupuesto de tokens y latencia por flujo de trabajo antes de que el uso se expanda sin control.</li>
+<li>[OPS] Producto y Modelo Operativo — Un responsable debe revisar fallos, desviaciones y el alcance del despliegue semanalmente.</li>
 </ul>
 </div>
-<p>Preguntas abiertas
-- ¿Cuáles son los pasos específicos de implementación y el cronograma para adoptar la arquitectura Zero Trust para IA?</p>
 <hr />
-<h3 id="3-ia-agentica">3) IA Agentica<a class="headerlink" href="#3-ia-agentica" title="Permanent link">&para;</a></h3>
-<h4 id="lanzamiento-del-modelo-mai-thinking-1">Lanzamiento del Modelo MAI-Thinking-1<a class="headerlink" href="#lanzamiento-del-modelo-mai-thinking-1" title="Permanent link">&para;</a></h4>
+<h3 id="3-ia-agente">3) IA Agente<a class="headerlink" href="#3-ia-agente" title="Permanent link">&para;</a></h3>
+<h4 id="los-permisos-de-agentes-necesitan-un-ambito-mas-pequeno">Los permisos de agentes necesitan un ámbito más pequeño<a class="headerlink" href="#los-permisos-de-agentes-necesitan-un-ambito-mas-pequeno" title="Permanent link">&para;</a></h4>
 <div class="admonition note">
 <p class="admonition-title">Implicación Arquitectónica</p>
 <ul>
-<li>[AGENT] Agentes y Orquestación — Utilizar MAI-Thinking-1 para tareas complejas de razonamiento en aplicaciones de IA agentica, mejorando las capacidades de toma de decisiones.</li>
-<li>[COST] Infraestructura, Hardware y Costos — Evaluar los requerimientos computacionales de MAI-Thinking-1 para optimizar la asignación de recursos y gestionar costos operativos.</li>
+<li>[AGENT] Agentes y Orquestación — Comenzar con una lista pequeña de herramientas permitidas y forzar escalado para cualquier cosa difícil de deshacer.</li>
+<li>[REL] Confiabilidad y Evaluación — Fallas multisecuencia necesitan trazas reproducibles, de otro modo la depuración se vuelve conjetural.</li>
+<li>[GOV] Seguridad, Privacidad y Gobernanza — Registrar quién aprobó una acción autónoma y qué contexto tenía el sistema en ese momento.</li>
 </ul>
 </div>
-<p>Preguntas abiertas
-- ¿Cuáles son los términos de licencia y costos asociados con el despliegue de MAI-Thinking-1 en entornos empresariales?</p>
-<h4 id="maquinas-virtuales-azure-cobalt-200">Máquinas Virtuales Azure Cobalt 200<a class="headerlink" href="#maquinas-virtuales-azure-cobalt-200" title="Permanent link">&para;</a></h4>
+<h4 id="la-gestion-del-estado-es-donde-aparece-el-dolor-en-produccion">La gestión del estado es donde aparece el dolor en producción<a class="headerlink" href="#la-gestion-del-estado-es-donde-aparece-el-dolor-en-produccion" title="Permanent link">&para;</a></h4>
 <div class="admonition note">
 <p class="admonition-title">Implicación Arquitectónica</p>
 <ul>
-<li>[COST] Infraestructura, Hardware y Costos — Usar Azure Cobalt 200 VMs para mejorar el rendimiento de cargas de trabajo IA agenticas, equilibrando costo y eficiencia computacional.</li>
-<li>[OPS] Producto y Modelo Operativo — Planificar estrategias de migración hacia Azure Cobalt 200 VMs para aprovechar mejoras de rendimiento en aplicaciones de IA.</li>
+<li>[DATA] Datos, RAG y Conocimiento — Las escrituras en memoria deben mantenerse con alcance definido, revisadas y reversibles para no contaminar el contexto.</li>
+<li>[COST] Infraestructura, Hardware y Costos — Limitar la profundidad de reintentos y la expansión de llamadas a herramientas antes de que tareas prolongadas se vuelvan costosas y extrañas.</li>
+<li>[OPS] Producto y Modelo Operativo — Alguien debe tener a su cargo las guías para tareas bloqueadas, memoria corrupta y tormentas de reintentos.</li>
 </ul>
 </div>
-<p>Preguntas abiertas
-- ¿Cuáles son las rutas de migración y desafíos potenciales al trasladar cargas de trabajo existentes a Azure Cobalt 200 VMs?</p>
 <hr />
 <h3 id="4-radar-de-ia">4) Radar de IA<a class="headerlink" href="#4-radar-de-ia" title="Permanent link">&para;</a></h3>
-<h4 id="retiro-de-la-api-de-asistentes">Retiro de la API de Asistentes<a class="headerlink" href="#retiro-de-la-api-de-asistentes" title="Permanent link">&para;</a></h4>
+<h4 id="la-nueva-capacidad-deberia-entrar-primero-por-un-piloto-pequeno">La nueva capacidad debería entrar primero por un piloto pequeño<a class="headerlink" href="#la-nueva-capacidad-deberia-entrar-primero-por-un-piloto-pequeno" title="Permanent link">&para;</a></h4>
 <div class="admonition note">
 <p class="admonition-title">Implicación Arquitectónica</p>
 <ul>
-<li>[OPS] Producto y Modelo Operativo — Desarrollar un plan de migración para la transición desde la API de Asistentes deprecated hacia soluciones alternativas para mantener la funcionalidad de las aplicaciones.</li>
-<li>[GOV] Seguridad, Privacidad y Gobernanza — Asegurar que la migración cumpla con regulaciones de seguridad y privacidad para evitar vulnerabilidades potenciales.</li>
+<li>[REL] Confiabilidad y Evaluación — Empezar con un conjunto de evaluación estrecho ligado a un flujo de trabajo antes de abrir la puerta más ampliamente.</li>
+<li>[GOV] Seguridad, Privacidad y Gobernanza — Revisar vías de exposición de datos antes de permitir cualquier novedad en entornos compartidos.</li>
+<li>[COST] Infraestructura, Hardware y Costos — Colocar límites de uso en el piloto para que el entusiasmo no se convierta en gasto sorpresa.</li>
 </ul>
 </div>
-<p>Preguntas abiertas
-- ¿Cuáles son las mejores prácticas para migrar desde la API de Asistentes para asegurar una mínima interrupción y mantener el cumplimiento?</p>
 <hr />
 <h3 id="5-resumen-para-cto">5) Resumen para CTO<a class="headerlink" href="#5-resumen-para-cto" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Integrar el modelado de amenazas de AWS Security Agent para identificar y mitigar proactivamente riesgos de seguridad en entornos de producción.</li>
-<li>Adoptar el marco Zero Trust para IA de Microsoft para aplicar controles de acceso estrictos y verificación continua, mejorando la postura de seguridad de los sistemas de IA.</li>
-<li>Utilizar MAI-Thinking-1 para tareas complejas de razonamiento en aplicaciones de IA agenticas, mejorando las capacidades de toma de decisiones.</li>
+<li>No ampliar la autonomía antes de que la puerta de evaluación sea aburrida y confiable.</li>
+<li>Mantener permisos de herramientas y alcance de memoria más ajustados que lo que quiere la demostración.</li>
+<li>Reintentos, trazas y caminos de aprobación son parte de la arquitectura, no trabajo de limpieza.</li>
 </ul>
 <hr />
 <h3 id="6-notas-de-rohit">6) Notas de Rohit<a class="headerlink" href="#6-notas-de-rohit" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Sorprendido por los rápidos avances en características de seguridad de IA de AWS y Microsoft.</li>
-<li>Necesidad de revisar el impacto del retiro de la API de Asistentes en nuestras aplicaciones actuales de IA.</li>
-<li>Enfoque en integrar MAI-Thinking-1 en nuestros sistemas de IA agentica para mejorar capacidades de razonamiento.</li>
+<li>El modelo volvió a desviarse en la estructura. Buen recordatorio de que el contenido y el diseño no deberían depender del mismo paso.</li>
+<li>El patrón más seguro es obvio ahora: dejar que el modelo encuentre señales, luego dejar que el código bloquee la forma de la página.</li>
 </ul>
 <hr />
 <h3 id="7-ejercicio-de-diseno">7) Ejercicio de Diseño<a class="headerlink" href="#7-ejercicio-de-diseno" title="Permanent link">&para;</a></h3>
-<p><strong>Escenario:</strong> Implementación de un nuevo sistema impulsado por IA para el procesamiento de reclamos en una compañía de seguros.</p>
+<p><strong>Escenario:</strong> Un equipo de plataforma quiere aprobaciones dirigidas por agentes en un flujo interno de entrega este trimestre.</p>
 <p><strong>Restricciones:</strong>
-- Cumplimiento con leyes modelo NAIC.
-- Integración con sistemas mainframe legados.
-- Regulaciones de privacidad de datos (p.ej., HIPAA).</p>
-<p><strong>Preguntas guía:</strong>
-- ¿Cómo aseguramos que el sistema de IA cumpla con las leyes modelo NAIC?
-- ¿Cuáles son los pasos para integrar el nuevo sistema con la infraestructura mainframe existente?
-- ¿Cómo manejamos los datos sensibles de clientes para cumplir con HIPAA?
-- ¿Cuáles son los benchmarks de rendimiento para el sistema de IA en el procesamiento de reclamos?
-- ¿Cómo monitoreamos y auditamos las decisiones del sistema de IA para mantener la transparencia?</p>
+- No se pueden debilitar los controles de auditoría existentes
+- El costo debe mantenerse dentro del presupuesto actual de la plataforma
+- Las fallas deben derivar a un camino manual en minutos</p>
+<p><strong>Preguntas orientadoras:</strong>
+- ¿Qué acciones permanecen por defecto solo lectura?
+- ¿Dónde sigue siendo obligatoria la aprobación humana?
+- ¿Cómo se limitarán y observarán los reintentos?
+- ¿Qué escrituras en memoria están permitidas y son reversibles?
+- ¿Qué evaluaciones deciden si el piloto se amplía?</p>
 <hr />
 <!-- AII_TODAY_START -->
 <p><a id="aii-today"></a></p>
 <h3 id="indice-de-implicaciones-arquitectonicas-hoy">Índice de Implicaciones Arquitectónicas (Hoy)<a class="headerlink" href="#indice-de-implicaciones-arquitectonicas-hoy" title="Permanent link">&para;</a></h3>
+<!-- 3–5 viñetas. Cada una debe comenzar con una clave temática + etiqueta humana. Una línea cada una. Debe incluir Componente + Decisión. -->
+
 <ul>
-<li>[REL] Confiabilidad y Evaluación — Componente: AWS Security Agent; Decisión: Integrar el modelado de amenazas para identificar y mitigar proactivamente riesgos de seguridad en entornos de producción.</li>
-<li>[GOV] Seguridad, Privacidad y Gobernanza — Componente: Marco Zero Trust para IA; Decisión: Adoptar para aplicar controles de acceso estrictos y verificación continua, mejorando la postura de seguridad de los sistemas de IA.</li>
-<li>[COST] Infraestructura, Hardware y Costos — Componente: modelo MAI-Thinking-1; Decisión: Evaluar requerimientos computacionales para optimizar asignación de recursos y gestionar costos operativos.</li>
+<li>[REL] Confiabilidad y Evaluación — Componente: puerta de evaluación; Decisión: bloquear despliegue hasta que pasen las comprobaciones de regresión tras cambios de modelo o herramientas.</li>
+<li>[AGENT] Agentes y Orquestación — Componente: política de herramientas; Decisión: mantener permisos estrechos y forzar escalado para acciones sensibles.</li>
+<li>[DATA] Datos, RAG y Conocimiento — Componente: capa de memoria; Decisión: limitar escrituras y hacerlas reversibles antes de uso prolongado.</li>
+<li>[GOV] Seguridad, Privacidad y Gobernanza — Componente: auditoría de aprobación; Decisión: capturar actor, contexto y camino de decisión para pasos autónomos.</li>
 </ul>
 <!-- AII_TODAY_END -->
-
-<hr />
 
 
 
