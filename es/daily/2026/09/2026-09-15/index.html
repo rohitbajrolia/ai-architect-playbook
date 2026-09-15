@@ -238,7 +238,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#description-cumplimiento-y-control-de-costos-impulsados-por-modelos-senales-e-implicaciones-de-arquitectura-de-ia-para-2026-09-15-basadas-en-la-entrega-de-servicios-financieros-y-de-seguros" class="md-skip">
+        <a href="#description-estandares-regulatorios-de-ia-y-validacion-de-modelos-senales-e-implicaciones-de-la-arquitectura-de-ia-para-2026-09-15-basadas-en-la-entrega-de-servicios-de-seguros-y-financieros" class="md-skip">
           Skip to content
         </a>
       
@@ -922,124 +922,99 @@
   
 
 
-<!-- SOURCE_SHA256: f64804932876a2ba2dac63df416a5088a791058451630ef2739fcf2ee1389bb8 -->
+<!-- SOURCE_SHA256: 59b747e6f565588ae2bf53270b75d8c0dba8ae298f984f81e7f98d5e131a8e21 -->
 <hr />
-<h2 id="description-cumplimiento-y-control-de-costos-impulsados-por-modelos-senales-e-implicaciones-de-arquitectura-de-ia-para-2026-09-15-basadas-en-la-entrega-de-servicios-financieros-y-de-seguros">description: "Cumplimiento y Control de Costos Impulsados por Modelos — Señales e implicaciones de arquitectura de IA para 2026-09-15, basadas en la entrega de servicios financieros y de seguros."<a class="headerlink" href="#description-cumplimiento-y-control-de-costos-impulsados-por-modelos-senales-e-implicaciones-de-arquitectura-de-ia-para-2026-09-15-basadas-en-la-entrega-de-servicios-financieros-y-de-seguros" title="Permanent link">&para;</a></h2>
+<h2 id="description-estandares-regulatorios-de-ia-y-validacion-de-modelos-senales-e-implicaciones-de-la-arquitectura-de-ia-para-2026-09-15-basadas-en-la-entrega-de-servicios-de-seguros-y-financieros">description: "Estándares regulatorios de IA y validación de modelos — Señales e implicaciones de la arquitectura de IA para 2026-09-15, basadas en la entrega de servicios de seguros y financieros."<a class="headerlink" href="#description-estandares-regulatorios-de-ia-y-validacion-de-modelos-senales-e-implicaciones-de-la-arquitectura-de-ia-para-2026-09-15-basadas-en-la-entrega-de-servicios-de-seguros-y-financieros" title="Permanent link">&para;</a></h2>
 <blockquote>
-<p>Entrada #189 · ~6 min de lectura · 2026-09-15</p>
+<p>Entrada #190 · ~5 min de lectura · 2026-09-15</p>
 </blockquote>
 <h1 id="2026-09-15">2026-09-15<a class="headerlink" href="#2026-09-15" title="Permanent link">&para;</a></h1>
-<h2 id="marco-diario-para-2026-09-15">Marco Diario para 2026-09-15<a class="headerlink" href="#marco-diario-para-2026-09-15" title="Permanent link">&para;</a></h2>
-<p><strong>Tema:</strong> Cumplimiento y Control de Costos Impulsados por Modelos</p>
+<h2 id="marco-diario-para-2026-09-15">Marco diario para 2026-09-15<a class="headerlink" href="#marco-diario-para-2026-09-15" title="Permanent link">&para;</a></h2>
+<p><strong>Tema:</strong> Estándares regulatorios de IA y validación de modelos</p>
 <p>Cómo leo esta página:
 - [REL] Confiabilidad y Evaluación — ¿Qué falla en producción? ¿Cómo lo probamos y observamos?
 - [AGENT] Agentes y Orquestación — ¿Qué ejecuta el ciclo? ¿Qué acciones puede tomar?
-- [DATA] Datos, RAG y Conocimiento — ¿De dónde viene el contexto? ¿Cómo se recupera?
+- [DATA] Datos, RAG y Conocimiento — ¿De dónde proviene el contexto? ¿Cómo se recupera?
 - [GOV] Seguridad, Privacidad y Gobernanza — ¿Qué necesita políticas, permisos y auditoría?
 - [COST] Infraestructura, Hardware y Costos — ¿Qué se vuelve caro (latencia/tokens/GPU/operaciones)? ¿Cómo lo limitamos?
-- [OPS] Producto y Modelo Operativo — ¿Quién es responsable semanalmente? ¿Cómo lo implementamos de forma segura?</p>
-<p>Mapa rápido del sistema (para ubicar cada elemento): Modelo → Contexto (RAG/memoria) → Orquestador → Herramientas → Evaluaciones/Traza → Gobernanza.</p>
-<h3 id="1-senales-de-hoy">1) Señales de Hoy<a class="headerlink" href="#1-senales-de-hoy" title="Permanent link">&para;</a></h3>
+- [OPS] Producto y Modelo Operativo — ¿Quién es responsable de esto semanalmente? ¿Cómo lo implementamos de forma segura?</p>
+<p>Mapa rápido del sistema (para ubicar cada elemento): Modelo → Contexto (RAG/memoria) → Orquestador → Herramientas → Evaluaciones/Rastreo → Gobernanza.</p>
+<h3 id="1-senales-de-hoy">1) Señales de hoy<a class="headerlink" href="#1-senales-de-hoy" title="Permanent link">&para;</a></h3>
 <ul>
-<li><strong>2026-09-15</strong>: <a href="https://openai.com/blog/gpt-5-financial-services">Blog de OpenAI sobre fine-tuning de GPT-5 para servicios financieros</a> — Fine-tuning de modelos grandes específicamente para suscripción de seguros mejora tanto la precisión como la auditabilidad regulatoria.</li>
-<li><strong>2026-09-15</strong>: <a href="https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI-RMF-v2.0.pdf">NIST publica la versión 2.0 del marco actualizado de gestión de riesgos de IA</a> — Incorporó orientación específica sobre requerimientos de trazabilidad para IA en la automatización de reclamos.</li>
-<li><strong>2026-09-15</strong>: <a href="https://www.anthropic.com/news/claude3-interpretability">Anthropic publica mejoras en interpretabilidad de Claude 3</a> — Nuevas herramientas de interpretabilidad diseñadas para trazar decisiones de agentes, apoyando el cumplimiento en IA de servicio de pólizas.</li>
-<li><strong>2026-09-15</strong>: <a href="https://aws.amazon.com/blogs/machine-learning/aws-inference-batch-for-underwriting">AWS lanza API de inferencia por lotes optimizada para suscripción de alto volumen</a> — Reduce costos de infraestructura en un 30% para evaluaciones automatizadas de riesgo a gran escala.</li>
-<li><strong>2026-09-15</strong>: <a href="https://arxiv.org/abs/2609.14253">Artículo de Microsoft Research sobre modelos multimodales para detección de fraudes</a> — Combina datos de texto, imagen y voz para mejorar la precisión en la señalización de fraudes en transacciones financieras.</li>
-<li><strong>2026-09-15</strong>: <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A52026PC0429">Comisión Europea actualiza cronogramas del proyecto de Ley de IA</a> — Especifica plazos para evaluaciones de conformidad enfocadas en sistemas de IA para seguros a mediados de 2027.</li>
-<li><strong>2026-09-15</strong>: <a href="https://www.infoq.com/articles/ai-observability-enterprise">Artículo de InfoQ sobre herramientas de observabilidad de IA</a> — Enfatiza la integración de trazas en capas y detección de anomalías en pipelines de suscripción impulsadas por IA.</li>
-<li><strong>2026-09-15</strong>: <a href="https://deepmind.com/research/publications/2026/efficient-few-shot-learning">Estudio de DeepMind sobre eficiencia de aprendizaje con pocos ejemplos</a> — Muestra la capacidad para adaptar reglas de suscripción con pocos ejemplos, reduciendo las necesidades de datos de entrenamiento en un 70%.</li>
-<li><strong>2026-09-15</strong>: <a href="https://siliconangle.com/2026/09/15/ai-inference-vendor-lock-in-enterprise-risk">SiliconANGLE sobre riesgos de vendor lock-in en inferencia de IA</a> — Resalta preocupaciones empresariales crecientes sobre dependencia en precios de tokens de proveedores en la nube para procesamiento de reclamos a escala.</li>
-<li><strong>2026-09-15</strong>: <a href="https://www.ftc.gov/news-events/news/press-releases/2026/09/ftc-updates-automated-decision-transparency">FTC actualiza orientación sobre transparencia en decisiones automatizadas</a> — Subraya la importancia de registros de auditoría granulares para herramientas de suscripción con IA.</li>
+<li><strong>2026-09-15</strong>: <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32021R0953">Publicación de estándares revisados del Acta de IA de la UE</a> — Nuevas directrices para sistemas de IA de alto riesgo que incluyen modelos de suscripción de seguros que ahora imponen requisitos más estrictos de trazabilidad y explicabilidad del modelo.</li>
+<li><strong>2026-09-15</strong>: <a href="https://www.microsoft.com/en-us/research/blog/continuous-ai-validation-for-financial-institutions/">Microsoft Research sobre validación continua de modelos en servicios financieros</a> — Avances en pipelines que permiten evaluación continua post-despliegue y detección de deriva para cumplimiento y rendimiento.</li>
+<li><strong>2026-09-15</strong>: <a href="https://openai.com/blog/federated-learning-finance">Blog de OpenAI sobre aprendizaje federado para IA financiera que preserva la privacidad</a> — Implementaciones prácticas de aprendizaje federado para reducir la transferencia de datos sensibles en detección de fraude bancario.</li>
 </ul>
 <hr />
 <h3 id="2-genai">2) GenAI<a class="headerlink" href="#2-genai" title="Permanent link">&para;</a></h3>
-<h4 id="modelos-fine-tuned-mejoran-cumplimiento-y-precision">Modelos Fine-Tuned Mejoran Cumplimiento y Precisión<a class="headerlink" href="#modelos-fine-tuned-mejoran-cumplimiento-y-precision" title="Permanent link">&para;</a></h4>
+<h4 id="explicabilidad-del-modelo-para-cumplimiento-regulatorio">Explicabilidad del modelo para cumplimiento regulatorio<a class="headerlink" href="#explicabilidad-del-modelo-para-cumplimiento-regulatorio" title="Permanent link">&para;</a></h4>
 <div class="admonition note">
-<p class="admonition-title">Implicación Arquitectónica</p>
+<p class="admonition-title">Implicación arquitectónica</p>
 <ul>
-<li>[REL] Confiabilidad y Evaluación — Las pruebas de regresión deben verificar que los modelos fine-tuned mantengan cumplimiento con reglas de suscripción en casos límite.</li>
-<li>[GOV] Seguridad, Privacidad y Gobernanza — Los registros de auditoría para decisiones del modelo necesitan detallarse por escenario de cliente para apoyar auditorías regulatorias en reclamos.</li>
-<li>[DATA] Datos, RAG y Conocimiento — El fine-tuning requiere conjuntos de datos curados y específicos del dominio actualizados para evitar que el conocimiento obsoleto cause riesgos regulatorios o comerciales.</li>
+<li>[GOV] Seguridad, Privacidad y Gobernanza — Implementar registro de auditoría detallado y granular de las rutas de decisión del modelo para satisfacer los requisitos de transparencia del Acta de IA en la automatización de suscripción.</li>
+<li>[REL] Confiabilidad y Evaluación — Integrar métricas de explicabilidad en la validación periódica del modelo para detectar degradaciones que afecten el cumplimiento regulatorio.</li>
+<li>[AGENT] Agentes y Orquestación — Incrustar APIs de explicabilidad en agentes de triaje de reclamaciones para interpretación en tiempo real durante la escalación.</li>
 </ul>
 </div>
 <hr />
-<h4 id="deteccion-de-fraude-multimodal-de-microsoft-research">Detección de Fraude Multimodal de Microsoft Research<a class="headerlink" href="#deteccion-de-fraude-multimodal-de-microsoft-research" title="Permanent link">&para;</a></h4>
+<h3 id="3-ia-agentiva">3) IA Agentiva<a class="headerlink" href="#3-ia-agentiva" title="Permanent link">&para;</a></h3>
+<h4 id="pipelines-de-validacion-continua-del-modelo">Pipelines de validación continua del modelo<a class="headerlink" href="#pipelines-de-validacion-continua-del-modelo" title="Permanent link">&para;</a></h4>
 <div class="admonition note">
-<p class="admonition-title">Implicación Arquitectónica</p>
+<p class="admonition-title">Implicación arquitectónica</p>
 <ul>
-<li>[DATA] Datos, RAG y Conocimiento — Los agentes de detección de fraude en reclamos deben ingerir y sincronizar múltiples modalidades de datos (texto, imagen, audio) de forma confiable para evitar banderas perdidas.</li>
-<li>[COST] Infraestructura, Hardware y Costos — Los modelos multimodales aumentan los costos de inferencia; se necesitan APIs por lotes o aceleradores on-premise para controlar costos.</li>
-<li>[OPS] Producto y Modelo Operativo — Los equipos de detección de fraude deben coordinar flujos de trabajo de etiquetado de datos a través de tipos diversos con supervisión de gobernanza de datos.</li>
-</ul>
-</div>
-<hr />
-<h3 id="3-ia-agentica">3) IA Agéntica<a class="headerlink" href="#3-ia-agentica" title="Permanent link">&para;</a></h3>
-<h4 id="herramientas-de-interpretabilidad-claude-3-ayudan-al-cumplimiento">Herramientas de Interpretabilidad Claude 3 Ayudan al Cumplimiento<a class="headerlink" href="#herramientas-de-interpretabilidad-claude-3-ayudan-al-cumplimiento" title="Permanent link">&para;</a></h4>
-<div class="admonition note">
-<p class="admonition-title">Implicación Arquitectónica</p>
-<ul>
-<li>[AGENT] Agentes y Orquestación — Los frameworks de agentes deben incorporar hooks de trazado de decisiones en tiempo real para crear registros legibles por humanos para servicio de pólizas.</li>
-<li>[REL] Confiabilidad y Evaluación — Las estrategias de prueba deberían incluir la verificación de que las capas de interpretabilidad no degradan la latencia ni la precisión de respuestas del modelo.</li>
-<li>[GOV] Seguridad, Privacidad y Gobernanza — El acceso a registros de interpretabilidad debe estar restringido bajo políticas RBAC estrictas para mantener la confidencialidad de datos de clientes.</li>
-</ul>
-</div>
-<hr />
-<h4 id="api-de-inferencia-por-lotes-aws-reduce-costos-para-suscripcion">API de Inferencia por Lotes AWS Reduce Costos para Suscripción<a class="headerlink" href="#api-de-inferencia-por-lotes-aws-reduce-costos-para-suscripcion" title="Permanent link">&para;</a></h4>
-<div class="admonition note">
-<p class="admonition-title">Implicación Arquitectónica</p>
-<ul>
-<li>[DATA] Datos, RAG y Conocimiento — Los pipelines de suscripción en tiempo real requieren orquestación híbrida de inferencia por lotes + streaming para balancear latencia y rendimiento.</li>
-<li>[COST] Infraestructura, Hardware y Costos — Los flujos de trabajo de suscripción de alto volumen deben migrar a APIs de inferencia por lotes para reducir el impacto del precio por llamada.</li>
-<li>[OPS] Producto y Modelo Operativo — Los equipos de producto deben monitorear de cerca los SLAs de los trabajos en lote para prevenir retrasos en decisiones de suscripción que afecten la experiencia del cliente.</li>
+<li>[REL] Confiabilidad y Evaluación — Construir pruebas automáticas de regresión con detección de deriva en tiempo real en modelos de procesamiento de reclamaciones para evitar fallas silenciosas.</li>
+<li>[OPS] Producto y Modelo Operativo — Definir la propiedad de los flujos de trabajo de validación del modelo entre los equipos de cumplimiento, ciencia de datos y operaciones para garantizar una respuesta rápida a las alertas.</li>
+<li>[GOV] Seguridad, Privacidad y Gobernanza — Hacer cumplir el registro inmutable de los resultados de validación para preparación ante auditorías.</li>
 </ul>
 </div>
 <hr />
 <h3 id="4-radar-de-ia">4) Radar de IA<a class="headerlink" href="#4-radar-de-ia" title="Permanent link">&para;</a></h3>
-<h4 id="herramientas-de-observabilidad-de-ia-vitales-para-estabilidad-en-produccion">Herramientas de Observabilidad de IA Vitales para Estabilidad en Producción<a class="headerlink" href="#herramientas-de-observabilidad-de-ia-vitales-para-estabilidad-en-produccion" title="Permanent link">&para;</a></h4>
+<h4 id="aprendizaje-federado-para-deteccion-de-fraude-que-preserva-la-privacidad">Aprendizaje federado para detección de fraude que preserva la privacidad<a class="headerlink" href="#aprendizaje-federado-para-deteccion-de-fraude-que-preserva-la-privacidad" title="Permanent link">&para;</a></h4>
 <div class="admonition note">
-<p class="admonition-title">Implicación Arquitectónica</p>
+<p class="admonition-title">Implicación arquitectónica</p>
 <ul>
-<li>[REL] Confiabilidad y Evaluación — Establecer observabilidad en capas combinando trazas a nivel de prompts con monitoreo de modelos ML para automatización de reclamos.</li>
-<li>[GOV] Seguridad, Privacidad y Gobernanza — Los sistemas de observabilidad deben registrar accesos y modificaciones para evitar incumplimientos en entornos regulados.</li>
-<li>[COST] Infraestructura, Hardware y Costos — Invertir temprano en observabilidad limita costosos arreglos post-mortem tras fallas de modelos de IA en suscripción o servicio de pólizas.</li>
+<li>[DATA] Datos, RAG y Conocimiento — Arquitectar recuperadores que soporten consultas federadas minimizando la exposición de datos sensibles durante el entrenamiento de modelos de fraude entre bancos.</li>
+<li>[GOV] Seguridad, Privacidad y Gobernanza — Incorporar protecciones de privacidad diferencial para cumplir con GDPR en pipelines de agregación federada de modelos.</li>
+<li>[COST] Infraestructura, Hardware y Costos — Considerar la alta sobrecarga de comunicación en el aprendizaje federado dentro del presupuesto de infraestructura, especialmente entre grandes instituciones financieras.</li>
 </ul>
 </div>
 <hr />
-<h3 id="5-resumen-para-cto">5) Resumen para CTO<a class="headerlink" href="#5-resumen-para-cto" title="Permanent link">&para;</a></h3>
+<h3 id="5-resumen-del-cto">5) Resumen del CTO<a class="headerlink" href="#5-resumen-del-cto" title="Permanent link">&para;</a></h3>
 <ul>
-<li>La integración estrecha de modelos ajustados al dominio con interpretabilidad y registros de auditoría es imprescindible para IA regulada en seguros.</li>
-<li>La gestión de costos a escala requiere combinar inferencia por lotes y streaming, especialmente en suscripción o detección de fraude de alto volumen.</li>
-<li>La observabilidad y control de acceso para logs de IA deben estar integrados desde el inicio, no ser un añadido posterior, para cumplir demandas regulatorias cambiantes.</li>
+<li>La explicabilidad del modelo es ahora un requisito regulatorio estricto; integrar la trazabilidad profundamente en los componentes de suscripción de reclamaciones.</li>
+<li>La validación continua del modelo necesita detección automática de deriva con gobernanza bien definida para escalar de forma segura.</li>
+<li>El aprendizaje federado ofrece una vía para colaborar sin compartir datos, pero añade complejidad y costos al diseño de infraestructura.</li>
 </ul>
 <hr />
 <h3 id="6-notas-de-rohit">6) Notas de Rohit<a class="headerlink" href="#6-notas-de-rohit" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Me sorprendió el empuje de OpenAI y Anthropic en herramientas de interpretabilidad enfocadas en cumplimiento; esto está cambiando de pura capacidad a auditoría.</li>
-<li>Necesito revisar cómo nuestras configuraciones de inferencia por lotes pueden integrarse con herramientas de observabilidad para cumplimiento de SLA en pipelines de suscripción.</li>
-<li>Decir a los equipos que la trazabilidad para auditoría de cumplimiento se ha vuelto tan importante como la precisión del modelo para automatización de reclamos. Sin registros de auditoría, no hay lanzamiento.</li>
+<li>Sorprendido de lo estrictos que se han vuelto los controles del nuevo Acta de IA sobre modelos de suscripción en cuanto a explicabilidad.</li>
+<li>Necesito revisar esta semana el registro y cobertura de la API de explicabilidad de nuestro agente de triaje de reclamaciones.</li>
+<li>Le diría al equipo: enfoquen ahora en las trazas de auditoría; los reguladores quieren todo trazable, no solo predicciones precisas.</li>
 </ul>
 <hr />
-<h3 id="7-ejercicio-de-diseno">7) Ejercicio de Diseño<a class="headerlink" href="#7-ejercicio-de-diseno" title="Permanent link">&para;</a></h3>
-<p><strong>Escenario:</strong> Desplegar un sistema de decisión automatizada impulsado por IA para suscripción en una gran aseguradora, garantizando procesamiento en tiempo real de solicitudes.</p>
+<h3 id="7-ejercicio-de-diseno">7) Ejercicio de diseño<a class="headerlink" href="#7-ejercicio-de-diseno" title="Permanent link">&para;</a></h3>
+<p><strong>Escenario:</strong> Automatizar el triaje de reclamaciones para un asegurador mediano sujeto al cumplimiento del Acta de IA de la UE con asistencia de agente de soporte al cliente en tiempo real.</p>
 <p><strong>Restricciones:</strong>
-- Debe cumplir con las leyes modelo NAIC y los futuros trails de auditoría del AI Act de la UE.
-- Necesita integrar bases de datos de pólizas en mainframe legados para verificación cruzada.
-- Los SLA exigen decisiones en 2 segundos por solicitud para cumplir expectativas de clientes.</p>
+- Debe mantener las trazas de auditoría y explicabilidad mandadas por el Acta de IA para todas las decisiones de triaje.
+- El servicio funciona en infraestructura de mainframe legado con actualizaciones de datos de reclamaciones por lotes.
+- Privacidad del cliente y cumplimiento de GDPR requerido para los datos en el flujo de trabajo de triaje y escalación.</p>
 <p><strong>Preguntas guía:</strong>
-- ¿Cómo diseñar el registro de auditoría para capturar cada paso de decisión de suscripción sin añadir latencia?
-- ¿Cómo orquestar rutas alternativas si la inferencia de IA falla o viola reglas de cumplimiento?
-- ¿Qué estrategia híbrida de inferencia por lotes vs tiempo real conviene para un flujo estable de suscripción de alto volumen?
-- ¿Cómo integrar de forma segura datos legados de mainframe en el contexto RAG aumentado?
-- ¿Qué métricas de evaluación y pruebas automatizadas validan el cumplimiento continuamente en producción?</p>
+- ¿Cómo diseñamos la capa de trazabilidad para registrar cada decisión de inferencia de IA cuando se integra con sistemas legados?
+- ¿Qué mecanismos de monitoreo y validación detectan mejor la deriva de modelos en el triaje en tiempo real bajo carga intensa?
+- ¿Cómo se aísla y procesa la información sensible del cliente cumpliendo con GDPR durante la evaluación y escalación del modelo?
+- ¿Qué controles de respaldo o humanos en el ciclo minimizan el riesgo regulatorio por triaje automatizado erróneo?
+- ¿Cómo diseñamos la escalación del agente que incluya APIs de explicabilidad consumibles tanto por el agente como por auditores de cumplimiento?</p>
 <hr />
 <!-- AII_TODAY_START -->
 <p><a id="aii-today"></a></p>
-<h3 id="indice-de-implicaciones-arquitectonicas-hoy">Índice de Implicaciones Arquitectónicas (Hoy)<a class="headerlink" href="#indice-de-implicaciones-arquitectonicas-hoy" title="Permanent link">&para;</a></h3>
+<h3 id="indice-de-implicaciones-arquitectonicas-hoy">Índice de implicaciones arquitectónicas (Hoy)<a class="headerlink" href="#indice-de-implicaciones-arquitectonicas-hoy" title="Permanent link">&para;</a></h3>
 <ul>
-<li>[REL] Confiabilidad y Evaluación — Componente: eval gate; Decisión: añadir pruebas de regresión antes de ampliar el despliegue.</li>
-<li>[AGENT] Agentes y Orquestación — Componente: orquestador; Decisión: imponer listas blancas de herramientas + reintentos/tiempos de espera.</li>
-<li>[DATA] Datos, RAG y Conocimiento — Componente: recuperador; Decisión: añadir ranking de fuentes + controles de frescura.</li>
+<li>[GOV] Seguridad, Privacidad y Gobernanza — Componente: modelo de suscripción; Decisión: implementar trazas de auditoría detalladas para cumplir con el Acta de IA.</li>
+<li>[REL] Confiabilidad y Evaluación — Componente: pipeline de validación de modelos; Decisión: automatizar la detección de deriva con puertas de pruebas de regresión.</li>
+<li>[AGENT] Agentes y Orquestación — Componente: agente de triaje de reclamaciones; Decisión: incrustar API de explicabilidad para transparencia en decisiones en tiempo real.</li>
+<li>[DATA] Datos, RAG y Conocimiento — Componente: recuperador federado; Decisión: soportar aprendizaje federado preservando la privacidad con mínima exposición de datos.</li>
+<li>[OPS] Producto y Modelo Operativo — Componente: flujos de trabajo de validación; Decisión: asignar responsabilidad interequipos con registro de auditoría inmutable.</li>
 </ul>
 <!-- AII_TODAY_END -->
 
