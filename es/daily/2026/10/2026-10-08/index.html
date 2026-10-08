@@ -238,7 +238,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#description-generalizacion-del-modelo-y-limites-regulatorios-senales-de-arquitectura-de-ia-e-implicaciones-para-2026-10-08-basadas-en-la-entrega-de-seguros-y-servicios-financieros" class="md-skip">
+        <a href="#description-expansion-de-la-ia-en-seguros-senales-e-implicaciones-de-la-arquitectura-de-ia-para-el-2026-10-08-fundamentadas-en-la-prestacion-de-servicios-de-seguros-y-financieros" class="md-skip">
           Skip to content
         </a>
       
@@ -922,132 +922,131 @@
   
 
 
-<!-- SOURCE_SHA256: 764239bfbc26878711df919d852f85e515ace9791e2da342493c1c5ed8e3ee13 -->
+<!-- SOURCE_SHA256: 4d805cabb27e5ed3b10ca6cac7130694beedd30a41b089dfbb8d42c49d71d86f -->
 <hr />
-<h2 id="description-generalizacion-del-modelo-y-limites-regulatorios-senales-de-arquitectura-de-ia-e-implicaciones-para-2026-10-08-basadas-en-la-entrega-de-seguros-y-servicios-financieros">description: "Generalización del Modelo y Límites Regulatorios — Señales de arquitectura de IA e implicaciones para 2026-10-08, basadas en la entrega de seguros y servicios financieros."<a class="headerlink" href="#description-generalizacion-del-modelo-y-limites-regulatorios-senales-de-arquitectura-de-ia-e-implicaciones-para-2026-10-08-basadas-en-la-entrega-de-seguros-y-servicios-financieros" title="Permanent link">&para;</a></h2>
+<h2 id="description-expansion-de-la-ia-en-seguros-senales-e-implicaciones-de-la-arquitectura-de-ia-para-el-2026-10-08-fundamentadas-en-la-prestacion-de-servicios-de-seguros-y-financieros">description: "Expansión de la IA en Seguros — Señales e implicaciones de la arquitectura de IA para el 2026-10-08, fundamentadas en la prestación de servicios de seguros y financieros."<a class="headerlink" href="#description-expansion-de-la-ia-en-seguros-senales-e-implicaciones-de-la-arquitectura-de-ia-para-el-2026-10-08-fundamentadas-en-la-prestacion-de-servicios-de-seguros-y-financieros" title="Permanent link">&para;</a></h2>
 <blockquote>
-<p>Entrada #212 · ~6 min de lectura · 2026-10-08</p>
+<p>Entrada #213 · ~5 min de lectura · 2026-10-08</p>
 </blockquote>
 <h1 id="2026-10-08">2026-10-08<a class="headerlink" href="#2026-10-08" title="Permanent link">&para;</a></h1>
 <h2 id="marco-diario-para-2026-10-08">Marco Diario para 2026-10-08<a class="headerlink" href="#marco-diario-para-2026-10-08" title="Permanent link">&para;</a></h2>
-<p><strong>Tema:</strong> Generalización del Modelo y Límites Regulatorios</p>
+<p><strong>Tema:</strong> Expansión de la IA en Seguros</p>
 <p>Cómo leo esta página:
 - [REL] Confiabilidad y Evaluación — ¿Qué falla en producción? ¿Cómo lo probamos y observamos?
-- [AGENT] Agentes y Orquestación — ¿Qué ejecuta el bucle? ¿Qué acciones puede tomar?
+- [AGENT] Agentes y Orquestación — ¿Qué ejecuta el ciclo? ¿Qué acciones puede tomar?
 - [DATA] Datos, RAG y Conocimiento — ¿De dónde viene el contexto? ¿Cómo se recupera?
 - [GOV] Seguridad, Privacidad y Gobernanza — ¿Qué necesita política, permisos y auditoría?
-- [COST] Infraestructura, Hardware y Costos — ¿Qué se vuelve costoso (latencia/tokens/GPU/ops)? ¿Cómo lo limitamos?
-- [OPS] Producto y Modelo Operativo — ¿Quién es responsable semanalmente? ¿Cómo lo implementamos de forma segura?</p>
-<p>Mapa rápido del sistema (para ubicar cada elemento): Modelo → Contexto (RAG/memoria) → Orquestador → Herramientas → Evaluaciones/Seguimiento → Gobernanza.</p>
+- [COST] Infraestructura, Hardware y Costos — ¿Qué se vuelve caro (latencia/tokens/GPU/operaciones)? ¿Cómo lo limitamos?
+- [OPS] Producto y Modelo Operativo — ¿Quién es responsable semanalmente? ¿Cómo lo implementamos de manera segura?</p>
+<p>Mapa rápido del sistema (para ubicar cada elemento): Modelo → Contexto (RAG/memoria) → Orquestador → Herramientas → Evaluaciones/Rastreo → Gobernanza.</p>
 <h3 id="1-senales-de-hoy">1) Señales de Hoy<a class="headerlink" href="#1-senales-de-hoy" title="Permanent link">&para;</a></h3>
 <ul>
-<li><strong>2026-10-08</strong>: <a href="https://openai.com/blog/gpt-5">OpenAI publica el informe técnico de GPT-5</a> — El nuevo modelo mejora el aprendizaje few-shot mientras reduce alucinaciones, con un enfoque en una generalización más segura.</li>
-<li><strong>2026-10-08</strong>: <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R0678">Publicación del borrador final de la Ley de IA de la UE</a> — Establece estrictos requisitos de cumplimiento para sistemas IA en los sectores financiero y de seguros, enfatizando la transparencia y supervisión humana.</li>
-<li><strong>2026-10-08</strong>: <a href="https://deepmind.com/research/publications/2026/contrastive-learning-document-retrieval">DeepMind publica avances en aprendizaje contrastivo para recuperación de documentos</a> — Propone nuevos métodos para mejorar la precisión de recuperación en grandes corpus de texto, potenciando sistemas RAG.</li>
-<li><strong>2026-10-08</strong>: <a href="https://azure.microsoft.com/en-us/blog/ai-cost-management-2026">Microsoft detalla mejoras en gestión de costos de IA en Azure</a> — Nueva herramienta para seguimiento y optimización de gastos de inferencia y entrenamiento de IA a escala empresarial.</li>
+<li><strong>2026-10-08</strong>: <a href="https://siliconangle.com/2026/05/06/corgi-raises-160m-1-3b-valuation-expand-ai-native-insurance-platform/">Corgi recauda $160M con una valoración de $1.3B para expandir la plataforma de seguros nativa de IA</a> — Corgi Insurance Inc. asegura $160 millones para mejorar sus servicios de seguros impulsados por IA.</li>
+<li><strong>2026-10-08</strong>: <a href="https://techcrunch.com/2026/01/21/lemonade-launches-an-insurance-product-for-tesla-full-self-driving-customers/">Lemonade lanza un producto de seguro para clientes de Tesla Full Self-Driving</a> — Lemonade introduce un seguro adaptado a la tecnología Full Self-Driving de Tesla.</li>
+<li><strong>2026-10-08</strong>: <a href="https://siliconangle.com/2026/04/21/cowbell-debuts-prime-one-cyber-insurance-ai-quantum-risk-cover/">Cowbell presenta Prime One, seguro cibernético con cobertura para riesgos de IA y cuánticos</a> — Cowbell Cyber Inc. lanza un seguro cibernético que aborda riesgos de IA y computación cuántica.</li>
+<li><strong>2026-10-08</strong>: <a href="https://siliconangle.com/2026/03/24/insurance-tech-startup-shepherd-raises-42m-underwrite-physical-layer-ai/">Shepherd recauda $42M para cubrir la capa física de la IA</a> — Shepherd asegura $42 millones para asegurar la infraestructura de IA.</li>
+<li><strong>2026-10-08</strong>: <a href="https://siliconangle.com/2026/07/15/agi-raises-70m-buy-transform-insurance-firms-ai-native-operations/">AGI recauda $70M para comprar y transformar firmas de seguros en operaciones nativas de IA</a> — AGI Holdings LLC recauda $70 millones para convertir firmas de seguros a modelos impulsados por IA.</li>
 </ul>
 <hr />
 <h3 id="2-genai">2) GenAI<a class="headerlink" href="#2-genai" title="Permanent link">&para;</a></h3>
-<h4 id="aprendizaje-few-shot-y-seguridad-en-gpt-5">Aprendizaje Few-shot y Seguridad en GPT-5<a class="headerlink" href="#aprendizaje-few-shot-y-seguridad-en-gpt-5" title="Permanent link">&para;</a></h4>
+<h4 id="plataformas-de-seguros-impulsadas-por-ia">Plataformas de Seguros Impulsadas por IA<a class="headerlink" href="#plataformas-de-seguros-impulsadas-por-ia" title="Permanent link">&para;</a></h4>
 <div class="admonition note">
 <p class="admonition-title">Implicación Arquitectónica</p>
 <ul>
-<li>[REL] Confiabilidad y Evaluación — Las suites de regresión deben ampliarse para incluir escenarios few-shot complejos y detectar errores de generalización antes de que los modelos lleguen a producción.</li>
-<li>[AGENT] Agentes y Orquestación — Los agentes de automatización de reclamos con GPT-5 necesitan puntajes de confianza calibrados para fallback inmediato a revisión humana.</li>
-<li>[GOV] Seguridad, Privacidad y Gobernanza — Los pipelines de cumplimiento deben registrar explícitamente la razón de las decisiones del modelo para cumplir trazabilidad de auditoría según la Ley de IA de la UE para asistencia en suscripción.</li>
+<li>[DATA] Datos, RAG y Conocimiento — Integrar flujos de datos en tiempo real para evaluación dinámica de riesgos.</li>
+<li>[COST] Infraestructura, Hardware y Costos — Garantizar infraestructura en la nube escalable para procesar datos a gran escala.</li>
+<li>[OPS] Producto y Modelo Operativo — Establecer ciclos de desarrollo ágiles para adaptarse rápidamente a los cambios del mercado.</li>
 </ul>
 </div>
 <p>Preguntas abiertas
-- ¿Cómo balancear la generalización más amplia de GPT-5 con el ajuste fino específico de dominio en flujos regulados como evaluaciones de riesgo financiero?</p>
-<h4 id="recuperacion-contrastiva-de-documentos-para-rag">Recuperación Contrastiva de Documentos para RAG<a class="headerlink" href="#recuperacion-contrastiva-de-documentos-para-rag" title="Permanent link">&para;</a></h4>
+- ¿Cómo podemos garantizar la privacidad de los datos mientras integramos diversas fuentes de datos?</p>
+<h4 id="ia-en-seguros-ciberneticos">IA en Seguros Cibernéticos<a class="headerlink" href="#ia-en-seguros-ciberneticos" title="Permanent link">&para;</a></h4>
 <div class="admonition note">
 <p class="admonition-title">Implicación Arquitectónica</p>
 <ul>
-<li>[DATA] Datos, RAG y Conocimiento — Actualizar los recuperadores a métodos de aprendizaje contrastivo requiere reentrenamiento con documentos de pólizas y reclamos actualizados para mantener relevancia.</li>
-<li>[COST] Infraestructura, Hardware y Costos — Los modelos contrastivos aumentan el costo de almacenamiento de vectores; será necesario agrupar consultas y podar índices para controlar la latencia en pipelines de servicio de pólizas.</li>
-<li>[OPS] Producto y Modelo Operativo — Los equipos necesitan flujos de trabajo dedicados para refrescos periódicos de embeddings y evitar datos obsoletos que causen riesgos de cumplimiento.</li>
+<li>[DATA] Datos, RAG y Conocimiento — Desarrollar modelos para predecir y mitigar amenazas cibernéticas relacionadas con IA.</li>
+<li>[COST] Infraestructura, Hardware y Costos — Invertir en protocolos de seguridad avanzados para proteger datos sensibles.</li>
+<li>[OPS] Producto y Modelo Operativo — Crear equipos especializados para monitorear y responder a riesgos cibernéticos emergentes.</li>
 </ul>
 </div>
 <p>Preguntas abiertas
-- ¿Cómo integrar recuperadores contrastivos con sistemas legacy de gestión documental en aseguradoras sin reescrituras importantes de plataforma?</p>
+- ¿Cuáles son los requisitos regulatorios para asegurar incidentes cibernéticos relacionados con IA?</p>
 <hr />
-<h3 id="3-ia-agentiva">3) IA Agentiva<a class="headerlink" href="#3-ia-agentiva" title="Permanent link">&para;</a></h3>
-<h4 id="puertas-human-in-the-loop-en-automatizacion-de-reclamos">Puertas Human-in-the-loop en Automatización de Reclamos<a class="headerlink" href="#puertas-human-in-the-loop-en-automatizacion-de-reclamos" title="Permanent link">&para;</a></h4>
+<h3 id="3-ia-agente">3) IA Agente<a class="headerlink" href="#3-ia-agente" title="Permanent link">&para;</a></h3>
+<h4 id="ia-en-vehiculos-autonomos">IA en Vehículos Autónomos<a class="headerlink" href="#ia-en-vehiculos-autonomos" title="Permanent link">&para;</a></h4>
 <div class="admonition note">
 <p class="admonition-title">Implicación Arquitectónica</p>
 <ul>
-<li>[AGENT] Agentes y Orquestación — Los agentes automáticos de aprobación de reclamos requieren umbrales configurables de aprobación humana para cumplir con leyes modelo NAIC.</li>
-<li>[REL] Confiabilidad y Evaluación — Los sistemas de monitoreo deben rastrear la deriva en decisiones de agentes a lo largo del tiempo para detectar fallos silenciosos que socavan la confianza en el procesamiento autónomo.</li>
-<li>[GOV] Seguridad, Privacidad y Gobernanza — Los registros y auditorías deben capturar con precisión acciones de agentes y anulaciones humanas para cumplimiento regulatorio y defensa ante disputas.</li>
+<li>[AGENT] Agentes y Orquestación — Diseñar agentes de IA capaces de tomar decisiones en tiempo real en escenarios de conducción complejos.</li>
+<li>[REL] Confiabilidad y Evaluación — Implementar pruebas continuas para garantizar seguridad y cumplimiento.</li>
+<li>[GOV] Seguridad, Privacidad y Gobernanza — Abordar responsabilidad y consideraciones éticas en la conducción autónoma.</li>
 </ul>
 </div>
 <p>Preguntas abiertas
-- ¿Cuál es un presupuesto de latencia efectivo para las puertas de revisión humana que equilibre expectativas del cliente y seguridad regulatoria?</p>
-<h4 id="actualizaciones-escalables-del-orquestador-para-servicio-de-polizas">Actualizaciones Escalables del Orquestador para Servicio de Pólizas<a class="headerlink" href="#actualizaciones-escalables-del-orquestador-para-servicio-de-polizas" title="Permanent link">&para;</a></h4>
+- ¿Cómo equilibramos la innovación con el cumplimiento regulatorio en el seguro para vehículos autónomos?</p>
+<h4 id="ia-en-seguros-de-infraestructura">IA en Seguros de Infraestructura<a class="headerlink" href="#ia-en-seguros-de-infraestructura" title="Permanent link">&para;</a></h4>
 <div class="admonition note">
 <p class="admonition-title">Implicación Arquitectónica</p>
 <ul>
-<li>[DATA] Datos, RAG y Conocimiento — Los orquestadores deben interactuar directamente con bases de datos de pólizas en tiempo real, gestionando versiones de datos para evitar comunicaciones inconsistentes con clientes.</li>
-<li>[COST] Infraestructura, Hardware y Costos — Optimizar la eficiencia del orquestador mediante cachés pre-creadas de consultas frecuentes reduce el volumen de inferencias y el gasto mensual en la nube.</li>
-<li>[OPS] Producto y Modelo Operativo — Los equipos de operaciones necesitan mecanismos iterativos de despliegue para lanzar cambios en la lógica de agentes sin interrumpir el servicio.</li>
+<li>[DATA] Datos, RAG y Conocimiento — Utilizar análisis predictivo para evaluar riesgos de infraestructura.</li>
+<li>[COST] Infraestructura, Hardware y Costos — Optimizar la asignación de recursos para proyectos de infraestructura.</li>
+<li>[OPS] Producto y Modelo Operativo — Desarrollar alianzas con proveedores de infraestructura para una cobertura integral.</li>
 </ul>
 </div>
 <p>Preguntas abiertas
-- ¿Cómo versionar la lógica del orquestador manteniendo uptime continuo en el servicio de pólizas bajo SLAs estrictos?</p>
+- ¿Cuáles son los desafíos para asegurar proyectos de infraestructura basados en IA?</p>
 <hr />
 <h3 id="4-radar-de-ia">4) Radar de IA<a class="headerlink" href="#4-radar-de-ia" title="Permanent link">&para;</a></h3>
-<h4 id="automatizacion-de-cumplimiento-con-la-ley-de-ia-de-la-ue">Automatización de Cumplimiento con la Ley de IA de la UE<a class="headerlink" href="#automatizacion-de-cumplimiento-con-la-ley-de-ia-de-la-ue" title="Permanent link">&para;</a></h4>
+<h4 id="suscripcion-mejorada-con-ia">Suscripción Mejorada con IA<a class="headerlink" href="#suscripcion-mejorada-con-ia" title="Permanent link">&para;</a></h4>
 <div class="admonition note">
 <p class="admonition-title">Implicación Arquitectónica</p>
 <ul>
-<li>[REL] Confiabilidad y Evaluación — Los chequeos de cumplimiento deben automatizarse en pipelines con validación integrada contra las disposiciones actualizadas de la Ley de IA de la UE para prevenir multas.</li>
-<li>[GOV] Seguridad, Privacidad y Gobernanza — Los módulos de minimización de datos y verificación de consentimiento del usuario son obligatorios en todos los servicios de IA orientados a asegurados.</li>
-<li>[COST] Infraestructura, Hardware y Costos — La integración de herramientas de cumplimiento añade sobrecarga; optimizar motores de reglas es clave para controlar costos en altos volúmenes de suscripción.</li>
+<li>[DATA] Datos, RAG y Conocimiento — Integrar diversas fuentes de datos para una evaluación integral de riesgos.</li>
+<li>[COST] Infraestructura, Hardware y Costos — Invertir en herramientas de IA para automatizar procesos de suscripción.</li>
+<li>[OPS] Producto y Modelo Operativo — Capacitar a suscriptores para interpretar eficazmente los conocimientos impulsados por IA.</li>
 </ul>
 </div>
 <p>Preguntas abiertas
-- ¿Con qué frecuencia las actualizaciones de la Ley de IA de la UE exigirán reentrenamiento o recertificación de sistemas IA desplegados en finanzas?</p>
+- ¿Cómo garantizamos la transparencia en las decisiones de suscripción impulsadas por IA?</p>
 <hr />
-<h3 id="5-resumen-del-cto">5) Resumen del CTO<a class="headerlink" href="#5-resumen-del-cto" title="Permanent link">&para;</a></h3>
+<h3 id="5-informe-del-cto">5) Informe del CTO<a class="headerlink" href="#5-informe-del-cto" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Las mejoras en generalización de modelos aumentan la necesidad de evaluaciones de dominio más estrictas antes del despliegue.</li>
-<li>Los mecanismos human-in-the-loop siguen siendo esenciales para equilibrar automatización y cumplimiento regulatorio en reclamos.</li>
-<li>La automatización del cumplimiento con la Ley de IA de la UE es obligatoria; los costos de integración deben planificarse temprano en todas las hojas de ruta de producto.</li>
+<li>Invertir en infraestructura en la nube escalable para apoyar plataformas de seguros impulsadas por IA.</li>
+<li>Desarrollar modelos de IA para predecir y mitigar amenazas cibernéticas emergentes.</li>
+<li>Establecer ciclos de desarrollo ágiles para adaptarse a las demandas cambiantes del mercado.</li>
 </ul>
 <hr />
 <h3 id="6-notas-de-rohit">6) Notas de Rohit<a class="headerlink" href="#6-notas-de-rohit" title="Permanent link">&para;</a></h3>
 <ul>
-<li>La capacidad mejorada few-shot de GPT-5 me sorprendió; podría reducir ciclos de ajuste pero exige validación más rigurosa.</li>
-<li>Tengo que revisar si nuestras puertas actuales de revisión humana cumplen las últimas guías NAIC sobre decisiones autónomas de reclamos.</li>
-<li>Los equipos deben priorizar ciclos de refresco de embeddings para sistemas de recuperación; datos obsoletos son un riesgo silencioso de cumplimiento en suscripción.</li>
+<li>Sorprendido por la rápida adopción de la IA en seguros.</li>
+<li>Necesidad de revisar regulaciones de privacidad de datos para la integración de IA.</li>
+<li>Enfoque en construir soluciones de IA escalables para aplicaciones de seguros.</li>
 </ul>
 <hr />
 <h3 id="7-ejercicio-de-diseno">7) Ejercicio de Diseño<a class="headerlink" href="#7-ejercicio-de-diseno" title="Permanent link">&para;</a></h3>
-<p><strong>Escenario:</strong> Automatizar la suscripción de pólizas de seguro de auto personal a escala con un sistema híbrido de revisión IA-humana.</p>
+<p><strong>Escenario:</strong> Implementar suscripción impulsada por IA en una empresa de seguros mediana.</p>
 <p><strong>Restricciones:</strong>
-- Debe cumplir con leyes modelo NAIC sobre supervisión humana.
-- Aplican reglas de residencia de datos y consentimiento bajo la Ley de IA de la UE.
-- Los sistemas legacy de gestión de pólizas se integran vía actualizaciones por lotes.</p>
-<p><strong>Preguntas guía:</strong>
-- ¿Cómo diseñar el pipeline de decisión híbrido para permitir fallback dinámico a suscriptores humanos sin picos de latencia?
-- ¿Qué registros de auditoría deben almacenarse para demostrar cumplimiento regulatorio en la automatización de suscripción?
-- ¿Cómo refrescar ventanas de contexto RAG para incorporar factores de riesgo que cambian frecuentemente sin reentrenar modelos completos?
-- ¿Qué controles de costos son necesarios para manejar demanda pico en suscripción sin facturas excesivas en la nube?
-- ¿Cómo versionar componentes IA sin interrumpir flujos existentes de servicio de pólizas?</p>
+- Cumplimiento con las leyes modelo NAIC.
+- Integración con sistemas mainframe heredados.
+- Aprobación del departamento actuarial.</p>
+<p><strong>Preguntas guías:</strong>
+- ¿Cómo garantizamos el cumplimiento de las leyes modelo NAIC en la suscripción impulsada por IA?
+- ¿Cuáles son los desafíos de integración con sistemas mainframe heredados?
+- ¿Cómo obtenemos la aprobación actuarial para los modelos de suscripción impulsada por IA?
+- ¿Qué consideraciones de privacidad de datos deben abordarse?
+- ¿Cómo gestionamos el proceso de cambio dentro de la organización?</p>
 <hr />
 <!-- AII_TODAY_START -->
 <p><a id="aii-today"></a></p>
 <h3 id="indice-de-implicaciones-arquitectonicas-hoy">Índice de Implicaciones Arquitectónicas (Hoy)<a class="headerlink" href="#indice-de-implicaciones-arquitectonicas-hoy" title="Permanent link">&para;</a></h3>
+<!-- 3–5 elementos. Cada uno debe comenzar con una clave temática + etiqueta humana. Una línea cada uno. Debe incluir Componente + Decisión. -->
+
 <ul>
-<li>[REL] Confiabilidad y Evaluación — Componente: suite de pruebas few-shot; Decisión: integrar pruebas complejas de dominio antes del despliegue de GPT-5 en suscripción.</li>
-<li>[AGENT] Agentes y Orquestación — Componente: agente de automatización de reclamos; Decisión: implementar confianza calibrada con fallback humano para cumplimiento.</li>
-<li>[DATA] Datos, RAG y Conocimiento — Componente: recuperador; Decisión: reentrenar usando métodos contrastivos en documentos actuales de pólizas, habilitar refrescos frecuentes.</li>
-<li>[GOV] Seguridad, Privacidad y Gobernanza — Componente: pipeline de cumplimiento; Decisión: garantizar registros transparentes para cumplir auditorías de Ley de IA de la UE.</li>
-<li>[COST] Infraestructura, Hardware y Costos — Componente: orquestador; Decisión: optimizar caché de consultas para reducir picos de costo de inferencia durante servicio de pólizas.</li>
+<li>[DATA] Datos, RAG y Conocimiento — Componente: pipeline de integración de datos; Decisión: implementar procesamiento de datos en tiempo real para evaluación dinámica de riesgos.</li>
+<li>[COST] Infraestructura, Hardware y Costos — Componente: infraestructura en la nube; Decisión: escalar recursos para manejar procesamiento de datos a gran escala.</li>
+<li>[OPS] Producto y Modelo Operativo — Componente: equipo de desarrollo; Decisión: adoptar metodologías ágiles para adaptarse rápidamente a cambios del mercado.</li>
 </ul>
 <!-- AII_TODAY_END -->
-
-<hr />
 
 
 
